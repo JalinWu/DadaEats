@@ -6,7 +6,7 @@ const fs = require('fs');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // getMenu
-router.get('/getMenu', (req, res) => {
+router.get('/getMenu', ensureAuthenticated, (req, res) => {
     fs.readFile('menus/menu.json', (err, data) => {
         if(err) throw err;
 

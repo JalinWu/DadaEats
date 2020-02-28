@@ -6,7 +6,7 @@ const fs = require('fs');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // getOrder
-router.get('/getCartList', (req, res) => {
+router.get('/getCartList', ensureAuthenticated, (req, res) => {
     Order.find({expired: false})
     .then(result => {
         // console.log(result);
