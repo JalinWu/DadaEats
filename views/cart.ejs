@@ -1,0 +1,195 @@
+<div class="section-top-border container">
+    <div class="progress-table-wrap">
+        <div class="progress-table">
+            <blockquote class="generic-blockquote">
+                <h3>
+                    購物車
+                </h3>
+            </blockquote>
+            <br>
+
+            <% for(var i = 0;i < result.length;i++){ %>
+            <div class="table-row" id="<%= result[i]._id %>">
+                <div class="row no-margin" style="width: 100%">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="country">
+                            <div>
+                                <p class="menu-title"><%= result[i].orderTitle %></p>
+                                <% for(var j = 0; j < result[i].orderContents.length; j++) { %>
+                                <%= result[i].orderContents[j].item %>
+                                <% if(result[i].orderContents[j].item != ''){ %>
+                                <%= "," %>
+                                <% } %>
+                                <% } %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 text-right">
+                        <div class="inline-flex banner-left">
+                            <div class="menu-title mr-15">NT$ <%= result[i].amount %> 元
+                            </div>
+                            <% if(result[i].status == 'not-confirmed'){ %>
+                            <a href="#" class="genric-btn radius danger removeItems" data-toggle="modal" data-target="#Modal-"
+                                onclick="removeItems('<%= result[i]._id %>')">-</a>
+                            <% } %>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <% } %>
+
+            <hr>
+            <div class="text-right banner-left" style="padding: 15px">
+                <h5 id="subtotal" class="mb-30">小計：<%= subtotal %></h4>
+                <h5 id="freight">運費：<span id="freight"><%= freight %></span></h4>
+                <hr>
+                <h5 id="sum" class="mb-30">總計：<%= sum %></h4>
+                <a href="#" class="primary-btn" style="border-radius: 3px" onclick="confirm()">確定</a>
+                            
+
+
+            </div>
+
+            <div class="text-center" id="payment" style="visibility:hidden">
+                <hr>
+                <span style="font-weight: bold">支付方式：</span>
+                <img width="150px" src="/img/line.png" id="lineImg" alt="">
+                <img width="150px" src="/img/JKOSPay.jpeg" id="jkospayImg" alt="">
+                <img width="150px" src="/img/richart.png" id="richartImg" alt="">
+                <img width="150px" src="/img/CTBC.png" id="ctbcImg" alt="">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function removeItems(itemId) {
+        $.ajax({
+            url: '/cart/deleteCartList',
+            type: 'post',
+            dataType: "json",
+            data: {
+                _id: itemId
+            },
+            error: function (err) {
+                if (err) throw err
+                console.log('bad job');
+
+            },
+            success: function (response) {
+                console.log('good job')
+                console.log(response);
+            }
+        });
+        location.reload()
+    }
+
+    function confirm(){
+        $('.removeItems').remove();
+        $('#payment').css('visibility', 'visible');
+
+        $.ajax({
+            url: '/cart/updateCartList',
+            type: 'post',
+            dataType: "json",
+            data: {
+                account: $('.accountTitle').attr('account')
+            },
+            error: function (err) {
+                if (err) throw err
+                console.log('bad job');
+
+            },
+            success: function (response) {
+                console.log('good job')
+                console.log(response);
+            }
+        });
+    }
+
+    $("#lineImg").on('click', () => {
+        Swal.fire({
+            title: 'Line掃碼支付',
+            html: '開啟Line -> 錢包 -> 掃描 -> 掃碼/輸入編號'+
+                  '<br>'+
+                  '編號： 24280711086',
+            imageUrl: '/img/myLine.jpg',
+            imageWidth: 400,
+            width: 600,
+            padding: '3em',
+            background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+            backdrop: `
+                        rgba(0,0,123,0.4)
+                        url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                        left top
+                        no-repeat
+                    `
+        })
+
+    })
+
+    $("#jkospayImg").on('click', () => {
+        Swal.fire({
+            title: '街口支付',
+            html: '開啟街口支付 -> 掃描條碼/轉帳'+
+                  '<br>'+
+                  '街口帳戶： 901053917',
+            imageUrl: '/img/myJKOSpay.png',
+            imageWidth: 400,
+            width: 600,
+            padding: '3em',
+            background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+            backdrop: `
+                        rgba(0,0,123,0.4)
+                        url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                        left top
+                        no-repeat
+                    `
+        })
+
+    })
+
+    $("#richartImg").on('click', () => {
+        Swal.fire({
+            title: 'Richart 轉帳',
+            html: '開啟Richart -> 收付 -> 轉帳 -> 掃碼'+
+                  '<br>'+
+                  '<a href="https://richart.tw/TSDIB_RichartWeb/RC04/RC040300?token=WlPgAiogkrA%3D">點我開啟Richart APP(僅支援手機)</a>',
+            imageUrl: '/img/myJKOSpay.png',
+            imageWidth: 400,
+            width: 600,
+            padding: '3em',
+            background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+            backdrop: `
+                        rgba(0,0,123,0.4)
+                        url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                        left top
+                        no-repeat
+                    `
+        })
+
+    })
+
+    $("#ctbcImg").on('click', () => {
+        Swal.fire({
+            title: '中國信託轉帳',
+            html: '開啟中信 -> 轉帳 -> QRcode轉帳',
+            imageUrl: '/img/myCTBC.png',
+            imageWidth: 400,
+            width: 600,
+            padding: '3em',
+            background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+            backdrop: `
+                        rgba(0,0,123,0.4)
+                        url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                        left top
+                        no-repeat
+                    `
+        })
+
+    })
+
+</script>

@@ -1,0 +1,264 @@
+<div class="section-top-border container">
+    <div class="progress-table-wrap">
+        <div class="progress-table">
+            <% for(var i = 0;i < menus.menu_categories.length; i++){ %>
+            <blockquote class="generic-blockquote">
+                <h3>
+                    <%= menus.menu_categories[i].name %>
+                </h3>
+                <%= menus.menu_categories[i].description %>
+            </blockquote>
+            <br>
+            <% for(var j = 0;j < menus.menu_categories[i].products.length; j++){ %>
+            <div class="table-row">
+                <div class="row no-margin" style="width: 100%">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="country">
+                            <% if( menus.menu_categories[i].products[j].logo_path ){ %>
+                            <img src="<%= menus.menu_categories[i].products[j].logo_path %>" width="45%" alt="flag">
+                            <% } %>
+                            <div>
+                                <p class="menu-title"><%= menus.menu_categories[i].products[j].name %></p>
+                                <%= menus.menu_categories[i].products[j].description %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 text-right">
+                        <div class="inline-flex banner-left">
+                            <div class="menu-title mr-15">NT$<%= menus.menu_categories[i].products[j].lowestPrice %>元起
+                            </div>
+                            <a href="#" class="genric-btn radius primary-btn" data-toggle="modal"
+                                data-target="#Modal-<%= i%><%= j %>" onclick="removeToppings()">+</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-<%= i %><%= j %>" tabindex="-1" role="dialog"
+                aria-labelledby="Modal-Title" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" style="display: block">
+                            <button type="button" class="close" menu-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <% if( menus.menu_categories[i].products[j].logo_path ){ %>
+                            <img src="<%= menus.menu_categories[i].products[j].logo_path %>" width="100%" alt="flag">
+                            <% } %>
+                            <div class="modal-title" id="Modal-Title">
+                                <p id="menu-title-<%= menus.menu_categories[i].products[j].id %>" class="menu-title"><%= menus.menu_categories[i].products[j].name %></p>
+                                <%= menus.menu_categories[i].products[j].description %>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <% for(var m = 0; m < menus.menu_categories[i].products[j].product_variations.length; m++){ %>
+                            <label style="width: 100%;display: flex; justify-content: space-between">
+                                <span>
+                                    <input type="radio" name="vari-check" id="vari_<%=i%>_<%=j%>_<%=m%>"
+                                        menudata="<%= menus.menu_categories[i].products[j].product_variations[m].topping_ids %>"
+                                        menudetails={"item":"<%= menus.menu_categories[i].products[j].product_variations[m].name %>","price":<%= menus.menu_categories[i].products[j].product_variations[m].price %>} 
+                                        >
+                                    <%= menus.menu_categories[i].products[j].product_variations[m].name %>
+                                </span>
+                                <span
+                                    class="text-right">NT$<%= menus.menu_categories[i].products[j].product_variations[m].price %></span>
+                                </label>
+                            <% } %>
+                            <div class="toppings-wrap"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <p>總計：<p id="sum">5</p></p>
+                            <button id="submit-btn-<%= menus.menu_categories[i].products[j].id %>" type="button" class="btn btn-primary" onclick="submit(<%= menus.menu_categories[i].products[j].id %>)" data-dismiss="modal">確定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+            <% } %>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(() => {
+        console.log(location.search.split('orderId=')[1]);
+    })
+
+    $(document).on('change', 'input:radio[id^="vari_"]', function (event) {
+        var topping_ids = this.getAttribute("menudata")
+        // console.log(topping_ids.split(",")[0]);
+
+        $.ajax({
+            url: '/menu/getToppings',
+            type: 'get',
+            error: function (err) {
+                if (err) throw err
+            },
+            success: function (response) {
+                $(".toppings-wrap").append("<div class=\"toppings\"></div>");
+
+                for (var i = 0; i < topping_ids.split(",").length; i++) {
+                    // console.log(response[topping_ids.split(",")[i]].name);
+                    $(".toppings").append("<p class=\"menu-title\">" + response[topping_ids.split(",")[i]].name + "</p>");
+                    for (var j = 0; j < response[topping_ids.split(",")[i]].options.length; j++) {
+                        // console.log(response[topping_ids.split(",")[i]].options[j].name);
+                        if(response[topping_ids.split(",")[i]].quantity_minimum == 0 && response[topping_ids.split(",")[i]].quantity_maximum == 1) {
+                            // cancelable radio
+                            $(".toppings").append(`<div class="toppings-body d-flex justify-content-between">
+                                    <span>
+                                        <label><input type="radio" name="vari-check-${i}" id="cancelable-radio-${i}-${j}"
+                                            menudetails={"item":"${ response[topping_ids.split(",")[i]].options[j].name}","price":${ response[topping_ids.split(",")[i]].options[j].price}} 
+                                            >
+                                        ${ response[topping_ids.split(",")[i]].options[j].name}</label>
+                                    </span>
+                                    
+                                    <span
+                                        class="text-right">NT$${ response[topping_ids.split(",")[i]].options[j].price}</span>
+                                </div>`)
+
+                        }else if (response[topping_ids.split(",")[i]].quantity_minimum == 1 && response[topping_ids.split(",")[i]].quantity_maximum == 1) {
+                            // uncancelable radio
+                            $(".toppings").append(`<div class="toppings-body d-flex justify-content-between">
+                                    <span>
+                                        <label><input type="radio" name="vari-check-${i}" id="uncancelable-radio-${i}-${j}">
+                                        ${ response[topping_ids.split(",")[i]].options[j].name}</label>
+                                    </span>
+                                    
+                                    <span
+                                        class="text-right">NT$${ response[topping_ids.split(",")[i]].options[j].price}</span>
+                                </div>`)
+
+                        }else if(response[topping_ids.split(",")[i]].quantity_minimum == 0 && response[topping_ids.split(",")[i]].quantity_maximum > 1) {
+                            // checkbox
+                            $(".toppings").append(`<div class="toppings-body d-flex justify-content-between">
+                                    <span>
+                                        <label><input type="checkbox" name="vari-check-${i}" id="checkbox-${i}-${j}"
+                                            menudetails={"item":"${ response[topping_ids.split(",")[i]].options[j].name}","price":${ response[topping_ids.split(",")[i]].options[j].price}}
+                                            >
+                                        ${ response[topping_ids.split(",")[i]].options[j].name}</label>
+                                    </span>
+                                    
+                                    <span
+                                        class="text-right">NT$${ response[topping_ids.split(",")[i]].options[j].price}</span>
+                                </div>`)
+
+                        }
+                    }
+
+                }
+                    
+                $(".toppings").prev('.toppings').remove()
+
+            }
+        });
+    });
+
+    $(document).on('click', 'input:radio[id^="cancelable-radio-"]', function(event){
+        if (this.className != "selected") {
+            // console.log('not selected yet');
+
+            $(this).closest('.modal-body').find(`input[name=${this.name}]`).removeClass('selected');
+            $(this).addClass("selected")
+            
+        }else if (this.className == "selected") {
+            // console.log('selected yet');
+
+            $(this).removeClass("selected")
+            this.checked = false;
+        }
+    })
+
+    function removeToppings() {
+        $(".toppings").remove();
+        $('.modal #sum').text(0)
+
+        $('input:radio:checked').each(function(e){
+            this.checked = false
+        })
+        $('input:checkbox:checked').each(function(e){
+            this.checked = false
+        })
+    }
+
+    $(document).on('click', 'input', function(event){
+        var sum = 0;
+
+        $('input:radio:checked').each(function(e){
+            sum += JSON.parse($(this).attr('menudetails')).price;
+        })
+        $('input:checkbox:checked').each(function(e){
+            sum += JSON.parse($(this).attr('menudetails')).price;
+        })
+        
+        $('.modal #sum').text(sum+' ')
+    })
+
+    function submit(productId){
+
+        var menuTitle = $(`#menu-title-${productId}`).text();
+
+        var menuContents = new Array();
+        var amount = parseInt($('#sum').text().trim());
+        
+        for(var i = 0; i < $('input:radio:checked').length; i++) {
+            var radioId = $('input:radio:checked').val(0)[i].id;
+            var menuContnet = new Object();
+            menuContnet = $(`#${radioId}`).attr('menudetails');
+            menuContents.push(JSON.parse(menuContnet));
+        }
+        for(var i = 0; i < $('input:checkbox:checked').length; i++) {
+            var checkboxId = $('input:checkbox:checked').val(0)[i].id;
+            var menuContnet = new Object();
+            menuContnet = $(`#${checkboxId}`).attr('menudetails');
+            menuContents.push(JSON.parse(menuContnet));
+        }
+
+        $.ajax({
+            url: '/menu/postOrder',                        
+            type: 'post',      
+            dataType: "json",             
+            data: {
+                name: $('.accountTitle').attr('name'),
+                account: $('.accountTitle').attr('account'),
+                orderTitle: menuTitle,
+                orderContents: menuContents,
+                amount: amount
+            },
+            error: function (err) { 
+                if (err) throw err
+                console.log('bad job');
+                
+            },      
+            success: function (response) { 
+                console.log('good job')
+                console.log(response);
+                Swal.fire({
+                    icon: 'success',
+                    title: '成功加入購物車',
+                    text: '是否直接前往購物車？',
+                    showCancelButton: true,
+                    confirmButtonText: '是，去買單',
+                    cancelButtonText: '否，繼續購物',
+                    width: 600,
+                    padding: '3em',
+                    background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+                    backdrop: `
+                        rgba(0,0,123,0.4)
+                        url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                        left top
+                        no-repeat
+                    `
+                }).then((result) => {
+                    if(result.value){
+                        window.location.href = '/cart/getCartList'
+                    }
+                    
+                })
+                
+            }
+        });
+        
+    }
+</script>

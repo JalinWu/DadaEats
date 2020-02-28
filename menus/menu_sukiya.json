@@ -1,0 +1,641 @@
+[
+    {
+        "id": 43262,
+        "name": "Menu",
+        "description": "",
+        "opening_time": "00:00:00",
+        "closing_time": "23:59:00",
+        "type": "delivery",
+        "menu_categories": [
+            {
+                "id": 267874,
+                "code": "",
+                "name": "精緻餐點",
+                "description": "",
+                "file_path": null,
+                "mobify_file_path": null,
+                "file_name": null,
+                "products": [
+                    {
+                        "is_half_type_available": false,
+                        "id": 2184198,
+                        "name": "綜合蝦仁花枝羹",
+                        "code": "",
+                        "description": "湯頭採用蝦殼熬煮的高湯為基底，另添加蒜末提升蒜香風味。每碗羹內皆含白蝦4尾、花枝2塊。 | 加辣請另外備註",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184198.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184198.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 2547737,
+                                "code": "",
+                                "name": null,
+                                "price": 70,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 70
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 2184199,
+                        "name": "綜合羹麵",
+                        "code": "",
+                        "description": "湯頭採用蝦殼熬煮的高湯為基底，另添加蒜末提升蒜香風味。每碗羹內皆含白蝦4尾、花枝2塊。 | 加辣請另外備註",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184199.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184199.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 2547738,
+                                "code": "",
+                                "name": null,
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 3409920,
+                                "code": "",
+                                "name": "加大",
+                                "price": 90,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 80
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 2184200,
+                        "name": "綜合羹米粉",
+                        "code": "",
+                        "description": "湯頭採用蝦殼熬煮的高湯為基底，另添加蒜末提升蒜香風味。每碗羹內皆含白蝦4尾、花枝2塊。",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184200.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184200.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 2547739,
+                                "code": "",
+                                "name": null,
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 3409921,
+                                "code": "",
+                                "name": "加大",
+                                "price": 90,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 80
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 2184201,
+                        "name": "綜合羹冬粉",
+                        "code": "",
+                        "description": "湯頭採用蝦殼熬煮的高湯為基底，另添加蒜末提升蒜香風味。每碗羹內皆含白蝦4尾、花枝2塊 | 加辣請另外備註",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184201.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184201.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 2547740,
+                                "code": "",
+                                "name": "正常",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 3362592,
+                                "code": "",
+                                "name": "加大",
+                                "price": 90,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 80
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 2185054,
+                        "name": "蝦仁羹",
+                        "code": "",
+                        "description": "湯頭採用蝦殼熬煮的高湯為基底，另添加蒜末提升蒜香風味。每碗羹內皆含白蝦5尾 | 加辣請另外備註",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2185054.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2185054.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 2548682,
+                                "code": "",
+                                "name": "單點",
+                                "price": 70,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 2778796,
+                                "code": "",
+                                "name": "飯",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 2778797,
+                                "code": "",
+                                "name": "麵",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 2778798,
+                                "code": "",
+                                "name": "米粉",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 2778799,
+                                "code": "",
+                                "name": "冬粉",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 3362489,
+                                "code": "",
+                                "name": "飯加大",
+                                "price": 90,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 3362490,
+                                "code": "",
+                                "name": "麵加大",
+                                "price": 90,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 3362491,
+                                "code": "",
+                                "name": "米粉加大",
+                                "price": 90,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 3362492,
+                                "code": "",
+                                "name": "冬粉加大",
+                                "price": 90,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 70
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 2185055,
+                        "name": "花枝羹",
+                        "code": "",
+                        "description": "湯頭採用蝦殼熬煮的高湯為基底，另添加蒜末提升蒜香風味。每碗羹內皆含花枝7塊 | 加辣請另外備註",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2185055.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2185055.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 2548683,
+                                "code": "",
+                                "name": "單點",
+                                "price": 70,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 2778792,
+                                "code": "",
+                                "name": "飯",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 2778793,
+                                "code": "",
+                                "name": "麵",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 2778794,
+                                "code": "",
+                                "name": "米粉",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 2778795,
+                                "code": "",
+                                "name": "冬粉",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 3363201,
+                                "code": "",
+                                "name": "飯加大",
+                                "price": 90,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 3363202,
+                                "code": "",
+                                "name": "麵加大",
+                                "price": 90,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 3363203,
+                                "code": "",
+                                "name": "米粉加大",
+                                "price": 90,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 3363204,
+                                "code": "",
+                                "name": "冬粉加大",
+                                "price": 90,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 70
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 2929679,
+                        "name": "綜合羹飯",
+                        "code": "",
+                        "description": "湯頭採用蝦殼熬煮的高湯為基底，另添加蒜末提升蒜香風味。每碗羹內皆含白蝦4尾、花枝2塊。＊加辣請另外備註",
+                        "file_path": "",
+                        "logo_path": "",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3409624,
+                                "code": "",
+                                "name": "飯",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 3409625,
+                                "code": "",
+                                "name": "加大",
+                                "price": 90,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 80
+                    }
+                ],
+                "master_category_id": null
+            },
+            {
+                "id": 267875,
+                "code": "",
+                "name": "單點主食",
+                "description": "",
+                "file_path": null,
+                "mobify_file_path": null,
+                "file_name": null,
+                "products": [
+                    {
+                        "is_half_type_available": false,
+                        "id": 2184952,
+                        "name": "滷麵",
+                        "code": "",
+                        "description": "日式丼飯滷汁口味",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184952.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184952.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 2548576,
+                                "code": "",
+                                "name": "大",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 2548578,
+                                "code": "",
+                                "name": "小",
+                                "price": 30,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 3,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 30
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 2184955,
+                        "name": "滷米粉",
+                        "code": "",
+                        "description": "日式丼飯滷汁口味",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184955.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184955.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 2548580,
+                                "code": "",
+                                "name": "大",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 2548582,
+                                "code": "",
+                                "name": "小",
+                                "price": 30,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 3,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 30
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 2184959,
+                        "name": "滷冬粉",
+                        "code": "",
+                        "description": "日式丼飯滷汁口味",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184959.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184959.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 2548584,
+                                "code": "",
+                                "name": "大",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 2548586,
+                                "code": "",
+                                "name": "小",
+                                "price": 30,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 3,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 30
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 2184949,
+                        "name": "滷飯",
+                        "code": "",
+                        "description": "日式丼飯滷汁口味",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184949.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2184949.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 2548572,
+                                "code": "",
+                                "name": "大",
+                                "price": 40,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            },
+                            {
+                                "id": 2548574,
+                                "code": "",
+                                "name": "小",
+                                "price": 20,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 3,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 20
+                    }
+                ],
+                "master_category_id": null
+            }
+        ]
+    }
+]
