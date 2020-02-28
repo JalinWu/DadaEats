@@ -75,7 +75,7 @@ app.use('/menu', require('./routes/menu.js'));
 app.use('/cart', require('./routes/cart.js'));
 
 app.get('*', (request, response) => {
-	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+	response.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
 
 const PORT = process.env.PORT || 5000;
