@@ -84,7 +84,7 @@
 <script>
     $(document).ready(() => {
         console.log(location.search.split('orderId=')[1]);
-        
+
     })
 
     $(document).on('change', 'input:radio[id^="vari_"]', function (event) {
@@ -230,6 +230,7 @@
             error: function (err) { 
                 if (err) throw err
                 console.log('bad job');
+                alert('Oops, 好像哪裡出錯了(抓頭)')
                 
             },      
             success: function (response) { 

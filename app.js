@@ -23,7 +23,7 @@ const db = require('./config/keys').mongoURI;
 // Connect to MongoDB
 mongoose
   .connect(
-    db+'/Dadaeats',
+    db,
     { 
       useUnifiedTopology: true,
       useNewUrlParser: true 
