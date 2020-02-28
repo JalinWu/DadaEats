@@ -8,10 +8,6 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('client/build'));
-}
-
 // 解析application/json
 app.use(bodyParser.json());
 
@@ -70,13 +66,9 @@ app.use(function(req, res, next) {
 
 // Routes
 app.use('/', require('./routes/index.js'));
-app.use('/ ', require('./routes/users.js'));
+app.use('/users', require('./routes/users.js'));
 app.use('/menu', require('./routes/menu.js'));
 app.use('/cart', require('./routes/cart.js'));
-
-app.get('*', (request, response) => {
-	response.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
-});
 
 const PORT = process.env.PORT || 5000;
 
