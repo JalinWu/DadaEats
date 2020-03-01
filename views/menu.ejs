@@ -202,7 +202,7 @@
     function submit(productId) {
 
         var menuImg = $(`#menu-img-${productId}`).attr('src');
-        var menuTitle = $(`#menu-title-${productId}`).text();
+        var menuTitle = $(`#menu-title-${productId}`).text().trim();
 
         var menuContents = new Array();
         var amount = parseInt($('#sum').text().trim());
@@ -225,8 +225,6 @@
             type: 'post',
             dataType: "json",
             data: {
-                name: $('.accountTitle').attr('name'),
-                account: $('.accountTitle').attr('account'),
                 orderImg: menuImg,
                 orderTitle: menuTitle,
                 orderContents: menuContents,

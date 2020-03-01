@@ -1,11 +1,20 @@
 const express = require('express');
 const router = express.Router();
-const path = require('path')
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
+
+global.orderId = 1;
 
 // Dashboard
 router.get('/', (req, res) =>{
-  res.render('index')
+  res.render('index', {
+    orderId
+  })
 });
+
+router.get('/orderId', (req, res) => {
+  res.send({
+    orderId
+  })
+})
 
 module.exports = router;

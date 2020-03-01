@@ -1,13 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const path = require('path');
 const User = require('../models/User');
-const Order = require('../models/Order');
+const OrderList = require('../models/OrderList');
 const fs = require('fs');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // getUser
-router.get('/getUser', ensureAuthenticated, (req, res) => {
+router.get('/getUsers', ensureAuthenticated, (req, res) => {
     
     User.find({})
     .then(result => {
@@ -35,7 +34,7 @@ router.post('/updateDadaCoin', ensureAuthenticated, (req, res) => {
 
 // getOrders
 router.get('/getOrders', ensureAuthenticated, (req, res) => {
-    Order.find({expired: false})
+    OrderList.find({expired: false})
     .then(result => {
         res.render('getOrders',{
             permission: req.user.account,
@@ -49,7 +48,7 @@ router.post('/updateOrders', ensureAuthenticated,  (req, res) => {
     const { orderId } = req.body;
 
     for( var i = 0; i < orderId.length; i++) {
-        Order.findOneAndUpdate({ _id: orderId[i].split('user-picker-')[1] }, { $set:{ 'expired': true }}, (err, response) => {
+        OrderList.findOneAndUpdate({ _id: orderId[i].split('user-picker-')[1] }, { $set:{ 'expired': true }}, (err, response) => {
             if(err) throw err;
             
         })

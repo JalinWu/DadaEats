@@ -9,33 +9,33 @@ const OrderSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  orderImg: {
-    type: String,
-    required: false
-  },
-  orderTitle: {
-    type: String,
-    required: true
-  },
-  orderContents: {
-    type: Array,
-    required: true
-  },
-  amount: {
+  orderId: {
     type: Number,
     required: true
+  },
+  orders:{
+    type: Array,
+    required: false
+  },
+  subTotal: {
+    type: Number,
+    default: 0
+  },
+  freight: {
+    type: Number,
+    required: false
+  },
+  dadaCoin: {
+    type: Number,
+    required: false
   },
   sum: {
     type: Number,
-    required: false
+    default: 0
   },
   expired: {
     type: Boolean,
     default: false
-  },
-  status: {
-    type: String,
-    default: 'not-confirmed'
   },
   date: {
     type: Date,

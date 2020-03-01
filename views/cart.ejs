@@ -8,19 +8,20 @@
             </blockquote>
             <br>
 
-            <% for(var i = 0;i < result.length;i++){ %>
-            <div class="table-row" id="<%= result[i]._id %>">
+            <% if(result != null) { %>
+            <% for(var i = 0;i < result.orders.length; i++){ %>
+            <div class="table-row" id="table-row-<%= i %>">
                 <div class="row no-margin" style="width: 100%">
                     <div class="col-sm-12 col-md-8">
                         <div class="country">
-                            <% if(result[i].orderImg){%>
-                            <img src="<%= result[i].orderImg %>" width="45%" alt="flag">
+                            <% if(result.orders[i].orderImg){%>
+                            <img src="<%= result.orders[i].orderImg %>" width="45%" alt="flag">
                             <% } %>
                             <div>
-                                <p class="menu-title"><%= result[i].orderTitle %></p>
-                                <% for(var j = 0; j < result[i].orderContents.length; j++) { %>
-                                <%= result[i].orderContents[j].item %>
-                                <% if(result[i].orderContents[j].item != ''){ %>
+                                <p class="menu-title"><%= result.orders[i].orderTitle %></p>
+                                <% for(var j = 0; j < result.orders[i].orderContents.length; j++) { %>
+                                <%= result.orders[i].orderContents[j].item %>
+                                <% if(result.orders[i].orderContents[j].item != ''){ %>
                                 <%= "," %>
                                 <% } %>
                                 <% } %>
@@ -29,11 +30,11 @@
                     </div>
                     <div class="col-sm-12 col-md-4 text-right align-self-center">
                         <div class="inline-flex banner-left">
-                            <div class="menu-title mr-15">NT$ <%= result[i].amount %> 元
+                            <div class="menu-title mr-15">NT$ <%= result.orders[i].amount %> 元
                             </div>
-                            <% if(result[i].status == 'not-confirmed'){ %>
+                            <% if(result.orders[i].status == 'not-confirmed'){ %>
                             <a href="#" class="genric-btn radius danger removeItems" data-toggle="modal"
-                                data-target="#Modal-" onclick="removeItems('<%= result[i]._id %>')">-</a>
+                                data-target="#Modal-" onclick="removeItems('<%= result.orders[i].oid %>')">-</a>
                             <% } %>
                         </div>
                     </div>
@@ -44,15 +45,17 @@
 
             <hr>
             <div class="text-right banner-left" style="padding: 15px">
-                <h5 id="subtotal" class="mb-30">小計：<%= subtotal %></h4>
-                    <h5 id="freight">運費：<span id="freight"><%= freight %></span></h4>
+                <h5 id="subtotal" class="mb-30">小計：<%= result.subTotal %></h4>
+                    <h5 id="freight">運費：<span id="freight"><%= result.freight %></span></h4>
                         <hr>
-                        <h5 id="sum" class="mb-30">總計：<%= sum %></h4>
+                        <h5 id="sum" class="mb-30">總計：<%= result.sum %></h4>
                             <a href="#" class="primary-btn" style="border-radius: 3px" onclick="confirm()">確定</a>
 
 
 
             </div>
+            <% } %>
+
 
             <div class="text-center" id="payment" style="visibility:hidden">
                 <hr>
@@ -83,7 +86,7 @@
             type: 'post',
             dataType: "json",
             data: {
-                _id: itemId
+                id: itemId
             },
             error: function (err) {
                 if (err) throw err
