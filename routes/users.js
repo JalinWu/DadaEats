@@ -90,7 +90,7 @@ router.post('/login', (req, res, next) => {
 router.get('/logout', (req, res) => {
   req.logout();
   req.flash('success_msg', 'You are logged out');
-  res.redirect('/users/login');
+  res.redirect('/');
 });
 
 router.get('/auth', ensureAuthenticated, (req, res) => {
@@ -100,6 +100,12 @@ router.get('/auth', ensureAuthenticated, (req, res) => {
   const user = { name, account };
 
   res.send(user);
+})
+
+router.get('/dadaCoin', ensureAuthenticated, (req, res) => {
+  res.render('dadacoin', {
+    dadaCoin: req.user.dadaCoin
+  })
 })
 
 module.exports = router;

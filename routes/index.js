@@ -5,9 +5,7 @@ const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // Dashboard
 router.get('/', (req, res) =>{
-  res.render('index', {
-    orderId: 1
-  })
+  res.render('index')
 });
 
 module.exports = router;

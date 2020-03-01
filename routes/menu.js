@@ -32,8 +32,8 @@ router.get('/getToppings', (req, res) => {
 // postOrder
 router.post('/postOrder', (req, res) => {
     console.log('postOrder');
-    const { name, account, orderTitle, orderContents, amount } = req.body;
-    const newOrder = new Order({ name, account, orderTitle, orderContents, amount });
+    const { name, account, orderImg, orderTitle, orderContents, amount } = req.body;
+    const newOrder = new Order({ name, account, orderImg, orderTitle, orderContents, amount });
 
     newOrder.save()
     .then(result => {

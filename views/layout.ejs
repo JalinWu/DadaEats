@@ -48,16 +48,23 @@
       margin-bottom: 0;
       margin-top: 10px;
     }
-    .red{
+
+    .red {
       background: tomato;
     }
+
     #payment img {
       padding: 15px;
     }
-    .auth,.non-auth {
+
+    .auth,
+    .non-auth {
       display: none;
     }
-    .swal2-success-circular-line-left, .swal2-success-fix, .swal2-success-circular-line-right{
+
+    .swal2-success-circular-line-left,
+    .swal2-success-fix,
+    .swal2-success-circular-line-right {
       display: none;
     }
   </style>
@@ -76,12 +83,14 @@
             <li class="auth menu-has-children"><a class="accountTitle">Hi</a>
               <ul>
                 <li class="auth"><a href="/cart/getCartList">購物車</a></li>
-                <li class="auth"><a href="/cart/getCartList">我的達達幣</a></li>
+                <li class="auth"><a href="/users/dadaCoin">我的達達幣</a></li>
+                <li class="auth"><a href="/users/logout">登出</a></li>
               </ul>
             </li>
             <li class="non-auth"><a href="/users/login">Sign in</a></li>
             <li class="non-auth banner-left">
-              <input type ="button" onclick="javascript:location.href='/users/register'" class="primary-btn" style="line-height: inherit; color:white" value="Sign up"></input>
+              <input type="button" onclick="javascript:location.href='/users/register'" class="primary-btn"
+                style="line-height: inherit; color:white" value="Sign up"></input>
             </li>
           </ul>
         </nav><!-- #nav-menu-container -->
@@ -89,6 +98,67 @@
     </div>
   </header><!-- #header -->
   <div class="" style="margin-top: 70px"><%- body %></div>
+
+  <!-- start footer Area -->
+  <footer class="footer-area section-gap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-6 col-sm-6">
+          <div class="single-footer-widget">
+            <h4>About Me</h4>
+            <p>
+              We have tested a number of registry fix and clean utilities and present our top 3 list on our
+              site for your convenience.
+            </p>
+            <p class="footer-text">
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+              is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                target="_blank">Colorlib</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-6">
+          <div class="single-footer-widget">
+            <h4>Newsletter</h4>
+            <p>Stay updated with our latest trends</p>
+            <div class="" id="mc_embed_signup">
+              <form target="_blank"
+                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="EMAIL" placeholder="Enter Email Address"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address '" required=""
+                    type="email">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="lnr lnr-arrow-right"></span>
+                    </button>
+                  </div>
+                  <div class="info"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+          <div class="single-footer-widget">
+            <h4>Follow Me</h4>
+            <p>Let us be social</p>
+            <div class="footer-social d-flex align-items-center">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+              <a href="#"><i class="fa fa-behance"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer Area -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -119,35 +189,35 @@
   <script>
     var name, account;
     $(document).ready(() => {
-        $.ajax({
-            url: '/users/auth',
-            type: 'get',
-            error: function(err) {
-                if (err) throw err
-            },
-            success: function(res) {
-                if(res.name || res.account){
-                    name = res.name;
-                    account = res.account
-                    $('.auth').show();
-                    $('.non-auth').hide();
-                    $('.accountTitle').text(`Hi, ${res.name}`)
-                    $('.accountTitle').attr('name', res.name)
-                    $('.accountTitle').attr('account', res.account)
-                }else {
-                    $('.auth').hide();
-                    $('.non-auth').show();
-                }
-            }
-        })
+      $.ajax({
+        url: '/users/auth',
+        type: 'get',
+        error: function (err) {
+          if (err) throw err
+        },
+        success: function (res) {
+          if (res.name || res.account) {
+            name = res.name;
+            account = res.account
+            $('.auth').show();
+            $('.non-auth').hide();
+            $('.accountTitle').text(`Hi, ${res.name}`)
+            $('.accountTitle').attr('name', res.name)
+            $('.accountTitle').attr('account', res.account)
+          } else {
+            $('.auth').hide();
+            $('.non-auth').show();
+          }
+        }
+      })
     })
 
-    $(document).on('click','#mobile-nav-toggle', (e) => {
-        $('.accountTitle').text(`Hi, ${name}`)
-        $('.accountTitle').attr('name', name)
-        $('.accountTitle').attr('account', account)
+    $(document).on('click', '#mobile-nav-toggle', (e) => {
+      $('.accountTitle').text(`Hi, ${name}`)
+      $('.accountTitle').attr('name', name)
+      $('.accountTitle').attr('account', account)
     })
-    
+
   </script>
 </body>
 

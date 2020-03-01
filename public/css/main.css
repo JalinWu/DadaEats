@@ -1228,6 +1228,31 @@ h1, h2, h3, h4, h5, h6 {
   /* min-width: 800px; */
 }
 
+.progress-table .user-pick {
+  width: 10%;
+  padding-left: 30px;
+}
+
+.progress-table .user-name {
+  width: 30%;
+}
+
+.progress-table .user-account {
+  width: 30%;
+}
+
+.progress-table .user-dadacoin {
+  width: 30%;
+}
+
+.progress-table .user-orders {
+  width: 50%;
+}
+
+.progress-table .user-sum {
+  width: 10%;
+}
+
 .progress-table .serial {
   width: 11.83%;
   padding-left: 30px;
@@ -1250,7 +1275,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
-.progress-table .table-head .serial, .progress-table .table-head .country, .progress-table .table-head .visit, .progress-table .table-head .percentage {
+.progress-table .table-head .serial, .progress-table .table-head .country, .progress-table .table-head .visit, .progress-table .table-head .percentage, .progress-table .table-head .user-pick, .progress-table .table-head .user-name, .progress-table .table-head .user-account, .progress-table .table-head .user-dadacoin, .progress-table .table-head .user-orders, .progress-table .table-head .user-sum {
   color: #222222;
   line-height: 40px;
   text-transform: uppercase;
@@ -1263,7 +1288,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
-.progress-table .table-row .serial, .progress-table .table-row .country, .progress-table .table-row .visit, .progress-table .table-row .percentage {
+.progress-table .table-row .serial, .progress-table .table-row .country, .progress-table .table-row .visit, .progress-table .table-row .percentage, .progress-table .table-row .user-pick, .progress-table .table-row .user-name, .progress-table .table-row .user-account, .progress-table .table-row .user-dadacoin, .progress-table .table-row .user-orders, .progress-table .table-row .user-sum {
   display: flex;
   /* align-items: center; */
 }

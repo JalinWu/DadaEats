@@ -1,0 +1,76 @@
+<% if(permission == 'admin') {%>
+<div class="section-top-border container">
+    <h3 class="mb-30">Table</h3>
+    <div class="progress-table-wrap">
+        <div class="progress-table">
+            <div class="table-head">
+                <div class="user-pick">#</div>
+                <div class="user-name">Name</div>
+                <div class="user-account">Account</div>
+                <div class="user-dadacoin">dadaCoin</div>
+            </div>
+            <% for(var i = 0; i < result.length; i++) { %>
+            <div class="table-row">
+                <div class="user-pick">
+                    <input type="checkbox" name="user-picker" id="user-picker-<%= result[i].account %>">
+                </div>
+                <div class="user-name">
+                    <%= result[i].name %>
+                </div>
+                <div class="user-account">
+                    <%= result[i].account %>
+                </div>
+                <div class="user-dadacoin">
+                    <%= result[i].dadaCoin %>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+
+    <span>增加 <input type="text" id="add-dadacoin"> dadaCoin</span>
+    <a href="#" class="genric-btn info radius small" onclick="addDadaCoin()">確定</a>
+</div>
+<% } else {%>
+權限錯誤
+<% }%>
+
+
+<script>
+    $('input:checkbox').on('click', () => {
+        $('input:checkbox:checked').each(function (e) {
+            console.log(this.id);
+
+        })
+    })
+
+    function addDadaCoin() {
+        var accounts = new Array();
+        $('input:checkbox:checked').each(function (e) {
+            console.log(this.id);
+            accounts.push(this.id)
+        })
+        console.log(accounts)
+
+        $.ajax({
+            url: '/dashboard/updateDadaCoin',
+            type: 'post',
+            dataType: "json",
+            data: {
+                dadaCoin: $('#add-dadacoin').val(),
+                accounts: accounts
+            },
+            error: function (err) {
+                if (err) throw err
+                console.log('bad job');
+
+            },
+            success: function (response) {
+                console.log('good job')
+                console.log(response);
+            }
+        });
+        location.reload()
+
+    }
+</script>

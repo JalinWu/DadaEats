@@ -1,0 +1,79 @@
+<% if(permission == 'admin') {%>
+<div class="section-top-border container">
+    <h3 class="mb-30">Table</h3>
+    <div class="progress-table-wrap">
+        <div class="progress-table">
+            <div class="table-head">
+                <div class="user-pick">#</div>
+                <div class="user-name">Name</div>
+                <div class="user-orders">orders</div>
+                <div class="user-sum">Sum</div>
+            </div>
+            <% for(var i = 0; i < result.length; i++) { %>
+            <div class="table-row">
+                <div class="user-pick">
+                    <input type="checkbox" name="user-picker" id="user-picker-<%= result[i]._id %>">
+                </div>
+                <div class="user-name">
+                    <%= result[i].name %>
+                </div>
+                <div class="user-orders">
+                    <%= result[i].orderTitle %>
+                    <br>
+                    <% for(var j = 0; j < result[i].orderContents.length; j++) { %>
+                    <%= result[i].orderContents[j].item %>
+                    <%= ',' %>
+                    <% } %>
+                </div>
+                <div class="user-sum">
+                    <%= result[i].amount %>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+
+    <a href="#" class="genric-btn info radius small" onclick="expired()">Expired</a>
+</div>
+<% } else {%>
+權限錯誤
+<% }%>
+
+
+<script>
+    $('input:checkbox').on('click', () => {
+        $('input:checkbox:checked').each(function (e) {
+            console.log(this.id);
+
+        })
+    })
+
+    function expired() {
+        var orderId = new Array();
+        $('input:checkbox:checked').each(function (e) {
+            console.log(this.id);
+            orderId.push(this.id)
+        })
+        console.log(orderId)
+
+        $.ajax({
+            url: '/dashboard/updateOrders',
+            type: 'post',
+            dataType: "json",
+            data: {
+                orderId
+            },
+            error: function (err) {
+                if (err) throw err
+                console.log('bad job');
+
+            },
+            success: function (response) {
+                console.log('good job')
+                console.log(response);
+            }
+        });
+        location.reload()
+
+    }
+</script>

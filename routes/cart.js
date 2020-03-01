@@ -6,8 +6,9 @@ const fs = require('fs');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // getOrder
-router.get('/getCartList', ensureAuthenticated, (req, res) => {
-    Order.find({expired: false})
+router.get('/getCartList/', ensureAuthenticated, (req, res) => {
+    
+    Order.find({expired: false, account: req.user.account})
     .then(result => {
         // console.log(result);
         var subtotal = 0;
@@ -32,8 +33,7 @@ router.get('/getCartList', ensureAuthenticated, (req, res) => {
 });
 
 // deleteOrder
-router.post('/deleteCartList', (req, res) => {
-    console.log(req.body);
+router.post('/deleteCartList', ensureAuthenticated, (req, res) => {
     
     Order.deleteOne(req.body)
     .then(result => {
@@ -42,11 +42,9 @@ router.post('/deleteCartList', (req, res) => {
 })
 
 // updateOrder
-router.post('/updateCartList', (req, res) => {
-    console.log(req.body);
-    const { account } = req.body;
+router.get('/updateCartList', ensureAuthenticated, (req, res) => {
     
-    Order.updateMany({"account": account}, {"$set":{"status":"confirmed"}})
+    Order.updateMany({"account": req.user.account }, {"$set":{"status":"confirmed"}})
     .then(result => {
 
     })

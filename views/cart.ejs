@@ -1,3 +1,5 @@
+<br> <input type="button" value="瀏覽器版本資訊" id="aass" /> <br /><br />
+<div id="aa2"></div> <br><br>
 <div class="section-top-border container">
     <div class="progress-table-wrap">
         <div class="progress-table">
@@ -13,6 +15,9 @@
                 <div class="row no-margin" style="width: 100%">
                     <div class="col-sm-12 col-md-8">
                         <div class="country">
+                            <% if(result[i].orderImg){%>
+                            <img src="<%= result[i].orderImg %>" width="45%" alt="flag">
+                            <% } %>
                             <div>
                                 <p class="menu-title"><%= result[i].orderTitle %></p>
                                 <% for(var j = 0; j < result[i].orderContents.length; j++) { %>
@@ -24,13 +29,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 text-right">
+                    <div class="col-sm-12 col-md-4 text-right align-self-center">
                         <div class="inline-flex banner-left">
                             <div class="menu-title mr-15">NT$ <%= result[i].amount %> 元
                             </div>
                             <% if(result[i].status == 'not-confirmed'){ %>
-                            <a href="#" class="genric-btn radius danger removeItems" data-toggle="modal" data-target="#Modal-"
-                                onclick="removeItems('<%= result[i]._id %>')">-</a>
+                            <a href="#" class="genric-btn radius danger removeItems" data-toggle="modal"
+                                data-target="#Modal-" onclick="removeItems('<%= result[i]._id %>')">-</a>
                             <% } %>
                         </div>
                     </div>
@@ -42,11 +47,11 @@
             <hr>
             <div class="text-right banner-left" style="padding: 15px">
                 <h5 id="subtotal" class="mb-30">小計：<%= subtotal %></h4>
-                <h5 id="freight">運費：<span id="freight"><%= freight %></span></h4>
-                <hr>
-                <h5 id="sum" class="mb-30">總計：<%= sum %></h4>
-                <a href="#" class="primary-btn" style="border-radius: 3px" onclick="confirm()">確定</a>
-                            
+                    <h5 id="freight">運費：<span id="freight"><%= freight %></span></h4>
+                        <hr>
+                        <h5 id="sum" class="mb-30">總計：<%= sum %></h4>
+                            <a href="#" class="primary-btn" style="border-radius: 3px" onclick="confirm()">確定</a>
+
 
 
             </div>
@@ -65,6 +70,14 @@
 </div>
 
 <script>
+
+    var isMobile = false;
+    $(document).ready(() => {
+        var browser = { versions: function () { var u = navigator.userAgent, app = navigator.appVersion; return { mobile: !!u.match(/AppleWebKit.*Mobile.*/), ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), android: u.indexOf("Android") > -1 || u.indexOf("Linux") > -1, iPhone: u.indexOf("iPhone") > -1, iPad: u.indexOf("iPad") > -1 }; }(), language: (navigator.browserLanguage || navigator.language).toLowerCase() }; $("#aa2").append("userAgent 內容: <BR/>" + navigator.userAgent + "<BR/><BR/>"); $("#aa2").append("是否為移動終端: " + browser.versions.mobile + "<BR/>"); $("#aa2").append("是否 ios: " + browser.versions.ios + "<BR/>"); $("#aa2").append("是否 android: " + browser.versions.android + "<BR/>"); 
+
+        isMobile = browser.versions.mobile
+        
+    })
 
     function removeItems(itemId) {
         $.ajax({
@@ -87,17 +100,14 @@
         location.reload()
     }
 
-    function confirm(){
+    function confirm() {
         $('.removeItems').remove();
         $('#payment').css('visibility', 'visible');
 
         $.ajax({
             url: '/cart/updateCartList',
-            type: 'post',
+            type: 'get',
             dataType: "json",
-            data: {
-                account: $('.accountTitle').attr('account')
-            },
             error: function (err) {
                 if (err) throw err
                 console.log('bad job');
@@ -111,32 +121,50 @@
     }
 
     $("#lineImg").on('click', () => {
-        Swal.fire({
-            title: 'Line掃碼支付',
-            html: '開啟Line -> 錢包 -> 掃描 -> 掃碼/輸入編號'+
-                  '<br>'+
-                  '編號： 24280711086',
-            imageUrl: '/img/myLine.jpg',
-            imageWidth: 400,
-            width: 600,
-            padding: '3em',
-            background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
-            backdrop: `
-                        rgba(0,0,123,0.4)
-                        url("https://sweetalert2.github.io/images/nyan-cat.gif")
-                        left top
-                        no-repeat
-                    `
-        })
+        if(!isMobile) { // 電腦版
+            Swal.fire({
+                title: 'Line掃碼支付',
+                html: '開啟Line -> 錢包 -> 掃描 -> 掃碼',
+                imageUrl: '/img/myLine.jpg',
+                imageWidth: 400,
+                width: 600,
+                padding: '3em',
+                background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+                backdrop: `
+                            rgba(0,0,123,0.4)
+                            url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                            left top
+                            no-repeat
+                        `
+            })
+        }else { // 手機版
+            Swal.fire({
+                title: 'Line輸入編號支付',
+                html: '開啟Line -> 錢包 -> 掃描 -> 輸入編號' +
+                    '<br>' +
+                    '編號： 24280711086',
+                imageUrl: '/img/myLine.jpg',
+                imageWidth: 400,
+                width: 600,
+                padding: '3em',
+                background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+                backdrop: `
+                            rgba(0,0,123,0.4)
+                            url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                            left top
+                            no-repeat
+                        `
+            })
+        }
 
     })
 
     $("#jkospayImg").on('click', () => {
         Swal.fire({
             title: '街口支付',
-            html: '開啟街口支付 -> 掃描條碼/轉帳'+
-                  '<br>'+
-                  '街口帳戶： 901053917',
+            html: '開啟街口支付 -> 掃描條碼/轉帳' +
+                '<br>' +
+                '街口帳戶： 901053917',
             imageUrl: '/img/myJKOSpay.png',
             imageWidth: 400,
             width: 600,
@@ -155,10 +183,10 @@
     $("#richartImg").on('click', () => {
         Swal.fire({
             title: 'Richart 轉帳',
-            html: '開啟Richart -> 收付 -> 轉帳 -> 掃碼'+
-                  '<br>'+
-                  '<a href="https://richart.tw/TSDIB_RichartWeb/RC04/RC040300?token=WlPgAiogkrA%3D">點我開啟Richart APP(僅支援手機)</a>',
-            imageUrl: '/img/myJKOSpay.png',
+            html: '開啟Richart -> 收付 -> 轉帳 -> 掃碼' +
+                '<br>' +
+                '<a href="https://richart.tw/TSDIB_RichartWeb/RC04/RC040300?token=WlPgAiogkrA%3D">點我開啟Richart APP(僅支援手機)</a>',
+            imageUrl: '/img/myRichart.png',
             imageWidth: 400,
             width: 600,
             padding: '3em',
@@ -191,5 +219,30 @@
         })
 
     })
+    //判斷裝置型別 
+    $("#aass").click(function () {
+        var browser = { versions: function () { var u = navigator.userAgent, app = navigator.appVersion; return { mobile: !!u.match(/AppleWebKit.*Mobile.*/), ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), android: u.indexOf("Android") > -1 || u.indexOf("Linux") > -1, iPhone: u.indexOf("iPhone") > -1, iPad: u.indexOf("iPad") > -1 }; }(), language: (navigator.browserLanguage || navigator.language).toLowerCase() }; $("#aa2").append("userAgent 內容: <BR/>" + navigator.userAgent + "<BR/><BR/>"); $("#aa2").append("是否為移動終端: " + browser.versions.mobile + "<BR/>"); $("#aa2").append("是否 ios: " + browser.versions.ios + "<BR/>"); $("#aa2").append("是否 android: " + browser.versions.android + "<BR/>"); 
+        //判斷 瀏覽器 型別 
+        var ex = navigator.userAgent, bUA; if (ex.indexOf("MSIE") >= 0) {
+            bUA = "Internet Explorer 10 Or Earlier"; //IE 
+        } else if (ex.indexOf("Firefox") >= 0) { bUA = "Firefox"; } else if (ex.indexOf("Chrome") >= 0) {
+            bUA = "Chrome"; if (ex.indexOf("360SE") >= 0) { //360安全瀏覽器 
+                bUA = "360SE";
+            } else if (ex.indexOf("360EE") >= 0) { //360急速瀏覽器 
+                bUA = "360EE";
+            } else if (ex.indexOf("SE") >= 0 && ex.indexOf("360SE") == -1) { //搜狗瀏覽器 
+                bUA = "SouGou";
+            } else if (ex.indexOf("Maxthon") >= 0) { //遨遊瀏覽器 
+                bUA = "Maxthon";
+            }
+        } else if (ex.indexOf("UCBrowser") >= 0 || ex.indexOf("UCWEB") >= 0) { // UC瀏覽器 
+            bUA = "UCBrowser";
+        } else if (ex.indexOf("Opera") >= 0) { bUA = "Opera"; } else if (ex.indexOf("Safari") >= 0) { // 蘋果瀏覽器 
+            bUA = "Safari";
+        } else if (ex.indexOf("Netscape") >= 0) { bUA = "Netscape"; } else if (ex.indexOf("like Gecko") >= 0 && ex.indexOf("Trident") >= 0) {
+            bUA = "Internet Explorer 11 Or Later"; //IE11 以後,不再用 MSIE 
+        } else { bUA = "Other Broswer"; } $("#aa2").append("當前瀏覽器: " + bUA + "<BR/>");
+    });
+
 
 </script>

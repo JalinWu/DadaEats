@@ -9,6 +9,10 @@ const OrderSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  orderImg: {
+    type: String,
+    required: false
+  },
   orderTitle: {
     type: String,
     required: true
