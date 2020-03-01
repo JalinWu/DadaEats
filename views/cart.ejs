@@ -1,5 +1,3 @@
-<br> <input type="button" value="瀏覽器版本資訊" id="aass" /> <br /><br />
-<div id="aa2"></div> <br><br>
 <div class="section-top-border container">
     <div class="progress-table-wrap">
         <div class="progress-table">
@@ -73,10 +71,10 @@
 
     var isMobile = false;
     $(document).ready(() => {
-        var browser = { versions: function () { var u = navigator.userAgent, app = navigator.appVersion; return { mobile: !!u.match(/AppleWebKit.*Mobile.*/), ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), android: u.indexOf("Android") > -1 || u.indexOf("Linux") > -1, iPhone: u.indexOf("iPhone") > -1, iPad: u.indexOf("iPad") > -1 }; }(), language: (navigator.browserLanguage || navigator.language).toLowerCase() }; $("#aa2").append("userAgent 內容: <BR/>" + navigator.userAgent + "<BR/><BR/>"); $("#aa2").append("是否為移動終端: " + browser.versions.mobile + "<BR/>"); $("#aa2").append("是否 ios: " + browser.versions.ios + "<BR/>"); $("#aa2").append("是否 android: " + browser.versions.android + "<BR/>"); 
+        var browser = { versions: function () { var u = navigator.userAgent, app = navigator.appVersion; return { mobile: !!u.match(/AppleWebKit.*Mobile.*/), ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), android: u.indexOf("Android") > -1 || u.indexOf("Linux") > -1, iPhone: u.indexOf("iPhone") > -1, iPad: u.indexOf("iPad") > -1 }; }(), language: (navigator.browserLanguage || navigator.language).toLowerCase() }; $("#aa2").append("userAgent 內容: <BR/>" + navigator.userAgent + "<BR/><BR/>"); $("#aa2").append("是否為移動終端: " + browser.versions.mobile + "<BR/>"); $("#aa2").append("是否 ios: " + browser.versions.ios + "<BR/>"); $("#aa2").append("是否 android: " + browser.versions.android + "<BR/>");
 
         isMobile = browser.versions.mobile
-        
+
     })
 
     function removeItems(itemId) {
@@ -118,10 +116,14 @@
                 console.log(response);
             }
         });
+
+        $('html, body').animate({
+            scrollTop: $('#payment').offset().top
+        }, "show");
     }
 
     $("#lineImg").on('click', () => {
-        if(!isMobile) { // 電腦版
+        if (!isMobile) { // 電腦版
             Swal.fire({
                 title: 'Line掃碼支付',
                 html: '開啟Line -> 錢包 -> 掃描 -> 掃碼',
@@ -137,12 +139,12 @@
                             no-repeat
                         `
             })
-        }else { // 手機版
+        } else { // 手機版
             Swal.fire({
                 title: 'Line輸入編號支付',
-                html: '開啟Line -> 錢包 -> 掃描 -> 輸入編號' +
+                html: '開啟Line -> 錢包 -> 掃描 -> 下方輸入代碼' +
                     '<br>' +
-                    '編號： 24280711086',
+                    '代碼： 24280711086',
                 width: 600,
                 padding: '3em',
                 background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
@@ -158,89 +160,111 @@
     })
 
     $("#jkospayImg").on('click', () => {
-        Swal.fire({
-            title: '街口支付',
-            html: '開啟街口支付 -> 掃描條碼/轉帳' +
-                '<br>' +
-                '街口帳戶： 901053917',
-            imageUrl: '/img/myJKOSpay.png',
-            imageWidth: 400,
-            width: 600,
-            padding: '3em',
-            background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
-            backdrop: `
+        if (!isMobile) { // 電腦版
+            Swal.fire({
+                title: '街口支付',
+                html: '開啟街口支付 -> 掃描條碼',
+                imageUrl: '/img/myJKOSpay.png',
+                imageWidth: 400,
+                width: 600,
+                padding: '3em',
+                background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+                backdrop: `
                         rgba(0,0,123,0.4)
                         url("https://sweetalert2.github.io/images/nyan-cat.gif")
                         left top
                         no-repeat
                     `
-        })
+            })
+        } else { // 手機版
+            Swal.fire({
+                title: '街口支付',
+                html: '<a href="https://www.jkopay.com/transfer?j=Transfer:901053917">點我開啟街口支付轉帳</a>',
+                width: 600,
+                padding: '3em',
+                background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+                backdrop: `
+                        rgba(0,0,123,0.4)
+                        url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                        left top
+                        no-repeat
+                    `
+            })
+        }
 
     })
 
     $("#richartImg").on('click', () => {
-        Swal.fire({
-            title: 'Richart 轉帳',
-            html: '開啟Richart -> 收付 -> 轉帳 -> 掃碼' +
-                '<br>' +
-                '<a href="https://richart.tw/TSDIB_RichartWeb/RC04/RC040300?token=WlPgAiogkrA%3D">點我開啟Richart APP(僅支援手機)</a>',
-            imageUrl: '/img/myRichart.png',
-            imageWidth: 400,
-            width: 600,
-            padding: '3em',
-            background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
-            backdrop: `
+        if (!isMobile) { // 電腦版
+            Swal.fire({
+                title: 'Richart 轉帳',
+                html: '開啟Richart -> 收付 -> 轉帳 -> 掃碼',
+                imageUrl: '/img/myRichart.png',
+                imageWidth: 400,
+                width: 600,
+                padding: '3em',
+                background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+                backdrop: `
                         rgba(0,0,123,0.4)
                         url("https://sweetalert2.github.io/images/nyan-cat.gif")
                         left top
                         no-repeat
                     `
-        })
+            })
+        } else { // 手機版
+            Swal.fire({
+                title: 'Richart 轉帳',
+                html: '<a href="https://richart.tw/TSDIB_RichartWeb/RC04/RC040300?token=WlPgAiogkrA%3D">點我開啟Richart APP轉帳</a>',
+                width: 600,
+                padding: '3em',
+                background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+                backdrop: `
+                        rgba(0,0,123,0.4)
+                        url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                        left top
+                        no-repeat
+                    `
+            })
+        }
 
     })
 
     $("#ctbcImg").on('click', () => {
-        Swal.fire({
-            title: '中國信託轉帳',
-            html: '開啟中信 -> 轉帳 -> QRcode轉帳',
-            imageUrl: '/img/myCTBC.png',
-            imageWidth: 400,
-            width: 600,
-            padding: '3em',
-            background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
-            backdrop: `
+        if (!isMobile) { // 電腦版
+            Swal.fire({
+                title: '中國信託轉帳',
+                html: '開啟中信 -> 轉帳 -> QRcode轉帳',
+                imageUrl: '/img/myCTBC.png',
+                imageWidth: 400,
+                width: 600,
+                padding: '3em',
+                background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+                backdrop: `
                         rgba(0,0,123,0.4)
                         url("https://sweetalert2.github.io/images/nyan-cat.gif")
                         left top
                         no-repeat
                     `
-        })
+            })
+        } else { // 手機版
+            Swal.fire({
+                title: '中國信託轉帳',
+                html: '開啟中信 -> 轉帳 -> QRcode轉帳',
+                imageUrl: '/img/myCTBC.png',
+                imageWidth: 400,
+                width: 600,
+                padding: '3em',
+                background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+                backdrop: `
+                        rgba(0,0,123,0.4)
+                        url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                        left top
+                        no-repeat
+                    `
+            })
+        }
 
     })
-    //判斷裝置型別 
-    $("#aass").click(function () {
-        var browser = { versions: function () { var u = navigator.userAgent, app = navigator.appVersion; return { mobile: !!u.match(/AppleWebKit.*Mobile.*/), ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), android: u.indexOf("Android") > -1 || u.indexOf("Linux") > -1, iPhone: u.indexOf("iPhone") > -1, iPad: u.indexOf("iPad") > -1 }; }(), language: (navigator.browserLanguage || navigator.language).toLowerCase() }; $("#aa2").append("userAgent 內容: <BR/>" + navigator.userAgent + "<BR/><BR/>"); $("#aa2").append("是否為移動終端: " + browser.versions.mobile + "<BR/>"); $("#aa2").append("是否 ios: " + browser.versions.ios + "<BR/>"); $("#aa2").append("是否 android: " + browser.versions.android + "<BR/>"); 
-        //判斷 瀏覽器 型別 
-        var ex = navigator.userAgent, bUA; if (ex.indexOf("MSIE") >= 0) {
-            bUA = "Internet Explorer 10 Or Earlier"; //IE 
-        } else if (ex.indexOf("Firefox") >= 0) { bUA = "Firefox"; } else if (ex.indexOf("Chrome") >= 0) {
-            bUA = "Chrome"; if (ex.indexOf("360SE") >= 0) { //360安全瀏覽器 
-                bUA = "360SE";
-            } else if (ex.indexOf("360EE") >= 0) { //360急速瀏覽器 
-                bUA = "360EE";
-            } else if (ex.indexOf("SE") >= 0 && ex.indexOf("360SE") == -1) { //搜狗瀏覽器 
-                bUA = "SouGou";
-            } else if (ex.indexOf("Maxthon") >= 0) { //遨遊瀏覽器 
-                bUA = "Maxthon";
-            }
-        } else if (ex.indexOf("UCBrowser") >= 0 || ex.indexOf("UCWEB") >= 0) { // UC瀏覽器 
-            bUA = "UCBrowser";
-        } else if (ex.indexOf("Opera") >= 0) { bUA = "Opera"; } else if (ex.indexOf("Safari") >= 0) { // 蘋果瀏覽器 
-            bUA = "Safari";
-        } else if (ex.indexOf("Netscape") >= 0) { bUA = "Netscape"; } else if (ex.indexOf("like Gecko") >= 0 && ex.indexOf("Trident") >= 0) {
-            bUA = "Internet Explorer 11 Or Later"; //IE11 以後,不再用 MSIE 
-        } else { bUA = "Other Broswer"; } $("#aa2").append("當前瀏覽器: " + bUA + "<BR/>");
-    });
 
 
 </script>
