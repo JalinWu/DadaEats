@@ -67,23 +67,42 @@ router.post('/postOrder', ensureAuthenticated, (req, res) => {
     const { account } = req.user;
     const { orderImg, orderTitle, orderContents, amount } = req.body;
 
-    Order.updateOne({ account, orderId }, {
-        $push: {
-            orders: {
-                oid: new Date().getTime().toString(),
-                orderImg,
-                orderTitle,
-                orderContents,
-                amount,
-                status: 'not-confirmed'
-            }
+    var subTotal = 0;
+    var freight = 0;
+    var dadaCoin = 0;
+    Order.findOne({ account, orderId })
+    .then((result) => {
+        for(var i = 0; i < result.orders.length; i++) {
+            subTotal += parseInt(result.orders[i].amount);
         }
-    }).then((result) => {
-        res.send({
-            msg: 'success'
+        freight = result.freight;
+        dadaCoin = result.dadaCoin;
+    })
+    .then((result) => {
+        subTotal += parseInt(amount);
+        var sum = parseInt(subTotal) + parseInt(freight) - Math.floor(parseInt(dadaCoin)/100)
+        Order.updateOne({ account, orderId }, {
+            $push: {
+                orders: {
+                    oid: new Date().getTime().toString(),
+                    orderImg,
+                    orderTitle,
+                    orderContents,
+                    amount,
+                    status: 'not-confirmed'
+                }
+            },
+            $set: {
+                subTotal,
+                sum
+            }
+        }).then((result) => {
+            res.send({
+                msg: 'success'
+            })
         })
     })
-
+        
 })
 
 router.get('/', (req, res) => {

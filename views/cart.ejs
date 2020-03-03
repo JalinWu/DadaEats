@@ -46,12 +46,11 @@
             <hr>
             <div class="text-right banner-left" style="padding: 15px">
                 <h5 id="subtotal" class="mb-30">小計：<%= result.subTotal %></h4>
-                    <h5 id="freight">運費：<span id="freight"><%= result.freight %></span></h4>
-                        <hr>
-                        <h5 id="sum" class="mb-30">總計：<%= result.sum %></h4>
-                            <a href="#" class="primary-btn" style="border-radius: 3px" onclick="confirm()">確定</a>
-
-
+                <h5 id="freight" class="mb-30">運費：<span id="freight"><%= result.freight %></span></h4>
+                <h5 id="freight" style="color: #8490ff">達達幣折抵：<span id="freight"><%= Math.floor(result.dadaCoin/100) %></span></h4>
+                <hr>
+                <h5 id="sum" class="mb-30">總計：<%= result.sum %></h4>
+                <a href="#" class="primary-btn" style="border-radius: 3px" onclick="confirm()">確定</a>
 
             </div>
             <% } %>
@@ -96,9 +95,9 @@
             success: function (response) {
                 console.log('good job')
                 console.log(response);
+                location.reload()
             }
         });
-        location.reload()
     }
 
     function confirm() {

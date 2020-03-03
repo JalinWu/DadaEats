@@ -32,10 +32,32 @@ router.post('/deleteCartList', ensureAuthenticated, (req, res) => {
                 "oid": req.body.id
             }
         }
-    }).then((result) => {
-        res.send({
-            msg: 'success'
-        })
+    }).then((result0) => {
+        var subTotal = 0;
+        var freight = 0;
+        var dadaCoin = 0;
+        Order.findOne({ account, orderId })
+            .then((result) => {
+                for (var i = 0; i < result.orders.length; i++) {
+                    subTotal += parseInt(result.orders[i].amount);
+                }
+                freight = result.freight;
+                dadaCoin = result.dadaCoin;
+            })
+            .then((result) => {
+                var sum = parseInt(subTotal) + parseInt(freight) - Math.floor(parseInt(dadaCoin) / 100)
+                dadaCoin %= 100;
+                Order.updateOne({ account, orderId }, {
+                    $set: {
+                        subTotal,
+                        sum
+                    }
+                }).then((result) => {
+                    res.send({
+                        msg: 'success'
+                    })
+                })
+            })
     })
 })
 
