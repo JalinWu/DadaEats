@@ -19,7 +19,7 @@ router.get('/getCartList/', ensureAuthenticated, (req, res) => {
 
         })
 });
-
+  
 // deleteOrder
 router.post('/deleteCartList', ensureAuthenticated, (req, res) => {
     const { account } = req.user;
