@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const Order = require('../models/Order');
-const OrderList = require('../models/OrderList');
 const User = require('../models/User');
 const fs = require('fs');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
@@ -64,7 +63,7 @@ router.post('/deleteCartList', ensureAuthenticated, (req, res) => {
 // updateOrder
 router.get('/updateCartList', ensureAuthenticated, (req, res) => {
 
-    OrderList.updateMany({ "account": req.user.account }, { "$set": { "status": "confirmed" } })
+    Order.update({ "account": req.user.account }, { "$set": { "orders.$[].status": "confirmed" } })
         .then(result => {
 
         })

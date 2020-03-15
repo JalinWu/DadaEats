@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
-const OrderList = require('../models/OrderList');
+const Order = require('../models/Order');
 const fs = require('fs');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
@@ -34,7 +34,7 @@ router.post('/updateDadaCoin', ensureAuthenticated, (req, res) => {
 
 // getOrders
 router.get('/getOrders', ensureAuthenticated, (req, res) => {
-    OrderList.find({expired: false})
+    Order.find({expired: false})
     .then(result => {
         res.render('getOrders',{
             permission: req.user.account,
@@ -48,7 +48,7 @@ router.post('/updateOrders', ensureAuthenticated,  (req, res) => {
     const { orderId } = req.body;
 
     for( var i = 0; i < orderId.length; i++) {
-        OrderList.findOneAndUpdate({ _id: orderId[i].split('user-picker-')[1] }, { $set:{ 'expired': true }}, (err, response) => {
+        Order.findOneAndUpdate({ _id: orderId[i].split('user-picker-')[1] }, { $set:{ 'expired': true }}, (err, response) => {
             if(err) throw err;
             
         })

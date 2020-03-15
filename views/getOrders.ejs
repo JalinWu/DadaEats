@@ -18,15 +18,31 @@
                     <%= result[i].name %>
                 </div>
                 <div class="user-orders">
-                    <%= result[i].orderTitle %>
-                    <br>
-                    <% for(var j = 0; j < result[i].orderContents.length; j++) { %>
-                    <%= result[i].orderContents[j].item %>
-                    <%= ',' %>
-                    <% } %>
+                    <ol class="ordered-list">
+                        <% for(var j = 0; j < result[i].orders.length; j++) { %>
+                        <li>
+                            <span>
+                                <span style="font-weight: bold"><%= result[i].orders[j].orderTitle %>
+                                ,  小計：
+                                <%= result[i].orders[j].amount %></span>
+                                <ol class="ordered-list-alpha">
+                                    <% for(var k = 0; k < result[i].orders[j].orderContents.length; k++) { %>
+                                    <li>
+                                        <span>
+                                            <%= result[i].orders[j].orderContents[k].item %>
+                                            <%= result[i].orders[j].orderContents[k].price %>
+                                        </span>
+                                    </li>
+                                    <% } %>
+                                </ol>
+                            </span>
+                        </li>
+                        <% } %>
+                    </ol>
+
                 </div>
                 <div class="user-sum">
-                    <%= result[i].amount %>
+                    <%= result[i].sum %>
                 </div>
             </div>
             <% } %>
