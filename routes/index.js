@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
-global.orderId = 2;
+global.orderId = 3;
 
 // Dashboard
 router.get('/', (req, res) =>{

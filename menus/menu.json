@@ -1,16 +1,16 @@
 [
     {
-        "id": 14639,
-        "name": "menu",
+        "id": 19373,
+        "name": "MENU",
         "description": "",
         "opening_time": "00:00:00",
         "closing_time": "23:59:59",
         "type": "delivery",
         "menu_categories": [
             {
-                "id": 118195,
+                "id": 387222,
                 "code": "",
-                "name": "橄欖油清炒義大利麵",
+                "name": "※注意事項",
                 "description": "",
                 "file_path": null,
                 "mobify_file_path": null,
@@ -18,8 +18,8 @@
                 "products": [
                     {
                         "is_half_type_available": false,
-                        "id": 1006335,
-                        "name": "香蒜培根麵",
+                        "id": 3191252,
+                        "name": "若所選口味售罄將以同價商品隨機出貨",
                         "code": "",
                         "description": "",
                         "file_path": "",
@@ -27,1639 +27,10 @@
                         "half_type": "",
                         "product_variations": [
                             {
-                                "id": 1205596,
+                                "id": 3702692,
                                 "code": "",
                                 "name": null,
-                                "price": 80,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037034,
-                                    25037044
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 80
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006336,
-                        "name": "香蒜蛤蜊麵",
-                        "code": "",
-                        "description": "【辣】",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205597,
-                                "code": "",
-                                "name": null,
-                                "price": 90,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037034
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 90
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006337,
-                        "name": "香蒜蝦仁麵",
-                        "code": "",
-                        "description": "【辣】蘆筍、玉米筍",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1006337.jpg",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1006337.jpg",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205598,
-                                "code": "",
-                                "name": null,
-                                "price": 100,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037034
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 100
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006338,
-                        "name": "白酒蛤蜊麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205599,
-                                "code": "",
-                                "name": null,
-                                "price": 100,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037034,
-                                    25037044
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 100
-                    }
-                ],
-                "master_category_id": null
-            },
-            {
-                "id": 118196,
-                "code": "",
-                "name": "奶油白醬義大利麵",
-                "description": "",
-                "file_path": null,
-                "mobify_file_path": null,
-                "file_name": null,
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006340,
-                        "name": "奶油培根麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205601,
-                                "code": "",
-                                "name": null,
-                                "price": 90,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 90
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006341,
-                        "name": "奶油蛤蜊麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205602,
-                                "code": "",
-                                "name": null,
-                                "price": 110,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 110
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006342,
-                        "name": "奶油菌菇培根麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205603,
-                                "code": "",
-                                "name": null,
-                                "price": 110,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 110
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006343,
-                        "name": "奶油雞肉麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1006343.jpg",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1006343.jpg",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205604,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006344,
-                        "name": "奶油蘆筍香腸麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205605,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006345,
-                        "name": "奶油海鮮麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205606,
-                                "code": "",
-                                "name": null,
-                                "price": 140,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 140
-                    }
-                ],
-                "master_category_id": null
-            },
-            {
-                "id": 118197,
-                "code": "",
-                "name": "蛋奶素義大利麵",
-                "description": "【素食】",
-                "file_path": null,
-                "mobify_file_path": null,
-                "file_name": null,
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006346,
-                        "name": "奶汁菌菇素麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205607,
-                                "code": "",
-                                "name": null,
-                                "price": 100,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 100
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006347,
-                        "name": "南瓜醬素麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205608,
-                                "code": "",
-                                "name": null,
-                                "price": 110,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 110
-                    }
-                ],
-                "master_category_id": null
-            },
-            {
-                "id": 118198,
-                "code": "",
-                "name": "咖哩系列義大利麵",
-                "description": "【辣】",
-                "file_path": null,
-                "mobify_file_path": null,
-                "file_name": null,
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006348,
-                        "name": "咖哩雞肉麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205609,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006349,
-                        "name": "咖哩海鮮麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205610,
-                                "code": "",
-                                "name": null,
-                                "price": 140,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 140
-                    }
-                ],
-                "master_category_id": null
-            },
-            {
-                "id": 118199,
-                "code": "",
-                "name": "健康南瓜醬義大利麵",
-                "description": "",
-                "file_path": null,
-                "mobify_file_path": null,
-                "file_name": null,
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006350,
-                        "name": "南瓜醬培根麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205611,
-                                "code": "",
-                                "name": null,
-                                "price": 110,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 110
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006351,
-                        "name": "南瓜醬蛤蜊麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205612,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006352,
-                        "name": "南瓜醬雞肉麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205613,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006353,
-                        "name": "南瓜醬海鮮麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205614,
-                                "code": "",
-                                "name": null,
-                                "price": 140,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 140
-                    }
-                ],
-                "master_category_id": null
-            },
-            {
-                "id": 118200,
-                "code": "",
-                "name": "經典青醬義大利麵",
-                "description": "",
-                "file_path": null,
-                "mobify_file_path": null,
-                "file_name": null,
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006354,
-                        "name": "青醬培根麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205615,
-                                "code": "",
-                                "name": null,
-                                "price": 110,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 110
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006355,
-                        "name": "青醬蛤蜊麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205616,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006356,
-                        "name": "青醬雞肉麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205617,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006357,
-                        "name": "青醬海鮮麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1006357.jpg",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1006357.jpg",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205618,
-                                "code": "",
-                                "name": null,
-                                "price": 140,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 140
-                    }
-                ],
-                "master_category_id": null
-            },
-            {
-                "id": 118201,
-                "code": "",
-                "name": "番茄紅醬義大利麵",
-                "description": "",
-                "file_path": null,
-                "mobify_file_path": null,
-                "file_name": null,
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006359,
-                        "name": "茄汁蛤蜊麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1006359.jpg",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1006359.jpg",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205620,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006360,
-                        "name": "茄汁彩椒雞肉麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205621,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006361,
-                        "name": "茄汁海鮮麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205622,
-                                "code": "",
-                                "name": null,
-                                "price": 140,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 140
-                    }
-                ],
-                "master_category_id": null
-            },
-            {
-                "id": 118202,
-                "code": "",
-                "name": "韓式泡菜義大利麵",
-                "description": "【辣】",
-                "file_path": null,
-                "mobify_file_path": null,
-                "file_name": null,
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006362,
-                        "name": "泡菜豬肉麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205623,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006363,
-                        "name": "泡菜德腸麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1006363.jpg",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1006363.jpg",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205624,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006364,
-                        "name": "泡菜海鮮麵",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205625,
-                                "code": "",
-                                "name": null,
-                                "price": 140,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    0,
-                                    0,
-                                    25037034,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 140
-                    }
-                ],
-                "master_category_id": null
-            },
-            {
-                "id": 118203,
-                "code": "",
-                "name": "燉飯系列",
-                "description": "",
-                "file_path": null,
-                "mobify_file_path": null,
-                "file_name": null,
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006365,
-                        "name": "奶汁菌菇素飯",
-                        "code": "",
-                        "description": "素食",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205626,
-                                "code": "",
-                                "name": null,
-                                "price": 100,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037031,
-                                    0,
-                                    0,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 100
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006366,
-                        "name": "南瓜醬素飯",
-                        "code": "",
-                        "description": "素食",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205627,
-                                "code": "",
-                                "name": null,
-                                "price": 110,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037031,
-                                    0,
-                                    0,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 110
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006367,
-                        "name": "南瓜醬培根燉飯",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205628,
-                                "code": "",
-                                "name": null,
-                                "price": 110,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037031,
-                                    0,
-                                    0,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 110
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006368,
-                        "name": "南瓜醬雞肉燉飯",
-                        "code": "",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1006368.jpg",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1006368.jpg",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205629,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037031,
-                                    0,
-                                    0,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006369,
-                        "name": "南瓜醬海鮮燉飯",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205630,
-                                "code": "",
-                                "name": null,
-                                "price": 140,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037031,
-                                    0,
-                                    0,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 140
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006370,
-                        "name": "茄汁蛤蜊燉飯",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205631,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037031,
-                                    0,
-                                    0,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006371,
-                        "name": "茄汁雞肉燉飯",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205632,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037031,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006372,
-                        "name": "茄汁海鮮燉飯",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205633,
-                                "code": "",
-                                "name": null,
-                                "price": 140,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037031,
-                                    0,
-                                    0,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 140
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006373,
-                        "name": "青醬蛤蜊燉飯",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205634,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037031,
-                                    0,
-                                    0,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006374,
-                        "name": "青醬雞肉燉飯",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205635,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037031,
-                                    0,
-                                    0,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006375,
-                        "name": "奶油雞肉燉飯",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205636,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037031,
-                                    0,
-                                    0,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006376,
-                        "name": "奶油海鮮燉飯",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205637,
-                                "code": "",
-                                "name": null,
-                                "price": 140,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037031,
-                                    0,
-                                    0,
-                                    25037044,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 140
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006377,
-                        "name": "咖哩雞肉燉飯",
-                        "code": "",
-                        "description": "【辣】",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205638,
-                                "code": "",
-                                "name": null,
-                                "price": 120,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037031,
-                                    0,
-                                    0,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 120
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006378,
-                        "name": "咖哩海鮮燉飯",
-                        "code": "",
-                        "description": "【辣】",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205639,
-                                "code": "",
-                                "name": null,
-                                "price": 140,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25037031,
-                                    0,
-                                    0,
-                                    25037028
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 140
-                    }
-                ],
-                "master_category_id": null
-            },
-            {
-                "id": 118204,
-                "code": "",
-                "name": "加值系列",
-                "description": "",
-                "file_path": null,
-                "mobify_file_path": null,
-                "file_name": null,
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 1006379,
-                        "name": "玉米濃湯",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1205640,
-                                "code": "",
-                                "name": null,
-                                "price": 20,
+                                "price": 0,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
@@ -1667,30 +38,42 @@
                                 "topping_ids": []
                             }
                         ],
-                        "master_category_id": 3,
+                        "master_category_id": 13,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 20
-                    },
+                        "lowestPrice": 0
+                    }
+                ],
+                "master_category_id": null
+            },
+            {
+                "id": 147645,
+                "code": "",
+                "name": "經典口味",
+                "description": "",
+                "file_path": null,
+                "mobify_file_path": null,
+                "file_name": null,
+                "products": [
                     {
                         "is_half_type_available": false,
-                        "id": 1006534,
-                        "name": "可樂",
+                        "id": 1227691,
+                        "name": "經典原味",
                         "code": "",
                         "description": "",
-                        "file_path": "",
-                        "logo_path": "",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227691.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227691.jpg",
                         "half_type": "",
                         "product_variations": [
                             {
-                                "id": 1205805,
+                                "id": 1453846,
                                 "code": "",
                                 "name": null,
-                                "price": 20,
+                                "price": 30,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
@@ -1698,30 +81,30 @@
                                 "topping_ids": []
                             }
                         ],
-                        "master_category_id": 3,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 20
+                        "lowestPrice": 30
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 1006535,
-                        "name": "雪碧",
+                        "id": 1227692,
+                        "name": "經典花生",
                         "code": "",
                         "description": "",
-                        "file_path": "",
-                        "logo_path": "",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227692.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227692.jpg",
                         "half_type": "",
                         "product_variations": [
                             {
-                                "id": 1205806,
+                                "id": 1453847,
                                 "code": "",
                                 "name": null,
-                                "price": 20,
+                                "price": 30,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
@@ -1729,19 +112,31 @@
                                 "topping_ids": []
                             }
                         ],
-                        "master_category_id": 3,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 20
-                    },
+                        "lowestPrice": 30
+                    }
+                ],
+                "master_category_id": null
+            },
+            {
+                "id": 147646,
+                "code": "",
+                "name": "脆皮系列",
+                "description": "",
+                "file_path": null,
+                "mobify_file_path": null,
+                "file_name": null,
+                "products": [
                     {
                         "is_half_type_available": false,
-                        "id": 1006536,
-                        "name": "美粒果",
+                        "id": 1227694,
+                        "name": "脆皮紅豆",
                         "code": "",
                         "description": "",
                         "file_path": "",
@@ -1749,10 +144,10 @@
                         "half_type": "",
                         "product_variations": [
                             {
-                                "id": 1205807,
+                                "id": 1453849,
                                 "code": "",
                                 "name": null,
-                                "price": 20,
+                                "price": 30,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
@@ -1760,14 +155,274 @@
                                 "topping_ids": []
                             }
                         ],
-                        "master_category_id": 3,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 20
+                        "lowestPrice": 30
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 1227695,
+                        "name": "脆皮芋頭",
+                        "code": "",
+                        "description": "",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227695.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227695.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 1453850,
+                                "code": "",
+                                "name": null,
+                                "price": 30,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 30
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 1227696,
+                        "name": "脆皮乳酪",
+                        "code": "",
+                        "description": "",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227696.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227696.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 1453851,
+                                "code": "",
+                                "name": null,
+                                "price": 30,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 30
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 1227697,
+                        "name": "脆皮奶酥",
+                        "code": "",
+                        "description": "",
+                        "file_path": "",
+                        "logo_path": "",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 1453852,
+                                "code": "",
+                                "name": null,
+                                "price": 30,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 30
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 1227698,
+                        "name": "脆皮起士",
+                        "code": "",
+                        "description": "",
+                        "file_path": "",
+                        "logo_path": "",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 1453853,
+                                "code": "",
+                                "name": null,
+                                "price": 30,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 30
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 1227700,
+                        "name": "脆皮巧克力",
+                        "code": "",
+                        "description": "",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227700.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227700.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 1453855,
+                                "code": "",
+                                "name": null,
+                                "price": 30,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 30
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 1227703,
+                        "name": "脆皮燻雞",
+                        "code": "",
+                        "description": "",
+                        "file_path": "",
+                        "logo_path": "",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 1453858,
+                                "code": "",
+                                "name": null,
+                                "price": 30,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 30
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 1588191,
+                        "name": "脆皮藍莓",
+                        "code": "",
+                        "description": "",
+                        "file_path": "",
+                        "logo_path": "",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 1864207,
+                                "code": "",
+                                "name": null,
+                                "price": 30,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 30
+                    }
+                ],
+                "master_category_id": null
+            },
+            {
+                "id": 147647,
+                "code": "",
+                "name": "麻糬類",
+                "description": "",
+                "file_path": null,
+                "mobify_file_path": null,
+                "file_name": null,
+                "products": [
+                    {
+                        "is_half_type_available": false,
+                        "id": 1227704,
+                        "name": "麻糬",
+                        "code": "",
+                        "description": "",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227704.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227704.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 1453859,
+                                "code": "",
+                                "name": null,
+                                "price": 30,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": []
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 30
                     }
                 ],
                 "master_category_id": null
