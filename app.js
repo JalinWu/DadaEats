@@ -5,7 +5,24 @@ const passport = require('passport');
 const flash = require('connect-flash');
 const session = require('express-session');
 const bodyParser = require('body-parser');
+var admin = require("firebase-admin");
 require('dotenv').config()
+var serviceAccount = require("./config/dadaeats-firebase-key.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://dadaeats.firebaseio.com"
+});
+
+var fireData = admin.database(); //取得Firebase的database
+
+// 寫法1
+// fireData.ref('todos').set({title: '待辦清單'})
+
+// 寫法2
+fireData.ref('todos').push({
+    content: '要去爬山2'
+})
 
 const app = express();
 
