@@ -19,7 +19,6 @@
     "express": "^4.16.4",
     "express-ejs-layouts": "^2.5.0",
     "express-session": "^1.15.6",
-    "firebase-admin": "^8.10.0",
     "mongoose": "^5.7.5",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0"

@@ -79,8 +79,8 @@
         </div>
         <nav id="nav-menu-container">
           <ul class="nav-menu">
-            <li class="auth dashboard"><a href="#" id="manageUsers">管理使用者</a></li>
-            <li class="auth dashboard"><a href="#" id="manageOrders">管理訂單</a></li>
+            <li class="auth dashboard"><a href="#" class="manageUsers">管理使用者</a></li>
+            <li class="auth dashboard"><a href="#" class="manageOrders">管理訂單</a></li>
             <li class="auth"><a href="#" class="nav-lookMenu">看菜單</a></li>
             <li class="auth menu-has-children"><a class="accountTitle">Hi</a>
               <ul>
@@ -213,8 +213,8 @@
 
           if (res.account == 'admin') {
             $('.dashboard').show();
-            $('#manageUsers').attr('href', '/dashboard/getUsers')
-            $('#manageOrders').attr('href', '/dashboard/getOrders')
+            $('.manageUsers').attr('href', '/dashboard/getUsers')
+            $('.manageOrders').attr('href', '/dashboard/getOrders')
           } else {
             $('.dashboard').hide();
           }
@@ -239,30 +239,6 @@
       $('.accountTitle').attr('account', account)
     })
 
-  </script>
-
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
-
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyDuOv9-qH7jpGUtwhfBJ57rrJrOEdsO72M",
-      authDomain: "dadaeats.firebaseapp.com",
-      databaseURL: "https://dadaeats.firebaseio.com",
-      projectId: "dadaeats",
-      storageBucket: "dadaeats.appspot.com",
-      messagingSenderId: "80977165494",
-      appId: "1:80977165494:web:c6edfb0b9fdc8fcc823a17",
-      measurementId: "G-2WCF6XY0E6"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
   </script>
 </body>
 
