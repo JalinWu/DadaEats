@@ -1,6 +1,8 @@
 <div class="section-top-border container">
     <div class="progress-table-wrap">
         <div class="progress-table">
+            <h1 style="font-family: Microsoft JhengHei;">咬一口脆皮甜甜圈</h1>
+            <hr>
             <% for(var i = 0;i < menus.menu_categories.length; i++){ %>
             <blockquote class="generic-blockquote">
                 <h3>
@@ -74,8 +76,7 @@
                             </p>
                             <button id="submit-btn-<%= menus.menu_categories[i].products[j].id %>" type="button"
                                 class="btn btn-primary submit-btn"
-                                onclick="submit(<%= menus.menu_categories[i].products[j].id %>)" data-dismiss="modal"
-                                disabled="disabled">確定</button>
+                                onclick="submit(<%= menus.menu_categories[i].products[j].id %>)" data-dismiss="modal">確定</button>
                         </div>
                     </div>
                 </div>
@@ -185,7 +186,7 @@
         $('input:checkbox:checked').each(function (e) {
             this.checked = false
         })
-        $('.modal-footer button').attr('disabled', 'disabled')
+        // $('.modal-footer button').attr('disabled', 'disabled')
     }
 
     $(document).on('click', 'input', function (event) {
@@ -200,11 +201,11 @@
 
         $('.modal #sum').text(sum + ' ')
 
-        if ($('#sum').text() == '0') {
-            $('.modal-footer button').attr('disabled', 'disabled')
-        } else {
-            $('.modal-footer button').removeAttr('disabled')
-        }
+        // if ($('#sum').text() == '0') {
+        //     $('.modal-footer button').attr('disabled', 'disabled')
+        // } else {
+        //     $('.modal-footer button').removeAttr('disabled')
+        // }
     })
 
     function submit(productId) {
