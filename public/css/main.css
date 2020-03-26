@@ -3117,7 +3117,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*--------  End Skillbar Style  -------------*/
 .timeline ul li {
-  background: #f9f9ff;
+  background: #ddd;
   position: relative;
   margin: 0 auto;
   width: 2px;

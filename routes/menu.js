@@ -9,6 +9,7 @@ const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 router.get('/getMenu', ensureAuthenticated, (req, res) => {
     const { name, account } = req.user;
     const orderId = req.query.orderId;
+
     // 建一筆訂單
     Order.findOne({ account, orderId })
         .then((resultOrder) => {

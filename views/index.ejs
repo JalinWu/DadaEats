@@ -28,11 +28,82 @@
 				<p>
 					有礙於每次訂餐都要經過一段繁複的手續，加上不到一定金額要加收外送費，故萌生的這個辦公室團體外送平台Dada Eats，希望能提供一個友善的用餐管道
 				</p>
-				<a href="/menu/getMenu?orderId=<%= orderId %>" class="primary-btn text-uppercase">看菜單</a>
+				<a href="#timeline" class="primary-btn text-uppercase">看教學</a>
 			</div>
 		</div>
 	</div>
 </section>
 <!-- End home-about Area -->
 
-<section class="home-about-area pt-120"></section>
+<!-- Start Manual Area -->
+<section class="timeline pb-120 section-gap" id="timeline">
+	<div class="text-center">
+		<div class="menu-content pb-70">
+			<div class="title text-center">
+				<h1 class="mb-10">如何操作</h1>
+				<p>一步步帶你無痛點餐</p>
+			</div>
+		</div>
+	</div>
+	<ul>
+		<li>
+			<div class="content hidden" style="opacity: 1;">
+				<h4>
+					<time>Step 1. 註冊/登入</time>
+				</h4>
+				<p>先註冊一組帳號，密碼以bcrypt加密，可安心使用，相對的後台無法查密碼，所以<b>請記住</b>了！</p>
+			</div>
+		</li>
+		<li>
+			<div class="content hidden" style="opacity: 1;">
+				<img class="img-fluid mx-auto d-block mb-30" src="img/about/c-logo.png" alt="">
+				<h4>
+					<time>Step 2. 查看菜單，進行點餐</time>
+				</h4>
+				<p>點擊查看菜單，選擇喜愛的餐點，<b>內容物也得選清楚了</b>再按確認</p>
+			</div>
+		</li>
+		<li>
+			<div class="content hidden" style="opacity: 1;">
+				<h4>
+					<time>Step 3. 進入購物車，確認餐點</time>
+				</h4>
+				<p>餐點右方紅色減號可刪除重選，確認無誤後<b>請按下確認鈕</b></p>
+			</div>
+		</li>
+		<li>
+			<div class="content hidden" style="opacity: 1;">
+				<h4>
+					<time>Step 4. 支付</time>
+				</h4>
+				<p>選擇你喜愛的支付方式，支付頁面上顯示的總計金額，並註記下你的姓名</p>
+			</div>
+		</li>
+		<li>
+			<div class="content hidden" style="opacity: 1;">
+				<h4>
+					<time>Step 5. 完成</time>
+				</h4>
+				<p>操作完成，等待美食到來！</p>
+			</div>
+		</li>
+	</ul>
+</section>
+<!-- End Manual Area -->
+
+<!-- Start fact Area -->
+<section class="facts-area section-gap" id="facts-area" style="padding: 90px 0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 single-fact">
+				<h1 class="counter">
+					<%= userCount %>
+				</h1>
+				<p>使用人數</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end fact Area -->
+
+
