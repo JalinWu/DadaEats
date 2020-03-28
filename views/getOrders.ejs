@@ -8,6 +8,7 @@
                 <div class="user-name">Name</div>
                 <div class="user-orders">orders</div>
                 <div class="user-sum">Sum</div>
+                <div class="user-payment">Payment</div>
             </div>
             <% for(var i = 0; i < result.length; i++) { %>
             <div class="table-row">
@@ -22,20 +23,28 @@
                         <% for(var j = 0; j < result[i].orders.length; j++) { %>
                         <li>
                             <span>
-                                <span style="font-weight: bold"><%= result[i].orders[j].orderTitle %>
-                                ,  小計：
-                                <%= result[i].orders[j].amount %></span>
-                                <ol class="ordered-list-alpha">
-                                    <% for(var k = 0; k < result[i].orders[j].orderContents.length; k++) { %>
-                                    <li>
-                                        <span>
-                                            <%= result[i].orders[j].orderContents[k].item %>
-                                            <%= result[i].orders[j].orderContents[k].price %>
-                                        </span>
-                                    </li>
-                                    <% } %>
-                                </ol>
-                            </span>
+                                <span style="font-weight: bold">
+                                    <%= result[i].orders[j].orderTitle %>
+                                    , 小計：
+                                    <%= result[i].orders[j].amount %></span>
+                                <% if(result[i].orders[j].status == 'confirmed'){ %>
+                                <span style="font-weight: bold">
+                                    <% } else {%>
+                                    <span style="font-weight: bold; color: red">
+                                        <% } %>
+                                        , status:
+                                        <%= result[i].orders[j].status %></span>
+                                    <ol class="ordered-list-alpha">
+                                        <% for(var k = 0; k < result[i].orders[j].orderContents.length; k++) { %>
+                                        <li>
+                                            <span>
+                                                <%= result[i].orders[j].orderContents[k].item %>
+                                                <%= result[i].orders[j].orderContents[k].price %>
+                                            </span>
+                                        </li>
+                                        <% } %>
+                                    </ol>
+                                </span>
                         </li>
                         <% } %>
                     </ol>
@@ -43,6 +52,13 @@
                 </div>
                 <div class="user-sum">
                     <%= result[i].sum %>
+                </div>
+                <div class="user-payment">
+                    <% if(result[i].payment) { %>
+                    <button class="genric-btn success radius small" style="height: fit-content"><%= result[i].payment %></button>
+                    <% } else { %>
+                    <button class="genric-btn danger radius small" style="height: fit-content" onclick="payment('<%= result[i]._id %>')"><%= result[i].payment %></button>
+                    <% } %>
                 </div>
             </div>
             <% } %>
@@ -91,5 +107,26 @@
         });
         location.reload()
 
+    }
+
+    function payment(orderId) {
+        $.ajax({
+            url: '/dashboard/updateOrdersPayment',
+            type: 'post',
+            dataType: 'json',
+            data: {
+                orderId
+            },
+            error: function (err) {
+                if (err) throw err
+                console.log('bad job');
+            },
+            success: function (response) {
+                console.log('good job');
+                console.log(response);
+            }
+        });
+        location.reload()
+        
     }
 </script>

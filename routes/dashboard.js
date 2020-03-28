@@ -7,26 +7,26 @@ const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // getUser
 router.get('/getUsers', ensureAuthenticated, (req, res) => {
-    
+
     User.find({})
-    .then(result => {
-        // console.log(result);
-        res.render('getUsers',{
-            permission: req.user.account,
-            result
+        .then(result => {
+            // console.log(result);
+            res.render('getUsers', {
+                permission: req.user.account,
+                result
+            })
+
         })
-        
-    })
 });
 
 // updateDadaCoin
 router.post('/updateDadaCoin', ensureAuthenticated, (req, res) => {
     const { dadaCoin, accounts } = req.body;
 
-    for( var i = 0; i < accounts.length; i++) {
-        User.findOneAndUpdate({ account: accounts[i].split('user-picker-')[1] }, { $inc:{ 'dadaCoin': parseInt(dadaCoin) }}, (err, response) => {
-            if(err) throw err;
-            
+    for (var i = 0; i < accounts.length; i++) {
+        User.findOneAndUpdate({ account: accounts[i].split('user-picker-')[1] }, { $inc: { 'dadaCoin': parseInt(dadaCoin) } }, (err, response) => {
+            if (err) throw err;
+
         })
     }
     res.send('success')
@@ -34,31 +34,42 @@ router.post('/updateDadaCoin', ensureAuthenticated, (req, res) => {
 
 // getOrders
 router.get('/getOrders', ensureAuthenticated, (req, res) => {
-    Order.find({expired: false})
-    .then(result => {
-        res.render('getOrders',{
-            permission: req.user.account,
-            result
+    Order.find({ expired: false })
+        .then(result => {
+            res.render('getOrders', {
+                permission: req.user.account,
+                result
+            })
         })
-    })
 })
 
 // updateOrders
-router.post('/updateOrders', ensureAuthenticated,  (req, res) => {
+router.post('/updateOrders', ensureAuthenticated, (req, res) => {
     const { orderId } = req.body;
 
-    for( var i = 0; i < orderId.length; i++) {
-        Order.findOneAndUpdate({ _id: orderId[i].split('user-picker-')[1] }, { $set:{ 'expired': true }}, (err, response) => {
-            if(err) throw err;
-            
+    for (var i = 0; i < orderId.length; i++) {
+        Order.findOneAndUpdate({ _id: orderId[i].split('user-picker-')[1] }, { $set: { 'expired': true } }, (err, response) => {
+            if (err) throw err;
+
         })
     }
     res.send('success')
 });
 
+// updateOrdersPayment
+router.post('/updateOrdersPayment', ensureAuthenticated, (req, res) => {
+    const { orderId } = req.body;
+
+    Order.findOneAndUpdate({ _id: orderId }, { $set: { 'payment': true } }, (err, response) => {
+        if (err) throw err;
+
+    })
+    res.send('success')
+});
+
 // deleteOrder
 // router.post('/deleteCartList', ensureAuthenticated, (req, res) => {
-    
+
 //     Order.deleteOne(req.body)
 //     .then(result => {
 
@@ -67,7 +78,7 @@ router.post('/updateOrders', ensureAuthenticated,  (req, res) => {
 
 // updateOrder
 // router.get('/updateCartList', ensureAuthenticated, (req, res) => {
-    
+
 //     Order.updateMany({"account": req.user.account }, {"$set":{"status":"confirmed"}})
 //     .then(result => {
 
