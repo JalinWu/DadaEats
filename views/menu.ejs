@@ -17,7 +17,7 @@
                     <div class="col-sm-12 col-md-8">
                         <div class="country">
                             <% if( menus.menu_categories[i].products[j].logo_path ){ %>
-                            <img src="<%= menus.menu_categories[i].products[j].logo_path %>" width="45%" alt="flag">
+                            <img src="<%= menus.menu_categories[i].products[j].logo_path.split('?')[0] %>" width="45%" alt="flag">
                             <% } %>
                             <div>
                                 <p class="menu-title"><%= menus.menu_categories[i].products[j].name %></p>
@@ -48,7 +48,7 @@
                             </button>
                             <% if( menus.menu_categories[i].products[j].logo_path ){ %>
                             <img id="menu-img-<%= menus.menu_categories[i].products[j].id %>"
-                                src="<%= menus.menu_categories[i].products[j].logo_path %>" width="100%" alt="flag">
+                                src="<%= menus.menu_categories[i].products[j].logo_path.split('?')[0] %>" width="100%" alt="flag">
                             <% } %>
                             <div class="modal-title" id="Modal-Title">
                                 <p id="menu-title-<%= menus.menu_categories[i].products[j].id %>" class="menu-title">

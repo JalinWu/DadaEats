@@ -40,7 +40,7 @@ router.get('/getMenu', ensureAuthenticated, (req, res) => {
         })
 
     // 取得菜單內容
-    fs.readFile('menus/menu.json', (err, data) => {
+    fs.readFile('menus/menu.txt', (err, data) => {
         if (err) throw err;
 
         menus = JSON.parse(data.toString())[0]
@@ -53,7 +53,7 @@ router.get('/getMenu', ensureAuthenticated, (req, res) => {
 
 // getToppings
 router.get('/getToppings', (req, res) => {
-    fs.readFile('menus/toppings.json', (err, data) => {
+    fs.readFile('menus/toppings.txt', (err, data) => {
         if (err) throw err;
 
         toppings = JSON.parse(data.toString())

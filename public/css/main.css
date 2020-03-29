@@ -3381,7 +3381,7 @@ dl.accordion.time-line:before {
 /* =================================== */
 /*============ Start Blog Home Styles  =============*/
 .blog-home-banner {
-  background: url(../img/blog/blog-home-banner.jpg) bottom;
+  background: url(../img/bg-wine.jpg) center;
   background-size: cover;
   padding: 130px 0px;
 }
@@ -3405,7 +3405,7 @@ dl.accordion.time-line:before {
 }
 
 .blog-home-banner .overlay-bg {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .blog-page {
