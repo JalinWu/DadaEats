@@ -1,1 +1,779 @@
-[]
+{
+    "25253463": {
+        "id": 25253463,
+        "name": "茶底選擇【紅/綠/烏龍】",
+        "description": "",
+        "quantity_minimum": 0,
+        "quantity_maximum": 1,
+        "options": [
+            {
+                "id": 26394178,
+                "product_id": 3302550,
+                "name": "紅茶",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394179,
+                "product_id": 3302551,
+                "name": "綠茶",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394180,
+                "product_id": 3302553,
+                "name": "烏龍",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            }
+        ]
+    },
+    "25253464": {
+        "id": 25253464,
+        "name": "茶底選擇【紅/青/烏龍】",
+        "description": "",
+        "quantity_minimum": 0,
+        "quantity_maximum": 1,
+        "options": [
+            {
+                "id": 26394181,
+                "product_id": 3302550,
+                "name": "紅茶",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394182,
+                "product_id": 3302552,
+                "name": "青茶",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394183,
+                "product_id": 3302553,
+                "name": "烏龍",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            }
+        ]
+    },
+    "25253465": {
+        "id": 25253465,
+        "name": "茶底選擇【綠/青/烏龍】",
+        "description": "",
+        "quantity_minimum": 0,
+        "quantity_maximum": 1,
+        "options": [
+            {
+                "id": 26394184,
+                "product_id": 3302551,
+                "name": "綠茶",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394186,
+                "product_id": 3302552,
+                "name": "青茶",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394185,
+                "product_id": 3302553,
+                "name": "烏龍",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            }
+        ]
+    },
+    "25253466": {
+        "id": 25253466,
+        "name": "冰熱選擇",
+        "description": "",
+        "quantity_minimum": 1,
+        "quantity_maximum": 1,
+        "options": [
+            {
+                "id": 26394187,
+                "product_id": 3302554,
+                "name": "正常冰",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394188,
+                "product_id": 3302555,
+                "name": "少冰",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394189,
+                "product_id": 3302556,
+                "name": "微冰",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394190,
+                "product_id": 3302557,
+                "name": "去冰",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394191,
+                "product_id": 3302558,
+                "name": "常溫",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394192,
+                "product_id": 3302559,
+                "name": "溫飲",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394193,
+                "product_id": 3302560,
+                "name": "熱飲",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            }
+        ]
+    },
+    "25253467": {
+        "id": 25253467,
+        "name": "冰熱選擇【正/少/微/去/常溫】",
+        "description": "",
+        "quantity_minimum": 1,
+        "quantity_maximum": 1,
+        "options": [
+            {
+                "id": 26394194,
+                "product_id": 3302554,
+                "name": "正常冰",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394195,
+                "product_id": 3302555,
+                "name": "少冰",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394196,
+                "product_id": 3302556,
+                "name": "微冰",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394197,
+                "product_id": 3302557,
+                "name": "去冰",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394198,
+                "product_id": 3302558,
+                "name": "常溫",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            }
+        ]
+    },
+    "25253468": {
+        "id": 25253468,
+        "name": "冰熱選擇【正/少/微/去/常溫/溫】",
+        "description": "",
+        "quantity_minimum": 1,
+        "quantity_maximum": 1,
+        "options": [
+            {
+                "id": 26394199,
+                "product_id": 3302554,
+                "name": "正常冰",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394200,
+                "product_id": 3302555,
+                "name": "少冰",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394201,
+                "product_id": 3302556,
+                "name": "微冰",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394202,
+                "product_id": 3302557,
+                "name": "去冰",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394203,
+                "product_id": 3302558,
+                "name": "常溫",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394204,
+                "product_id": 3302559,
+                "name": "溫飲",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            }
+        ]
+    },
+    "25253469": {
+        "id": 25253469,
+        "name": "甜度選擇",
+        "description": "",
+        "quantity_minimum": 1,
+        "quantity_maximum": 1,
+        "options": [
+            {
+                "id": 26394205,
+                "product_id": 3302561,
+                "name": "正常糖",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394206,
+                "product_id": 3302562,
+                "name": "7分糖",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394207,
+                "product_id": 3302563,
+                "name": "5分糖",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394208,
+                "product_id": 3302564,
+                "name": "3分糖",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394209,
+                "product_id": 3302565,
+                "name": "無糖",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            }
+        ]
+    },
+    "25253471": {
+        "id": 25253471,
+        "name": "加料選擇",
+        "description": "",
+        "quantity_minimum": 0,
+        "quantity_maximum": 2,
+        "options": [
+            {
+                "id": 26394215,
+                "product_id": 3302567,
+                "name": "小紫蘇",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394216,
+                "product_id": 3302568,
+                "name": "寒天晶球(最多至常溫，無法做溫熱)",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394217,
+                "product_id": 3302569,
+                "name": "膠原晶鑽(最多至常溫，無法做溫熱)",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394218,
+                "product_id": 3302570,
+                "name": "蘆薈",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394219,
+                "product_id": 3302571,
+                "name": "手作布丁(最多至常溫，無法做溫熱)",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394220,
+                "product_id": 3302572,
+                "name": "現煮紅豆",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394221,
+                "product_id": 3302573,
+                "name": "椰果",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26394222,
+                "product_id": 3302574,
+                "name": "愛玉(最多至常溫，無法做溫熱)",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            }
+        ]
+    },
+    "25253472": {
+        "id": 25253472,
+        "name": "加料選擇【鮮奶】",
+        "description": "",
+        "quantity_minimum": 0,
+        "quantity_maximum": 1,
+        "options": [
+            {
+                "id": 26394223,
+                "product_id": 3302575,
+                "name": "鮮奶",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            }
+        ]
+    },
+    "25292570": {
+        "id": 25292570,
+        "name": "加料選擇【無手作布丁】",
+        "description": "",
+        "quantity_minimum": 0,
+        "quantity_maximum": 2,
+        "options": [
+            {
+                "id": 26610861,
+                "product_id": 3302567,
+                "name": "小紫蘇",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610862,
+                "product_id": 3302568,
+                "name": "寒天晶球(最多至常溫，無法做溫熱)",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610863,
+                "product_id": 3302569,
+                "name": "膠原晶鑽(最多至常溫，無法做溫熱)",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610864,
+                "product_id": 3302570,
+                "name": "蘆薈",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610866,
+                "product_id": 3302572,
+                "name": "現煮紅豆",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610867,
+                "product_id": 3302573,
+                "name": "椰果",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610868,
+                "product_id": 3302574,
+                "name": "愛玉(最多至常溫，無法做溫熱)",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            }
+        ]
+    },
+    "25292571": {
+        "id": 25292571,
+        "name": "加料選擇【無愛玉】",
+        "description": "",
+        "quantity_minimum": 0,
+        "quantity_maximum": 2,
+        "options": [
+            {
+                "id": 26610870,
+                "product_id": 3302567,
+                "name": "小紫蘇",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610871,
+                "product_id": 3302568,
+                "name": "寒天晶球(最多至常溫，無法做溫熱)",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610872,
+                "product_id": 3302569,
+                "name": "膠原晶鑽(最多至常溫，無法做溫熱)",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610873,
+                "product_id": 3302570,
+                "name": "蘆薈",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610874,
+                "product_id": 3302571,
+                "name": "手作布丁(最多至常溫，無法做溫熱)",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610875,
+                "product_id": 3302572,
+                "name": "現煮紅豆",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610876,
+                "product_id": 3302573,
+                "name": "椰果",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            }
+        ]
+    },
+    "25292572": {
+        "id": 25292572,
+        "name": "加料選擇【無愛玉/小紫蘇】",
+        "description": "",
+        "quantity_minimum": 0,
+        "quantity_maximum": 2,
+        "options": [
+            {
+                "id": 26610880,
+                "product_id": 3302568,
+                "name": "寒天晶球(最多至常溫，無法做溫熱)",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610881,
+                "product_id": 3302569,
+                "name": "膠原晶鑽(最多至常溫，無法做溫熱)",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610882,
+                "product_id": 3302570,
+                "name": "蘆薈",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610883,
+                "product_id": 3302571,
+                "name": "手作布丁(最多至常溫，無法做溫熱)",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610884,
+                "product_id": 3302572,
+                "name": "現煮紅豆",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26610885,
+                "product_id": 3302573,
+                "name": "椰果",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            }
+        ]
+    },
+    "25298786": {
+        "id": 25298786,
+        "name": "甜度選擇【蜂蜜】",
+        "description": "",
+        "quantity_minimum": 1,
+        "quantity_maximum": 1,
+        "options": [
+            {
+                "id": 26657135,
+                "product_id": 4495958,
+                "name": "正常蜜",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26657136,
+                "product_id": 4495959,
+                "name": "7分蜜",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26657137,
+                "product_id": 4495960,
+                "name": "5分蜜",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26657138,
+                "product_id": 4495961,
+                "name": "3分蜜",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26657139,
+                "product_id": 4495962,
+                "name": "無蜜【無蜜無甜度，建議最少3分蜜】",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            }
+        ]
+    }
+}

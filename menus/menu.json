@@ -1,16 +1,16 @@
 [
     {
-        "id": 19373,
-        "name": "MENU",
+        "id": 63415,
+        "name": "Menu",
         "description": "",
         "opening_time": "00:00:00",
-        "closing_time": "23:59:59",
+        "closing_time": "23:59:00",
         "type": "delivery",
         "menu_categories": [
             {
-                "id": 387222,
-                "code": "",
-                "name": "※注意事項",
+                "id": 399892,
+                "code": "d3ln-mc-87cl",
+                "name": "鮮茶香茗",
                 "description": "",
                 "file_path": null,
                 "mobify_file_path": null,
@@ -18,42 +18,517 @@
                 "products": [
                     {
                         "is_half_type_available": false,
-                        "id": 3191252,
-                        "name": "若所選口味售罄將以同價商品隨機出貨",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
+                        "id": 3302496,
+                        "name": "糖心蜜紅茶",
+                        "code": "d3ln-pr-1vj32",
+                        "description": "建議【5分糖】以上",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195643.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195643.jpg",
                         "half_type": "",
                         "product_variations": [
                             {
-                                "id": 3702692,
-                                "code": "",
-                                "name": null,
-                                "price": 0,
+                                "id": 3833473,
+                                "code": "d3ln-pv-26bgv",
+                                "name": "大杯",
+                                "price": 30,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
-                                "topping_ids": []
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833474,
+                                "code": "d3ln-pv-26bgw",
+                                "name": "瓶裝",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
                             }
                         ],
-                        "master_category_id": 13,
+                        "master_category_id": 11,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 0
+                        "lowestPrice": 30
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302497,
+                        "name": "茉莉綠茶",
+                        "code": "d3ln-pr-1vj33",
+                        "description": "",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195644.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195644.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833475,
+                                "code": "d3ln-pv-26bgx",
+                                "name": "大杯",
+                                "price": 30,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833476,
+                                "code": "d3ln-pv-26bgy",
+                                "name": "瓶裝",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 30
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302498,
+                        "name": "台灣高山青",
+                        "code": "d3ln-pr-1vj34",
+                        "description": "選用台灣茶葉，清香順口",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195645.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195645.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833477,
+                                "code": "d3ln-pv-26bgz",
+                                "name": "大杯",
+                                "price": 30,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833478,
+                                "code": "d3ln-pv-26bh0",
+                                "name": "瓶裝",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 30
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302499,
+                        "name": "四季烏龍",
+                        "code": "d3ln-pr-1vj35",
+                        "description": "選用台灣茶葉，清香順口",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195646.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195646.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833479,
+                                "code": "d3ln-pv-26bh1",
+                                "name": "大杯",
+                                "price": 30,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833480,
+                                "code": "d3ln-pv-26bh2",
+                                "name": "瓶裝",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 30
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302500,
+                        "name": "手作冬瓜茶",
+                        "code": "d3ln-pr-1vj36",
+                        "description": "甜度固定 | 選用冬瓜磚熬煮",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195647.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195647.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833481,
+                                "code": "d3ln-pv-26bh3",
+                                "name": "大杯",
+                                "price": 30,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833482,
+                                "code": "d3ln-pv-26bh4",
+                                "name": "瓶裝",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 30
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302501,
+                        "name": "冬瓜青",
+                        "code": "d3ln-pr-1vj37",
+                        "description": "甜度固定 | 選用冬瓜磚熬煮",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195648.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195648.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833483,
+                                "code": "d3ln-pv-26bh5",
+                                "name": "大杯",
+                                "price": 35,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253463,
+                                    25253466,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833484,
+                                "code": "d3ln-pv-26bh6",
+                                "name": "瓶裝",
+                                "price": 55,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253463,
+                                    25253466,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 35
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302502,
+                        "name": "桔香冰梅綠",
+                        "code": "d3ln-pr-1vj38",
+                        "description": "茉莉綠茶搭配新鮮金桔及話梅",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195649.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195649.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833485,
+                                "code": "d3ln-pv-26bh7",
+                                "name": "大杯",
+                                "price": 45,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253464,
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833486,
+                                "code": "d3ln-pv-26bh8",
+                                "name": "瓶裝",
+                                "price": 65,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253464,
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 45
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302503,
+                        "name": "蜂蜜綠茶",
+                        "code": "d3ln-pr-1vj39",
+                        "description": "限定冰飲 | 甜度來自蜂蜜不另加糖",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195650.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195650.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833487,
+                                "code": "d3ln-pv-26bh9",
+                                "name": "大杯",
+                                "price": 45,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253464,
+                                    25253467,
+                                    25298786,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833488,
+                                "code": "d3ln-pv-26bha",
+                                "name": "瓶裝",
+                                "price": 70,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253464,
+                                    25253467,
+                                    25298786,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 45
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302504,
+                        "name": "莓果青茶",
+                        "code": "d3ln-pr-1vj3a",
+                        "description": "限定冰飲  | 蔓越莓醬搭配青茶",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195651.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195651.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833489,
+                                "code": "d3ln-pv-26bhb",
+                                "name": "大杯",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253463,
+                                    25253467,
+                                    25253469,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833490,
+                                "code": "d3ln-pv-26bhc",
+                                "name": "瓶裝",
+                                "price": 75,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253463,
+                                    25253467,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 50
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302505,
+                        "name": "養樂多綠",
+                        "code": "d3ln-pr-1vj3b",
+                        "description": "限定冰飲 | 茉莉綠茶+養樂多",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195652.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195652.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833491,
+                                "code": "d3ln-pv-26bhd",
+                                "name": "大杯",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253464,
+                                    25253467,
+                                    25253469,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833492,
+                                "code": "d3ln-pv-26bhe",
+                                "name": "瓶裝",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253464,
+                                    25253467,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 50
                     }
                 ],
                 "master_category_id": null
             },
             {
-                "id": 147645,
-                "code": "",
-                "name": "經典口味",
+                "id": 399893,
+                "code": "d3ln-mc-87cm",
+                "name": "醇品奶香",
                 "description": "",
                 "file_path": null,
                 "mobify_file_path": null,
@@ -61,73 +536,419 @@
                 "products": [
                     {
                         "is_half_type_available": false,
-                        "id": 1227691,
-                        "name": "經典原味",
-                        "code": "",
+                        "id": 3302506,
+                        "name": "珍珠奶茶",
+                        "code": "d3ln-pr-1vj3c",
                         "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227691.jpg",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227691.jpg",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195653.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195653.jpg",
                         "half_type": "",
                         "product_variations": [
                             {
-                                "id": 1453846,
-                                "code": "",
-                                "name": null,
-                                "price": 30,
+                                "id": 3833493,
+                                "code": "d3ln-pv-26bhf",
+                                "name": "大杯",
+                                "price": 50,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
-                                "topping_ids": []
+                                "topping_ids": [
+                                    25253465,
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833494,
+                                "code": "d3ln-pv-26bhg",
+                                "name": "瓶裝",
+                                "price": 75,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253465,
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
                             }
                         ],
-                        "master_category_id": 4,
+                        "master_category_id": 11,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 30
+                        "lowestPrice": 50
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 1227692,
-                        "name": "經典花生",
-                        "code": "",
+                        "id": 3302507,
+                        "name": "經典奶茶",
+                        "code": "d3ln-pr-1vj3d",
                         "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227692.jpg",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227692.jpg",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195654.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195654.jpg",
                         "half_type": "",
                         "product_variations": [
                             {
-                                "id": 1453847,
-                                "code": "",
-                                "name": null,
-                                "price": 30,
+                                "id": 3833495,
+                                "code": "d3ln-pv-26bhh",
+                                "name": "大杯",
+                                "price": 50,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
-                                "topping_ids": []
+                                "topping_ids": [
+                                    25253465,
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833496,
+                                "code": "d3ln-pv-26bhi",
+                                "name": "瓶裝",
+                                "price": 75,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253465,
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
                             }
                         ],
-                        "master_category_id": 4,
+                        "master_category_id": 11,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 30
+                        "lowestPrice": 50
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302508,
+                        "name": "椰果奶茶",
+                        "code": "d3ln-pr-1vj3e",
+                        "description": "",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195655.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195655.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833497,
+                                "code": "d3ln-pv-26bhj",
+                                "name": "大杯",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253465,
+                                    25253466,
+                                    25253469,
+                                    25253471,
+                                    25253472
+                                ]
+                            },
+                            {
+                                "id": 3833498,
+                                "code": "d3ln-pv-26bhk",
+                                "name": "瓶裝",
+                                "price": 75,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253465,
+                                    25253466,
+                                    25253469,
+                                    25253471,
+                                    25253472
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 50
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302509,
+                        "name": "手作布丁奶茶",
+                        "code": "d3ln-pr-1vj3f",
+                        "description": "大杯｜香濃奶茶+爆量布丁，幸福滿滿",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195656.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195656.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833499,
+                                "code": "d3ln-pv-26bhl",
+                                "name": null,
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253465,
+                                    25253468,
+                                    25253469,
+                                    25253472,
+                                    25292570
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 50
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302510,
+                        "name": "珍珠布丁奶茶",
+                        "code": "d3ln-pr-1vj3g",
+                        "description": "大杯｜香濃奶茶+布丁+珍珠，幸福滿滿",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195657.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195657.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833500,
+                                "code": "d3ln-pv-26bhm",
+                                "name": null,
+                                "price": 55,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253465,
+                                    25253468,
+                                    25253469,
+                                    25253472,
+                                    25292570
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 55
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302511,
+                        "name": "相思逗珍奶",
+                        "code": "d3ln-pr-1vj3h",
+                        "description": "大杯｜手工紅豆+白玉珍珠，幸福滿滿",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195658.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195658.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833501,
+                                "code": "d3ln-pv-26bhn",
+                                "name": null,
+                                "price": 55,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253465,
+                                    25253466,
+                                    25253469,
+                                    25253471,
+                                    25253472
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 55
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302512,
+                        "name": "爵士巧克力",
+                        "code": "d3ln-pr-1vj3i",
+                        "description": "",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195659.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195659.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833502,
+                                "code": "d3ln-pv-26bho",
+                                "name": "大杯",
+                                "price": 55,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471,
+                                    25253472
+                                ]
+                            },
+                            {
+                                "id": 3833503,
+                                "code": "d3ln-pv-26bhp",
+                                "name": "瓶裝",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471,
+                                    25253472
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 55
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302513,
+                        "name": "曼特寧咖啡",
+                        "code": "d3ln-pr-1vj3j",
+                        "description": "",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195660.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195660.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833504,
+                                "code": "d3ln-pv-26bhq",
+                                "name": "大杯",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471,
+                                    25253472
+                                ]
+                            },
+                            {
+                                "id": 3833505,
+                                "code": "d3ln-pv-26bhr",
+                                "name": "瓶裝",
+                                "price": 75,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471,
+                                    25253472
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 50
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302514,
+                        "name": "黑糖薑母奶",
+                        "code": "d3ln-pr-1vj4i",
+                        "description": "大杯",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195696.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195696.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833506,
+                                "code": "d3ln-pv-26bj8",
+                                "name": null,
+                                "price": 55,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 55
                     }
                 ],
                 "master_category_id": null
             },
             {
-                "id": 147646,
-                "code": "",
-                "name": "脆皮系列",
+                "id": 399894,
+                "code": "d3ln-mc-87cn",
+                "name": "拿鐵鮮奶",
                 "description": "",
                 "file_path": null,
                 "mobify_file_path": null,
@@ -135,259 +956,270 @@
                 "products": [
                     {
                         "is_half_type_available": false,
-                        "id": 1227694,
-                        "name": "脆皮紅豆",
-                        "code": "",
-                        "description": "",
+                        "id": 3302516,
+                        "name": "紅茶拿鐵",
+                        "code": "d3ln-pr-1vj3l",
+                        "description": "選用義美鮮奶",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195663.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195663.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833509,
+                                "code": "d3ln-pv-26bhu",
+                                "name": "大杯",
+                                "price": 55,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253465,
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833510,
+                                "code": "d3ln-pv-26bhv",
+                                "name": "瓶裝",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253465,
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 55
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302517,
+                        "name": "抺茶拿鐵",
+                        "code": "d3ln-pr-1vj3m",
+                        "description": "大杯｜選用日本靜岡抹茶+義美鮮奶",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195664.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195664.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833511,
+                                "code": "d3ln-pv-26bhw",
+                                "name": null,
+                                "price": 55,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 55
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302518,
+                        "name": "紅豆抹茶拿鐵",
+                        "code": "d3ln-pr-1vj3n",
+                        "description": "大杯 | 選用日本靜岡抹茶+手工紅豆+義美鮮奶",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195665.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195665.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833512,
+                                "code": "d3ln-pv-26bhx",
+                                "name": null,
+                                "price": 65,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 65
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302519,
+                        "name": "紅豆沙鮮奶露",
+                        "code": "d3ln-pr-1vj3o",
+                        "description": "大杯｜手工紅豆+義美鮮奶",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195666.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195666.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833513,
+                                "code": "d3ln-pv-26bhy",
+                                "name": null,
+                                "price": 60,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 60
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302520,
+                        "name": "綠豆沙鮮奶露",
+                        "code": "d3ln-pr-1vj3p",
+                        "description": "大杯｜冰沙｜手工綠豆+義美鮮奶",
                         "file_path": "",
                         "logo_path": "",
                         "half_type": "",
                         "product_variations": [
                             {
-                                "id": 1453849,
-                                "code": "",
+                                "id": 3833514,
+                                "code": "d3ln-pv-26bhz",
                                 "name": null,
-                                "price": 30,
+                                "price": 60,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
-                                "topping_ids": []
+                                "topping_ids": [
+                                    25253469
+                                ]
                             }
                         ],
-                        "master_category_id": 4,
+                        "master_category_id": 11,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 30
+                        "lowestPrice": 60
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 1227695,
-                        "name": "脆皮芋頭",
-                        "code": "",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227695.jpg",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227695.jpg",
+                        "id": 3302521,
+                        "name": "芋頭鮮奶露",
+                        "code": "d3ln-pr-1vj3q",
+                        "description": "大杯｜甜度固定 | 手工芋頭+義美鮮奶",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195668.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195668.jpg",
                         "half_type": "",
                         "product_variations": [
                             {
-                                "id": 1453850,
-                                "code": "",
+                                "id": 3833515,
+                                "code": "d3ln-pv-26bi0",
                                 "name": null,
-                                "price": 30,
+                                "price": 65,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
-                                "topping_ids": []
+                                "topping_ids": [
+                                    25253466,
+                                    25253471
+                                ]
                             }
                         ],
-                        "master_category_id": 4,
+                        "master_category_id": 11,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 30
+                        "lowestPrice": 65
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 1227696,
-                        "name": "脆皮乳酪",
-                        "code": "",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227696.jpg",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227696.jpg",
+                        "id": 3302522,
+                        "name": "黑糖薑母拿鐵",
+                        "code": "d3ln-pr-1vj4j",
+                        "description": "大杯",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195697.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195697.jpg",
                         "half_type": "",
                         "product_variations": [
                             {
-                                "id": 1453851,
-                                "code": "",
+                                "id": 3833516,
+                                "code": "d3ln-pv-26bj9",
                                 "name": null,
-                                "price": 30,
+                                "price": 60,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
-                                "topping_ids": []
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
                             }
                         ],
-                        "master_category_id": 4,
+                        "master_category_id": 11,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 30
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1227697,
-                        "name": "脆皮奶酥",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1453852,
-                                "code": "",
-                                "name": null,
-                                "price": 30,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": []
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 30
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1227698,
-                        "name": "脆皮起士",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1453853,
-                                "code": "",
-                                "name": null,
-                                "price": 30,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": []
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 30
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1227700,
-                        "name": "脆皮巧克力",
-                        "code": "",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227700.jpg",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227700.jpg",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1453855,
-                                "code": "",
-                                "name": null,
-                                "price": 30,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": []
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 30
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1227703,
-                        "name": "脆皮燻雞",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1453858,
-                                "code": "",
-                                "name": null,
-                                "price": 30,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": []
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 30
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1588191,
-                        "name": "脆皮藍莓",
-                        "code": "",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "product_variations": [
-                            {
-                                "id": 1864207,
-                                "code": "",
-                                "name": null,
-                                "price": 30,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": []
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 30
+                        "lowestPrice": 60
                     }
                 ],
                 "master_category_id": null
             },
             {
-                "id": 147647,
-                "code": "",
-                "name": "麻糬類",
+                "id": 399895,
+                "code": "d3ln-mc-87co",
+                "name": "獨家特調",
                 "description": "",
                 "file_path": null,
                 "mobify_file_path": null,
@@ -395,24 +1227,1125 @@
                 "products": [
                     {
                         "is_half_type_available": false,
-                        "id": 1227704,
-                        "name": "麻糬",
-                        "code": "",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227704.jpg",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1227704.jpg",
+                        "id": 3302523,
+                        "name": "寒天愛玉",
+                        "code": "d3ln-pr-1vj3r",
+                        "description": "甜度固定 限定冰飲 | 鮮桔汁+冬瓜＋滑嫩愛玉+寒天晶球、經典熱銷品",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195669.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195669.jpg",
                         "half_type": "",
                         "product_variations": [
                             {
-                                "id": 1453859,
-                                "code": "",
-                                "name": null,
-                                "price": 30,
+                                "id": 3833517,
+                                "code": "d3ln-pv-26bi1",
+                                "name": "大杯",
+                                "price": 50,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
-                                "topping_ids": []
+                                "topping_ids": [
+                                    25253467,
+                                    25292571
+                                ]
+                            },
+                            {
+                                "id": 3833518,
+                                "code": "d3ln-pv-26bi2",
+                                "name": "瓶裝",
+                                "price": 75,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25292571
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 50
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302524,
+                        "name": "膠原愛玉",
+                        "code": "d3ln-pr-1vj3s",
+                        "description": "甜度固定、限定冰飲 | 鮮桔汁+冬瓜＋滑嫩愛玉+膠原晶鑽、獨家熱銷品",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195670.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195670.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833519,
+                                "code": "d3ln-pv-26bi3",
+                                "name": "大杯",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25292571
+                                ]
+                            },
+                            {
+                                "id": 3833520,
+                                "code": "d3ln-pv-26bi4",
+                                "name": "瓶裝",
+                                "price": 75,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25292571
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 50
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302525,
+                        "name": "膠原愛玉小紫蘇",
+                        "code": "d3ln-pr-1vj3t",
+                        "description": "甜度固定、限定冰飲 | 鮮桔汁+冬瓜＋愛玉+寒天及高纖小紫蘇、獨家熱銷品",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195671.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195671.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833521,
+                                "code": "d3ln-pv-26bi5",
+                                "name": "大杯",
+                                "price": 55,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25292572
+                                ]
+                            },
+                            {
+                                "id": 3833522,
+                                "code": "d3ln-pv-26bi6",
+                                "name": "瓶裝",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25292572
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 55
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302526,
+                        "name": "寒天愛玉小紫蘇",
+                        "code": "d3ln-pr-1vj3u",
+                        "description": "甜度固定、限定冰飲 | 鮮桔汁+冬瓜＋愛玉+寒天及高纖小紫蘇、經典熱銷品",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195672.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195672.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833523,
+                                "code": "d3ln-pv-26bi7",
+                                "name": "大杯",
+                                "price": 55,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25292572
+                                ]
+                            },
+                            {
+                                "id": 3833524,
+                                "code": "d3ln-pv-26bi8",
+                                "name": "瓶裝",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25292572
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 55
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302527,
+                        "name": "檸檬愛玉",
+                        "code": "d3ln-pr-1vj3v",
+                        "description": "限定冰飲 ",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195673.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195673.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833525,
+                                "code": "d3ln-pv-26bi9",
+                                "name": "大杯",
+                                "price": 45,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25253469,
+                                    25292571
+                                ]
+                            },
+                            {
+                                "id": 3833526,
+                                "code": "d3ln-pv-26bia",
+                                "name": "瓶裝",
+                                "price": 70,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25253469,
+                                    25292571
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 45
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302528,
+                        "name": "檸檬愛玉小紫蘇",
+                        "code": "d3ln-pr-1vj3w",
+                        "description": "限定冰飲 | 滑嫩愛玉+高纖小紫蘇、經典熱銷品",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195674.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195674.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833527,
+                                "code": "d3ln-pv-26bib",
+                                "name": "大杯",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25253469,
+                                    25292572
+                                ]
+                            },
+                            {
+                                "id": 3833528,
+                                "code": "d3ln-pv-26bic",
+                                "name": "瓶裝",
+                                "price": 75,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25253469,
+                                    25292572
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 50
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302529,
+                        "name": "桔香小紫蘇",
+                        "code": "d3ln-pr-1vj3x",
+                        "description": "甜度固定 | 鮮桔汁+冬瓜+高纖小紫蘇、經典熱銷品",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195675.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195675.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833529,
+                                "code": "d3ln-pv-26bid",
+                                "name": "大杯",
+                                "price": 45,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833530,
+                                "code": "d3ln-pv-26bie",
+                                "name": "瓶裝",
+                                "price": 70,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 45
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302530,
+                        "name": "膠原莓果露",
+                        "code": "d3ln-pr-1vj3y",
+                        "description": "限定冰飲 | 蔓越莓醬搭配獨家植物性膠原晶鑽",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195676.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195676.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833531,
+                                "code": "d3ln-pv-26bif",
+                                "name": "大杯",
+                                "price": 55,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25253469,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833532,
+                                "code": "d3ln-pv-26big",
+                                "name": "瓶裝",
+                                "price": 85,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 55
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302531,
+                        "name": "仙楂洛神梅",
+                        "code": "d3ln-pr-1vj3z",
+                        "description": "大杯 | 選用洛神花、仙楂、陳皮及話梅",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195677.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195677.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833533,
+                                "code": "d3ln-pv-26bih",
+                                "name": "大杯",
+                                "price": 40,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 40
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302532,
+                        "name": "黑糖薑母",
+                        "code": "d3ln-pr-1vj4h",
+                        "description": "大杯",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195695.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195695.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833534,
+                                "code": "d3ln-pv-26bj7",
+                                "name": null,
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 50
+                    }
+                ],
+                "master_category_id": null
+            },
+            {
+                "id": 399896,
+                "code": "d3ln-mc-87cp",
+                "name": "鮮榨原汁",
+                "description": "",
+                "file_path": null,
+                "mobify_file_path": null,
+                "file_name": null,
+                "products": [
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302533,
+                        "name": "炸彈檸檬",
+                        "code": "d3ln-pr-1vj40",
+                        "description": "大杯 | 冰沙 | 選用整顆新鮮檸檬入茶",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195678.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195678.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833535,
+                                "code": "d3ln-pv-26bii",
+                                "name": null,
+                                "price": 60,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253469
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 60
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302534,
+                        "name": "柚見檸檬",
+                        "code": "d3ln-pr-1vj41",
+                        "description": "大杯 | 限定冰飲 | 選用整顆新鮮檸檬搭配葡萄柚汁",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195679.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195679.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833536,
+                                "code": "d3ln-pv-26bij",
+                                "name": null,
+                                "price": 60,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 60
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302535,
+                        "name": "金桔檸檬",
+                        "code": "d3ln-pr-1vj42",
+                        "description": "",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195680.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195680.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833537,
+                                "code": "d3ln-pv-26bik",
+                                "name": "大杯",
+                                "price": 55,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833538,
+                                "code": "d3ln-pv-26bil",
+                                "name": "瓶裝",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 55
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302536,
+                        "name": "檸檬青",
+                        "code": "d3ln-pr-1vj43",
+                        "description": "",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195681.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195681.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833539,
+                                "code": "d3ln-pv-26bim",
+                                "name": "大杯",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253463,
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833540,
+                                "code": "d3ln-pv-26bin",
+                                "name": "瓶裝",
+                                "price": 75,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253463,
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 50
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302537,
+                        "name": "檸檬蜂蜜",
+                        "code": "d3ln-pr-1vj44",
+                        "description": "限定冰飲｜甜度來自蜂蜜不另加糖",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195682.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195682.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833541,
+                                "code": "d3ln-pv-26bio",
+                                "name": "大杯",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25298786,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833542,
+                                "code": "d3ln-pv-26bip",
+                                "name": "瓶裝",
+                                "price": 75,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25298786,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 50
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302538,
+                        "name": "檸檬冬瓜",
+                        "code": "d3ln-pr-1vj45",
+                        "description": "甜度固定 | 選用冬瓜磚熬煮搭配檸檬原汁，天然清爽",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195683.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195683.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833543,
+                                "code": "d3ln-pv-26biq",
+                                "name": "大杯",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833544,
+                                "code": "d3ln-pv-26bir",
+                                "name": "瓶裝",
+                                "price": 75,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 50
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302539,
+                        "name": "檸檬蜂蜜蘆薈",
+                        "code": "d3ln-pr-1vj46",
+                        "description": "限定冰飲 | 甜度來自蜂蜜不另加糖",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195684.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195684.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833545,
+                                "code": "d3ln-pv-26bis",
+                                "name": "大杯",
+                                "price": 60,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25298786,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833546,
+                                "code": "d3ln-pv-26bit",
+                                "name": "瓶裝",
+                                "price": 85,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25298786,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 60
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302540,
+                        "name": "鮮果百香綠",
+                        "code": "d3ln-pr-1vj47",
+                        "description": "限定冰飲 | 百香原汁搭配茉香綠茶、天然簡單好喝",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195685.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195685.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833547,
+                                "code": "d3ln-pv-26biu",
+                                "name": "大杯",
+                                "price": 50,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253464,
+                                    25253467,
+                                    25253469,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833548,
+                                "code": "d3ln-pv-26biv",
+                                "name": "瓶裝",
+                                "price": 75,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253464,
+                                    25253467,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 50
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302541,
+                        "name": "鮮果雙Q綠",
+                        "code": "d3ln-pr-1vj48",
+                        "description": "大杯 | 限定冰飲 | 鮮果百香綠+Q彈椰果及白玉珍珠、豐富口感",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195686.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195686.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833549,
+                                "code": "d3ln-pv-26biw",
+                                "name": null,
+                                "price": 55,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253464,
+                                    25253467,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 55
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302542,
+                        "name": "鮮果柚蜜錄",
+                        "code": "d3ln-pr-1vj49",
+                        "description": "限定冰飲 | 甜度來自蜂蜜不另加糖 | 季節限定8/1~2/28",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195687.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195687.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833550,
+                                "code": "d3ln-pv-26bix",
+                                "name": "大杯",
+                                "price": 60,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253464,
+                                    25253467,
+                                    25298786,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833551,
+                                "code": "d3ln-pv-26biy",
+                                "name": "瓶裝",
+                                "price": 90,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253464,
+                                    25253467,
+                                    25298786,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 60
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302543,
+                        "name": "鳳來水果茶",
+                        "code": "d3ln-pr-1vj4a",
+                        "description": "大杯 | 手工鳳梨醬搭配百香、蘋果、柳橙、檸檬新鮮果片",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195688.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195688.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833552,
+                                "code": "d3ln-pv-26biz",
+                                "name": null,
+                                "price": 60,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 60
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302544,
+                        "name": "金鑽鳳梨綠",
+                        "code": "d3ln-pr-1vj4b",
+                        "description": "手工鳳梨醬搭配苿莉綠茶",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195689.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195689.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833553,
+                                "code": "d3ln-pv-26bj0",
+                                "name": "大杯",
+                                "price": 55,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253464,
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            },
+                            {
+                                "id": 3833554,
+                                "code": "d3ln-pv-26bj1",
+                                "name": "瓶裝",
+                                "price": 80,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253464,
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 55
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302545,
+                        "name": "鳳梨QQ",
+                        "code": "d3ln-pr-1vj4c",
+                        "description": "大杯｜手工鳳梨醬搭配Ｑ彈椰果及白玉珍珠",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195690.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195690.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833555,
+                                "code": "d3ln-pv-26bj2",
+                                "name": null,
+                                "price": 55,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 55
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302546,
+                        "name": "鳳梨纖生",
+                        "code": "d3ln-pr-1vj4d",
+                        "description": "大杯 | 限定冰飲 | 手工鳳梨醬搭配滑嫩愛玉及高纖小紫蘇",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195691.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195691.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833556,
+                                "code": "d3ln-pv-26bj3",
+                                "name": null,
+                                "price": 45,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253467,
+                                    25253469,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 11,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 45
+                    }
+                ],
+                "master_category_id": null
+            },
+            {
+                "id": 399897,
+                "code": "d3ln-mc-87cq",
+                "name": "冬季限定",
+                "description": "",
+                "file_path": null,
+                "mobify_file_path": null,
+                "file_name": null,
+                "products": [
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302547,
+                        "name": "桂圓紅棗",
+                        "code": "d3ln-pr-1vj4e",
+                        "description": "大杯｜甜度固定｜選用台灣本土桂圓肉熬煮｜季節限定12/1~2/28",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195692.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195692.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833557,
+                                "code": "d3ln-pv-26bj4",
+                                "name": null,
+                                "price": 60,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253471
+                                ]
                             }
                         ],
                         "master_category_id": 4,
@@ -422,7 +2355,75 @@
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 30
+                        "lowestPrice": 60
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302548,
+                        "name": "桂圓紅棗奶",
+                        "code": "d3ln-pr-1vj4f",
+                        "description": "大杯｜甜度固定｜選用台灣本土桂圓肉熬煮｜季節限定12/1~2/28",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195693.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195693.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833558,
+                                "code": "d3ln-pv-26bj5",
+                                "name": null,
+                                "price": 65,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 65
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3302549,
+                        "name": "桂圓紅棗拿鐵",
+                        "code": "d3ln-pr-1vj4g",
+                        "description": "大杯｜甜度固定｜選用台灣本土桂圓肉熬煮｜季節限定12/1~2/28",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195694.jpg",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3195694.jpg",
+                        "half_type": "",
+                        "product_variations": [
+                            {
+                                "id": 3833559,
+                                "code": "d3ln-pv-26bj6",
+                                "name": null,
+                                "price": 70,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25253466,
+                                    25253471
+                                ]
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 70
                     }
                 ],
                 "master_category_id": null

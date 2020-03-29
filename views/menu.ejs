@@ -66,7 +66,8 @@
                                     <%= menus.menu_categories[i].products[j].product_variations[m].name %>
                                 </span>
                                 <span
-                                    class="text-right">NT$<%= menus.menu_categories[i].products[j].product_variations[m].price %></span>
+                                    class="text-right">NT$<%= menus.menu_categories[i].products[j].product_variations[m].price %>
+                                </span>
                             </label>
                             <% } %>
                             <div class="toppings-wrap"></div>
@@ -106,12 +107,17 @@
 
                     for (var i = 0; i < topping_ids.split(",").length; i++) {
                         // console.log(response[topping_ids.split(",")[i]].name);
-                        $(".toppings").append("<p class=\"menu-title\">" + response[topping_ids.split(",")[i]].name + "</p>");
+                        if(response[topping_ids.split(",")[i]].quantity_minimum == 1 && response[topping_ids.split(",")[i]].quantity_maximum == 1) {
+                            $(".toppings").append("<p class=\"menu-title\">" + response[topping_ids.split(",")[i]].name + "(*必填)</p>");
+                        }else {
+                            $(".toppings").append("<p class=\"menu-title\">" + response[topping_ids.split(",")[i]].name + "</p>");
+                        }
+
                         for (var j = 0; j < response[topping_ids.split(",")[i]].options.length; j++) {
                             // console.log(response[topping_ids.split(",")[i]].options[j].name);
                             if (response[topping_ids.split(",")[i]].quantity_minimum == 0 && response[topping_ids.split(",")[i]].quantity_maximum == 1) {
                                 // cancelable radio
-                                $(".toppings").append(`<div class="toppings-body d-flex justify-content-between">
+                                $(".toppings").append(`<label style="width: 100%;display: flex; justify-content: space-between">
                                     <span>
                                         <label><input type="radio" name="vari-check-${i}" id="cancelable-radio-${i}-${j}"
                                             menudetails={"item":"${ response[topping_ids.split(",")[i]].options[j].name}","price":${response[topping_ids.split(",")[i]].options[j].price}} 
@@ -121,23 +127,25 @@
                                     
                                     <span
                                         class="text-right">NT$${ response[topping_ids.split(",")[i]].options[j].price}</span>
-                                </div>`)
+                                </label>`)
 
                             } else if (response[topping_ids.split(",")[i]].quantity_minimum == 1 && response[topping_ids.split(",")[i]].quantity_maximum == 1) {
                                 // uncancelable radio
-                                $(".toppings").append(`<div class="toppings-body d-flex justify-content-between">
+                                $(".toppings").append(`<label style="width: 100%;display: flex; justify-content: space-between">
                                     <span>
-                                        <label><input type="radio" name="vari-check-${i}" id="uncancelable-radio-${i}-${j}">
-                                        ${ response[topping_ids.split(",")[i]].options[j].name}</label>
+                                        <input type="radio" name="vari-check-${i}" id="uncancelable-radio-${i}-${j}"
+                                            menudetails={"item":"${ response[topping_ids.split(",")[i]].options[j].name}","price":${response[topping_ids.split(",")[i]].options[j].price}} 
+                                            >
+                                        ${ response[topping_ids.split(",")[i]].options[j].name}
                                     </span>
                                     
                                     <span
                                         class="text-right">NT$${ response[topping_ids.split(",")[i]].options[j].price}</span>
-                                </div>`)
+                                </label>`)
 
                             } else if (response[topping_ids.split(",")[i]].quantity_minimum == 0 && response[topping_ids.split(",")[i]].quantity_maximum > 1) {
                                 // checkbox
-                                $(".toppings").append(`<div class="toppings-body d-flex justify-content-between">
+                                $(".toppings").append(`<label style="width: 100%;display: flex; justify-content: space-between">
                                     <span>
                                         <label><input type="checkbox" name="vari-check-${i}" id="checkbox-${i}-${j}"
                                             menudetails={"item":"${ response[topping_ids.split(",")[i]].options[j].name}","price":${response[topping_ids.split(",")[i]].options[j].price}}
@@ -147,7 +155,7 @@
                                     
                                     <span
                                         class="text-right">NT$${ response[topping_ids.split(",")[i]].options[j].price}</span>
-                                </div>`)
+                                </label>`)
 
                             }
                         }
@@ -178,7 +186,7 @@
 
     function removeToppings() {
         $(".toppings").remove();
-        $('.modal #sum').text(0)
+        $('.modal #sum').text(0);
 
         $('input:radio:checked').each(function (e) {
             this.checked = false
@@ -186,7 +194,7 @@
         $('input:checkbox:checked').each(function (e) {
             this.checked = false
         })
-        // $('.modal-footer button').attr('disabled', 'disabled')
+        $('.submit-btn').attr('disabled', 'disabled')
     }
 
     $(document).on('click', 'input', function (event) {
@@ -200,6 +208,8 @@
         })
 
         $('.modal #sum').text(sum + ' ')
+
+        $('.submit-btn').removeAttr('disabled')
 
         // if ($('#sum').text() == '0') {
         //     $('.modal-footer button').attr('disabled', 'disabled')
