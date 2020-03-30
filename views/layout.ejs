@@ -186,7 +186,7 @@
 
   <script type="text/javascript">
     var name, account;
-    window.onload = () => {
+    // window.onload = () => {
       $.ajax({
         url: '/users/auth',
         type: 'get',
@@ -228,7 +228,7 @@
           $('.nav-lookMenu').attr('href', `/menu/getMenu?orderId=${res.orderId}`)
         }
       })
-    }
+    // }
 
     $(document).on('click', '#mobile-nav-toggle', (e) => {
       $('.accountTitle').text(`Hi, ${name}`)
