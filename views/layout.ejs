@@ -199,7 +199,7 @@
             account = res.account
             $('.auth').show();
             $('.non-auth').hide();
-            $('.accountTitle').text(`Hi, ${res.name}`)
+            $('.accountTitle').text('Hi, ' + res.name)
             $('.accountTitle').attr('name', res.name)
             $('.accountTitle').attr('account', res.account)
           } else {
@@ -225,13 +225,13 @@
           if (err) throw err
         },
         success: function (res) {
-          $('.nav-lookMenu').attr('href', `/menu/getMenu?orderId=${res.orderId}`)
+          $('.nav-lookMenu').attr('href', '/menu/getMenu?orderId='+res.orderId)
         }
       })
     })
 
     $(document).on('click', '#mobile-nav-toggle', function(e) {
-      $('.accountTitle').text(`Hi, ${name}`)
+      $('.accountTitle').text('Hi, ' + res.name)
       $('.accountTitle').attr('name', name)
       $('.accountTitle').attr('account', account)
     })
