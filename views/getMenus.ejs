@@ -1,52 +1,54 @@
-<section class="banner-area relative blog-home-banner" id="home">
-    <div class="overlay overlay-bg"></div>
-    <div class="container">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="about-content blog-header-content col-lg-12">
-                <h1 class="text-white">
-                    DadaEats
-                </h1>
-                <p class="text-white">
-                    There is a moment in the life of any aspiring astronomer that it is time to buy that first
-                </p>
-                <a href="blog-single.html" class="primary-btn">View More</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="pt-120">
+<section class="pt-70">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
+                <div style="background:#444; color:#fff; padding:8px; margin-bottom: .5rem">
+                    <span>
+                        開團
+                    </span>
+                </div>
                 <div>
                     <label>團號：</label>
-                    <input type="text" class="form-control" id="orderId">
+                    <input type="text" class="form-control" id="groupId">
                 </div>
                 <div>
                     <label>連結：</label>
-                    <input type="text" class="form-control" id="foodpanda-url">
+                    <input type="text" class="form-control" id="foodpandaUrl">
+                </div>
+                <div>
+                    <label>店名：</label>
+                    <input type="text" class="form-control" id="shopName">
+                </div>
+                <div>
+                    <label>運費：</label>
+                    <input type="number" class="form-control" id="freight">
                 </div>
                 <br>
-                <a class="genric-btn info radius" id="submit" onclick="submit()">確定</a>
+                <a href="" class="genric-btn info radius" id="submit" onclick="submit()">確定</a>
             </div>
         </div>
 
     </div>
 </section>
 
+<section class="pt-120"></section>
+
 <script>
     function submit() {
-        var orderId = $('#orderId').val();
-        var foodpandaUrl = $('#foodpanda-url').val();
+        var groupId = $('#groupId').val();
+        var foodpandaUrl = $('#foodpandaUrl').val();
+        var shopName = $('#shopName').val();
+        var freight = $('#freight').val();
 
         $.ajax({
             url: '/dashboard/createMenus',
             type: 'post',
             dataType: "text",
             data: {
-                orderId,
-                foodpandaUrl
+                groupId,
+                foodpandaUrl,
+                shopName,
+                freight
             },
             error: function (err) {
                 if (err) throw err
@@ -56,8 +58,10 @@
             success: function (response) {
                 console.log('good job')
                 console.log(response);
+                alert('success');
+                location.reload();
             }
         });
-        
+
     }
 </script>

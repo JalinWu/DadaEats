@@ -9,8 +9,8 @@ const OrderSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  orderId: {
-    type: Number,
+  groupId: {
+    type: String,
     required: true
   },
   orders:{

@@ -80,7 +80,7 @@
             <li class="auth"><a href="#" class="nav-lookMenu">看菜單</a></li>
             <li class="auth menu-has-children"><a class="accountTitle">Hi</a>
               <ul>
-                <li class="auth"><a href="/cart/getCartList">購物車</a></li>
+                <li class="auth"><a href="#" class="nav-lookCart">購物車</a></li>
                 <li class="auth"><a href="/users/dadaCoin">我的達達幣</a></li>
                 <li class="auth"><a href="/users/logout">登出</a></li>
               </ul>
@@ -219,19 +219,20 @@
       })
 
       $.ajax({
-        url: '/orderId',
+        url: '/groupId',
         type: 'get',
         error: function (err) {
           if (err) throw err
         },
         success: function (res) {
-          $('.nav-lookMenu').attr('href', '/menu/getMenu?orderId='+res.orderId)
+          $('.nav-lookMenu').attr('href', '/menu/getMenu?groupId='+res.groupId)
+          $('.nav-lookCart').attr('href', '/cart/getCartList?groupId='+res.groupId)
         }
       })
     })
 
     $(document).on('click', '#mobile-nav-toggle', function(e) {
-      $('.accountTitle').text('Hi, ' + res.name)
+      $('.accountTitle').text('Hi, ' + name)
       $('.accountTitle').attr('name', name)
       $('.accountTitle').attr('account', account)
     })

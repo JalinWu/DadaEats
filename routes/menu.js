@@ -1,43 +1,44 @@
 const express = require('express');
 const router = express.Router();
+const fs = require('fs');
 const Order = require('../models/Order');
 const User = require('../models/User');
-const fs = require('fs');
+const Group = require('../models/Group');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // getMenu
-router.get('/getMenu', ensureAuthenticated, (req, res) => {
+router.get('/getMenu', ensureAuthenticated, async (req, res) => {
     const { name, account } = req.user;
-    const orderId = req.query.orderId;
+    const groupId = req.query.groupId;
 
     // 建一筆訂單
-    Order.findOne({ account, orderId })
-        .then((resultOrder) => {
+    Order.findOne({ account, groupId })
+        .then(async (resultOrder) => {
 
-            // getFreight
-            fs.readFile('menus/freight.txt', (err, data) => {
-                if (err) throw err;
+            //getFreight
+            var getGroup = await Group.findOne({ status: 'open' });
+            freight = getGroup.freight;
 
-                var freight = data.toString();
+            User.findOne({ account })
+                .then((resultUser) => {
+                    var dadaCoin = resultUser.dadaCoin;
 
-                User.findOne({ account })
-                    .then((resultUser) => {
-                        var dadaCoin = resultUser.dadaCoin;
-
-                        if (!resultOrder) {
-                            var newOrder = new Order({
-                                name,
-                                account,
-                                orderId,
-                                order: [],
-                                freight,
-                                dadaCoin
-                            })
-                            newOrder.save()
-                        }
-                    })
-            })
+                    if (!resultOrder) {
+                        var newOrder = new Order({
+                            name,
+                            account,
+                            groupId,
+                            order: [],
+                            freight,
+                            dadaCoin
+                        })
+                        newOrder.save()
+                    }
+                })
         })
+
+    var getGroup = await Group.findOne({ status: 'open' });
+    var title = getGroup.shopName;
 
     // 取得菜單內容
     fs.readFile('menus/menu.txt', (err, data) => {
@@ -46,6 +47,7 @@ router.get('/getMenu', ensureAuthenticated, (req, res) => {
         menus = JSON.parse(data.toString())[0]
 
         res.render('menu', {
+            title,
             menus
         })
     })
@@ -66,44 +68,44 @@ router.get('/getToppings', (req, res) => {
 router.post('/postOrder', ensureAuthenticated, (req, res) => {
     console.log('postOrder');
     const { account } = req.user;
-    const { orderImg, orderTitle, orderContents, amount } = req.body;
+    const { orderImg, orderTitle, orderContents, amount, groupId } = req.body;
 
     var subTotal = 0;
     var freight = 0;
     var dadaCoin = 0;
-    Order.findOne({ account, orderId })
-    .then((result) => {
-        for(var i = 0; i < result.orders.length; i++) {
-            subTotal += parseInt(result.orders[i].amount);
-        }
-        freight = result.freight;
-        dadaCoin = result.dadaCoin;
-    })
-    .then((result) => {
-        subTotal += parseInt(amount);
-        var sum = parseInt(subTotal) + parseInt(freight) - Math.floor(parseInt(dadaCoin)/100)
-        Order.updateOne({ account, orderId }, {
-            $push: {
-                orders: {
-                    oid: new Date().getTime().toString(),
-                    orderImg,
-                    orderTitle,
-                    orderContents,
-                    amount,
-                    status: 'not-confirmed'
-                }
-            },
-            $set: {
-                subTotal,
-                sum
+    Order.findOne({ account, groupId })
+        .then((result) => {
+            for (var i = 0; i < result.orders.length; i++) {
+                subTotal += parseInt(result.orders[i].amount);
             }
-        }).then((result) => {
-            res.send({
-                msg: 'success'
+            freight = result.freight;
+            dadaCoin = result.dadaCoin;
+        })
+        .then((result) => {
+            subTotal += parseInt(amount);
+            var sum = parseInt(subTotal) + parseInt(freight) - Math.floor(parseInt(dadaCoin) / 100)
+            Order.updateOne({ account, groupId }, {
+                $push: {
+                    orders: {
+                        oid: new Date().getTime().toString(),
+                        orderImg,
+                        orderTitle,
+                        orderContents,
+                        amount,
+                        status: 'not-confirmed'
+                    }
+                },
+                $set: {
+                    subTotal,
+                    sum
+                }
+            }).then((result) => {
+                res.send({
+                    msg: 'success'
+                })
             })
         })
-    })
-        
+
 })
 
 router.get('/', (req, res) => {

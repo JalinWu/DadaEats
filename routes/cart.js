@@ -1,15 +1,16 @@
 const express = require('express');
 const router = express.Router();
 const Order = require('../models/Order');
-const User = require('../models/User');
+const Group = require('../models/Group');
 const fs = require('fs');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // getCartList
 router.get('/getCartList/', ensureAuthenticated, (req, res) => {
     const { account } = req.user
+    const groupId = req.query.groupId;
 
-    Order.findOne({ expired: false, account })
+    Order.findOne({ expired: false, account, groupId })
         .then(result => {
 
             res.render('cart', {
@@ -20,12 +21,14 @@ router.get('/getCartList/', ensureAuthenticated, (req, res) => {
 });
   
 // deleteOrder
-router.post('/deleteCartList', ensureAuthenticated, (req, res) => {
+router.post('/deleteCartList', ensureAuthenticated, async (req, res) => {
     const { account } = req.user;
     console.log(`"${req.body.id}"`);
-    console.log(orderId);
 
-    Order.updateOne({ account, orderId }, {
+    var getGroup = await Group.findOne({ status: 'open' })
+    var groupId = getGroup.groupId;
+
+    Order.updateOne({ account, groupId }, {
         $pull: {
             "orders": {
                 "oid": req.body.id
@@ -35,7 +38,7 @@ router.post('/deleteCartList', ensureAuthenticated, (req, res) => {
         var subTotal = 0;
         var freight = 0;
         var dadaCoin = 0;
-        Order.findOne({ account, orderId })
+        Order.findOne({ account, groupId })
             .then((result) => {
                 for (var i = 0; i < result.orders.length; i++) {
                     subTotal += parseInt(result.orders[i].amount);
@@ -46,7 +49,7 @@ router.post('/deleteCartList', ensureAuthenticated, (req, res) => {
             .then((result) => {
                 var sum = parseInt(subTotal) + parseInt(freight) - Math.floor(parseInt(dadaCoin) / 100)
                 dadaCoin %= 100;
-                Order.updateOne({ account, orderId }, {
+                Order.updateOne({ account, groupId }, {
                     $set: {
                         subTotal,
                         sum

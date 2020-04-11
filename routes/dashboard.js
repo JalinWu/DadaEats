@@ -5,6 +5,7 @@ var cheerio = require("cheerio");
 var fs = require('fs')
 const User = require('../models/User');
 const Order = require('../models/Order');
+const Group = require('../models/Group');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // getUser
@@ -79,9 +80,22 @@ function writeIntoJSON(fileName, content) {
 }
 
 // createMenus
-router.post('/createMenus', ensureAuthenticated, (req, res) => {
-    const { orderId, foodpandaUrl } = req.body;
+router.post('/createMenus', ensureAuthenticated, async (req, res) => {
+    const { groupId, foodpandaUrl, shopName, freight } = req.body;
 
+    // close old group
+    var updateGroup = await Group.updateMany({ status: 'open' }, { $set: { status: 'closed' }})
+
+    // insert new group
+    var groupInfo = new Group({
+        groupId,
+        foodpandaUrl,
+        shopName,
+        freight
+    })
+    groupInfo.save();
+
+    // webcrawler
     var r = request(foodpandaUrl, (error, response, body) => {
         if (error) throw error;
 
@@ -91,7 +105,6 @@ router.post('/createMenus', ensureAuthenticated, (req, res) => {
         var dataVendor = JSON.parse($(whereWrapper[0]).attr('data-vendor'));
 
         // getLowestPrice
-        // const JSONdata = JSON.parse(data.toString())
         const JSONdata = dataVendor.menus
 
         console.log(JSONdata[0].menu_categories[0].products[0].product_variations[0].price)
