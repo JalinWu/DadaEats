@@ -1,0 +1,14 @@
+image: docker
+services:
+  - docker:dind # use image: Docker in Docker 
+stages:
+  - deploy
+step-deploy-prod:
+  stage: deploy
+  before_script:
+    - docker images 
+  script:
+    - docker build -f Dockerfile -t app/node-web .
+    - docker run -d -p 1434:80 --rm --name node-web app/node-web
+  after_script:
+    - docker ps # verify container is start correctly

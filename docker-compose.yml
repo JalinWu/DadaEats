@@ -2,9 +2,11 @@ version: '3'
 services:
   app: 
     container_name: docker-node-mongo
-    image: dadaeats_app
+    # image: dadaeats_app
     restart: always
-    # build: .
+    build: .
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/Dadaeats
     ports:
       - '80:5000'
     links:
