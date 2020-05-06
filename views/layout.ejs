@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height:100%">
 
 <head>
   <meta charset="UTF-8" />
@@ -77,6 +77,7 @@
             <li class="auth dashboard"><a href="#" class="manageMenus">管理開團</a></li>
             <li class="auth dashboard"><a href="#" class="manageUsers">管理使用者</a></li>
             <li class="auth dashboard"><a href="#" class="manageOrders">管理訂單</a></li>
+            <li class="auth dashboard"><a href="#" class="myChatbot">呼叫小垣</a></li>
             <li class="auth"><a href="#" class="nav-lookMenu">看菜單</a></li>
             <li class="auth menu-has-children"><a class="accountTitle">Hi</a>
               <ul>
@@ -212,6 +213,7 @@
             $('.manageMenus').attr('href', '/dashboard/getMenus')
             $('.manageUsers').attr('href', '/dashboard/getUsers')
             $('.manageOrders').attr('href', '/dashboard/getOrders')
+            $('.myChatbot').attr('href', '/chatbot/getChatbot')
           } else {
             $('.dashboard').hide();
           }

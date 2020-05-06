@@ -4087,10 +4087,11 @@ dl.accordion.time-line:before {
 }
 
 .comments-area {
-  background: #fafaff;
+  background: #eee;
   border: 1px solid #eee;
   padding: 50px 20px;
   margin-top: 50px;
+  border-radius: 20px;
 }
 
 @media (max-width: 414px) {
@@ -4142,7 +4143,7 @@ dl.accordion.time-line:before {
 }
 
 .comments-area .comment {
-  color: #777777;
+  color: #555555;
 }
 
 .comments-area .btn-reply {
@@ -4513,3 +4514,9 @@ dl.accordion.time-line:before {
 }
 
 /*-------- end footer Area -------------*/
+
+.dialog {
+  background:#fff;
+  border-radius: 10px;
+  padding: 10px;
+}

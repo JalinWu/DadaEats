@@ -1,0 +1,138 @@
+<div class="section-top-border container">
+    <div class="row">
+        <div class="col-md-6">
+            <img class="img-fluid" src="/img/mc-menu.jpg" alt="">
+        </div>
+        <div class="col-md-6">
+            <div class="comments-area mb-10" style="margin-top: 0px; height: 500px; overflow: auto">
+                <div class="d-flex mt-10">
+                    <div class="thumb">
+                        <img src="/img/blog/aragaki.PNG" alt="" style="width: 100px; border-radius: 50%;">
+                    </div>
+                    <div class="desc dialog">
+                        <h5><a href="#">小垣</a></h5>
+                        <p class="comment">
+                            歡迎光臨~請問要點什麼?
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <input id="myText" type="text" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="genric-btn info radius" style="width:100%" onclick="submit()">送出</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    var orderList = {
+        mainMeal: '',
+        sideMeal: '',
+        drinks: '',
+        drinkSize: ''
+    }
+
+    function submit() {
+        var myText = $('#myText').val();
+        var robotText = '';
+        var url = 'https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/6c5f8fdc-5fcd-40ef-923c-2a9b51ddd92c?verbose=true&timezoneOffset=0&subscription-key=4b681cc2f60848b0aa74550ccefa3381&q='
+        $('#myText').val('');
+
+        $('.comments-area').append(`
+            <div class="d-flex mt-10 text-right">
+                <p class="comment" style="width: 100%">
+                    <span class="dialog">
+                        ${myText}
+                    </span>
+                </p>
+            </div>
+        `)
+        $('.comments-area').scrollTop(10000);
+
+        $.ajax({
+            type: "GET",
+            url: url + myText,
+            dataType: "json",
+            error: function (e) {
+                console.log('oh no');
+            },
+            success: function (res) {
+                console.log(res);
+                const { topScoringIntent, entities } = res;
+
+                if (topScoringIntent.intent == '點餐') {
+                    for (var i = 0; i < entities.length; i++) {
+                        if (entities[i].type == '主餐') {
+                            orderList.mainMeal = entities[i].role;
+                        } else if (entities[i].type == '配餐') {
+                            orderList.sideMeal = entities[i].role;
+                        } else if (entities[i].type == '飲料') {
+                            orderList.drinks = entities[i].role;
+                        } else if (entities[i].type == '飲料大小') {
+                            orderList.drinkSize = entities[i].role;
+                        }
+                    }
+
+                    if (orderList.mainMeal == '') {
+                        robotText = '請問要什麼主餐呢?';
+                    } else if (orderList.sideMeal == '') {
+                        robotText = '請問要哪個配餐呢?';
+                    } else if (orderList.drinks == '') {
+                        robotText = '請問要什麼飲料呢?';
+                    } else if (orderList.drinkSize == '') {
+                        robotText = '請問飲料要中杯還是大杯?';
+                    }else {
+                        robotText = `好的，跟你確認下餐點:<br>
+                            ${orderList.mainMeal}<br>
+                            ${orderList.sideMeal}<br>
+                            ${orderList.drinks}<br>
+                            ${orderList.drinkSize}<br>`
+                    }
+                    console.log(orderList);
+                    
+                }else if (topScoringIntent.intent == '詢問') {
+                    robotText = '請看菜單，再跟我點餐喔!';
+                    for (var i = 0; i < entities.length; i++) {
+                        if (entities[i].type == '飲料') {
+                            robotText = `我們的飲料有"紅茶"，"綠茶"以及"玉米濃湯可以選喔!"`
+                        }
+                    }
+                }else if (topScoringIntent.intent == 'None') {
+                    robotText = 'Oops, 我不太理解，我只能幫你點餐喔~'
+                }
+
+                $('.comments-area').append(`
+                    <div class="d-flex mt-10">
+                        <div class="thumb">
+                            <img src="/img/blog/aragaki.PNG" alt="" style="width: 100px; border-radius: 50%;">
+                        </div>
+                        <div class="desc dialog">
+                            <h5><a href="#">小垣</a></h5>
+                            <span class="comment">
+                               ${robotText}
+                            </span>
+                        </div>
+                    </div>
+                `)
+
+                $('.comments-area').scrollTop(10000);
+                
+            }
+        });
+
+    }
+
+    $('#myText').keypress((e) => {
+        code = (e.keyCode ? e.keyCode : e.which);
+        if(code == 13){
+            submit();
+        }
+    })
+</script>
