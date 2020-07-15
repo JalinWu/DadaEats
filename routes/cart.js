@@ -66,9 +66,11 @@ router.post('/deleteCartList', ensureAuthenticated, async (req, res) => {
 // updateOrder
 router.get('/updateCartList', ensureAuthenticated, (req, res) => {
 
-    Order.update({ "account": req.user.account }, { "$set": { "orders.$[].status": "confirmed" } })
+    Order.updateMany({ "account": req.user.account }, { "$set": { "orders.$[].status": "confirmed" } })
         .then(result => {
-
+            res.send({
+                msg: 'success'
+            })
         })
 
 })

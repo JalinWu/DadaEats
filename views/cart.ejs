@@ -34,7 +34,7 @@
                             </div>
                             <% if(result.orders[i].status == 'not-confirmed'){ %>
                             <a href="#" class="genric-btn radius danger removeItems" data-toggle="modal"
-                                data-target="#Modal-" onclick="removeItems('<%= result.orders[i].oid %>')">X</a>
+                                data-target="#Modal-" onclick="removeItems('<%= result.orders[i].oid %>')">刪除</a>
                             <% } %>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                 <h5 id="freight" style="color: #8490ff">達達幣折抵：<span id="freight"><%= Math.floor(result.dadaCoin/100) %></span></h4>
                 <hr>
                 <h5 id="sum" class="mb-30">總計：<%= result.sum %></h4>
-                <a href="#" class="primary-btn" style="border-radius: 3px" onclick="confirm()">確定</a>
+                <a href="#" class="primary-btn" style="border-radius: 3px" onclick="confirm()">確定，並前往結帳</a>
 
             </div>
             <% } %>
@@ -103,6 +103,8 @@
     function confirm() {
         $('.removeItems').remove();
         $('#payment').css('visibility', 'visible');
+        console.log('confirm');
+        
 
         $.ajax({
             url: '/cart/updateCartList',
@@ -139,7 +141,7 @@
         } else { // 手機版
             Swal.fire({
                 title: 'Line輸入編號支付',
-                html: '開啟Line -> 錢包 -> 掃描 -> 下方輸入代碼' +
+                html: '開啟Line -> 錢包 -> 轉帳 -> 掃描 -> 下方輸入代碼' +
                     '<br>' +
                     '代碼： 24280711086',
                 width: 600,

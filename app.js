@@ -10,10 +10,13 @@ require('dotenv').config()
 const app = express();
 
 // 解析application/json
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 // 解析application/x-www-form-urlencoded，從網頁表單送來的資料
-app.use(bodyParser.urlencoded({extended: true}));
+// app.use(bodyParser.urlencoded({extended: true}));
+
+app.use(bodyParser.json({limit: '10mb', extended: true}))
+app.use(bodyParser.urlencoded({limit: '10mb', extended: true}))
 
 // Passport Config
 require('./config/passport')(passport);

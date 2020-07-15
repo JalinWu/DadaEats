@@ -39,6 +39,7 @@ router.get('/getMenu', ensureAuthenticated, async (req, res) => {
 
     var getGroup = await Group.findOne({ status: 'open' });
     var title = getGroup.shopName;
+    var imgSrc = getGroup.imgSrc;
 
     // 取得菜單內容
     fs.readFile('menus/menu.txt', (err, data) => {
@@ -48,7 +49,8 @@ router.get('/getMenu', ensureAuthenticated, async (req, res) => {
 
         res.render('menu', {
             title,
-            menus
+            menus,
+            imgSrc
         })
     })
 });

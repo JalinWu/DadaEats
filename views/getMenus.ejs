@@ -23,6 +23,14 @@
                     <label>運費：</label>
                     <input type="number" class="form-control" id="freight">
                 </div>
+                <div>
+                    <label>大圖連結：</label>
+                    <input type="text" class="form-control" id="img-src">
+                </div>
+                <div>
+                    <label>data-vendor：</label>
+                    <textarea class="form-control" id="data-vendor" rows="4" cols="50"></textarea>
+                </div>
                 <br>
                 <a href="" class="genric-btn info radius" id="submit" onclick="submit()">確定</a>
             </div>
@@ -39,6 +47,8 @@
         var foodpandaUrl = $('#foodpandaUrl').val();
         var shopName = $('#shopName').val();
         var freight = $('#freight').val();
+        var imgSrc = $('#img-src').val();
+        var dataVendor = $('#data-vendor').val();
 
         $.ajax({
             url: '/dashboard/createMenus',
@@ -48,7 +58,9 @@
                 groupId,
                 foodpandaUrl,
                 shopName,
-                freight
+                freight,
+                imgSrc,
+                dataVendor
             },
             error: function (err) {
                 if (err) throw err

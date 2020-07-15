@@ -81,53 +81,80 @@ function writeIntoJSON(fileName, content) {
 
 // createMenus
 router.post('/createMenus', ensureAuthenticated, async (req, res) => {
-    const { groupId, foodpandaUrl, shopName, freight } = req.body;
+    var { groupId, foodpandaUrl, shopName, freight, imgSrc, dataVendor } = req.body;
 
     // close old group
-    var updateGroup = await Group.updateMany({ status: 'open' }, { $set: { status: 'closed' }})
+    var updateGroup = await Group.updateMany({ status: 'open' }, { $set: { status: 'closed' } })
 
     // insert new group
     var groupInfo = new Group({
         groupId,
         foodpandaUrl,
         shopName,
-        freight
+        freight,
+        imgSrc
     })
     groupInfo.save();
 
-    // webcrawler
-    var r = request(foodpandaUrl, (error, response, body) => {
-        if (error) throw error;
+    dataVendor = JSON.parse(dataVendor);
 
-        var $ = cheerio.load(body);
+    // getLowestPrice
+    const JSONdata = dataVendor.menus
 
-        var whereWrapper = $(".where-wrapper");
-        var dataVendor = JSON.parse($(whereWrapper[0]).attr('data-vendor'));
+    console.log(JSONdata[0].menu_categories[0].products[0].product_variations[0].price)
+    var menu_categories = JSONdata[0].menu_categories;
 
-        // getLowestPrice
-        const JSONdata = dataVendor.menus
-
-        console.log(JSONdata[0].menu_categories[0].products[0].product_variations[0].price)
-        var menu_categories = JSONdata[0].menu_categories;
-
-        for (var i = 0; i < menu_categories.length; i++) {
-            for (var j = 0; j < menu_categories[i].products.length; j++) {
-                var lowestPrice = 100000;
-                for (var k = 0; k < menu_categories[i].products[j].product_variations.length; k++) {
-                    var currentPrice = menu_categories[i].products[j].product_variations[k].price
-                    if (currentPrice < lowestPrice)
-                        lowestPrice = currentPrice;
-                }
-                menu_categories[i].products[j].lowestPrice = lowestPrice;
+    for (var i = 0; i < menu_categories.length; i++) {
+        for (var j = 0; j < menu_categories[i].products.length; j++) {
+            var lowestPrice = 100000;
+            for (var k = 0; k < menu_categories[i].products[j].product_variations.length; k++) {
+                var currentPrice = menu_categories[i].products[j].product_variations[k].price
+                if (currentPrice < lowestPrice)
+                    lowestPrice = currentPrice;
             }
+            menu_categories[i].products[j].lowestPrice = lowestPrice;
         }
+    }
 
-        JSONdata[0].menu_categories = menu_categories;
-        fs.writeFileSync('./menus/menu.txt', JSON.stringify(JSONdata))
+    JSONdata[0].menu_categories = menu_categories;
+    fs.writeFileSync('./menus/menu.txt', JSON.stringify(JSONdata))
 
-        writeIntoJSON('./menus/toppings.txt', dataVendor.toppings)
+    writeIntoJSON('./menus/toppings.txt', dataVendor.toppings)
 
-    })
+
+    // webcrawler
+    // var r = request(foodpandaUrl, (error, response, body) => {
+    //     if (error) throw error;
+
+    //     var $ = cheerio.load(body);
+
+    //     var whereWrapper = $(".where-wrapper");
+    //     var dataVendor = JSON.parse($(whereWrapper[0]).attr('data-vendor'));
+
+    //     // getLowestPrice
+    //     const JSONdata = dataVendor.menus
+
+    //     console.log(JSONdata[0].menu_categories[0].products[0].product_variations[0].price)
+    //     var menu_categories = JSONdata[0].menu_categories;
+
+    //     for (var i = 0; i < menu_categories.length; i++) {
+    //         for (var j = 0; j < menu_categories[i].products.length; j++) {
+    //             var lowestPrice = 100000;
+    //             for (var k = 0; k < menu_categories[i].products[j].product_variations.length; k++) {
+    //                 var currentPrice = menu_categories[i].products[j].product_variations[k].price
+    //                 if (currentPrice < lowestPrice)
+    //                     lowestPrice = currentPrice;
+    //             }
+    //             menu_categories[i].products[j].lowestPrice = lowestPrice;
+    //         }
+    //     }
+
+    //     JSONdata[0].menu_categories = menu_categories;
+    //     fs.writeFileSync('./menus/menu.txt', JSON.stringify(JSONdata))
+
+    //     writeIntoJSON('./menus/toppings.txt', dataVendor.toppings)
+
+    // })
     res.send('success');
 
 });
