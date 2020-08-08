@@ -214,6 +214,12 @@
             $('.manageUsers').attr('href', '/dashboard/getUsers')
             $('.manageOrders').attr('href', '/dashboard/getOrders')
             $('.myChatbot').attr('href', '/chatbot/getChatbot')
+          } else if (res.account == '2007004' || res.account == '1908059') {
+            $('.dashboard').show();
+            $('.manageMenus').hide();
+            $('.manageUsers').hide();
+            $('.manageOrders').hide();
+            $('.myChatbot').attr('href', '/chatbot/getChatbot')
           } else {
             $('.dashboard').hide();
           }
