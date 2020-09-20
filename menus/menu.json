@@ -1,11 +1,5 @@
 [
     {
-        "id": 100736,
-        "name": "Main Menu",
-        "description": "",
-        "opening_time": "00:00:00",
-        "closing_time": "23:59:00",
-        "type": "delivery",
         "menu_categories": [
             {
                 "id": "656027",
