@@ -2,12 +2,21 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
+const request = require('request');
+const axios = require('axios');
+const FormData = require('form-data');
+require('dotenv').config();
+const jwt_decode = require('jwt-decode');
 // Load User model
 const User = require('../models/User');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // Login Page
-router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
+router.get('/login', forwardAuthenticated, (req, res) => {
+  res.render('login', {
+    redirect_url: process.env.redirect_url
+  })
+});
 
 // Register Page
 router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
@@ -106,6 +115,62 @@ router.get('/dadaCoin', ensureAuthenticated, (req, res) => {
   res.render('dadacoin', {
     dadaCoin: req.user.dadaCoin
   })
+})
+
+router.post('/loginLine', (req, res) => {
+  console.log("/loginLine");
+  const { code } = req.body;
+  
+  var url = 'https://api.line.me/oauth2/v2.1/token';
+  var data = `
+    grant_type=authorization_code&
+    code=${code}&
+    redirect_uri=${process.env.redirect_url}&
+    client_id=1654985474&
+    client_secret=1f803414877a4b7e3ff36d917ed279be
+  `
+  data = data.replace(/\r\n|\n/g, "").replace(/\s+/g, "");
+
+  axios.post(url, data, { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } })
+    .then(function (response) {
+      const { data } = response;
+      const token = data.id_token;
+      const decoded = jwt_decode(token);
+      const { name, picture } = decoded;
+      console.log(decoded);
+
+      User.findOne({ account: name }).then(user => {
+        if (user) {
+          console.log('user exists');
+        } else {
+          console.log('new user');
+
+          const newUser = new User({
+            name: name,
+            account: name,
+            password: picture
+          });
+
+          bcrypt.genSalt(10, (err, salt) => {
+            bcrypt.hash(newUser.password, salt, (err, hash) => {
+              if (err) throw err;
+              newUser.password = hash;
+              newUser.save();
+            });
+          });
+        }
+      });
+
+      res.send({
+        name,
+        picture
+      });
+    })
+    .catch(function (error) {
+      console.log('no');
+      res.send('error');
+    })
+
 })
 
 module.exports = router;

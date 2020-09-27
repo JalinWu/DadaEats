@@ -21,6 +21,31 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script src="/js/vendor/jquery-2.2.4.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/vendor/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  <script src="/js/easing.min.js"></script>
+  <script src="/js/hoverIntent.js"></script>
+  <script src="/js/superfish.min.js"></script>
+  <script src="/js/jquery.ajaxchimp.min.js"></script>
+  <script src="/js/jquery.magnific-popup.min.js"></script>
+  <script src="/js/jquery.tabs.min.js"></script>
+  <script src="/js/jquery.nice-select.min.js"></script>
+  <script src="/js/isotope.pkgd.min.js"></script>
+  <script src="/js/waypoints.min.js"></script>
+  <script src="/js/jquery.counterup.min.js"></script>
+  <script src="/js/simple-skillbar.js"></script>
+  <script src="/js/owl.carousel.min.js"></script>
+  <script src="/js/mail-script.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
   <!--
@@ -63,6 +88,7 @@
       display: none;
     }
   </style>
+
 </head>
 
 <body>
@@ -159,35 +185,62 @@
   </footer>
   <!-- End footer Area -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
-  <script src="/js/vendor/jquery-2.2.4.min.js"></script>
-  <script src="/js/popper.min.js"></script>
-  <script src="/js/vendor/bootstrap.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-  <script src="/js/easing.min.js"></script>
-  <script src="/js/hoverIntent.js"></script>
-  <script src="/js/superfish.min.js"></script>
-  <script src="/js/jquery.ajaxchimp.min.js"></script>
-  <script src="/js/jquery.magnific-popup.min.js"></script>
-  <script src="/js/jquery.tabs.min.js"></script>
-  <script src="/js/jquery.nice-select.min.js"></script>
-  <script src="/js/isotope.pkgd.min.js"></script>
-  <script src="/js/waypoints.min.js"></script>
-  <script src="/js/jquery.counterup.min.js"></script>
-  <script src="/js/simple-skillbar.js"></script>
-  <script src="/js/owl.carousel.min.js"></script>
-  <script src="/js/mail-script.js"></script>
-  <script src="/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-
   <script type="text/javascript">
     var name, account;
-    $(document).ready(function() {
+
+    $(document).ready(function () {
+      // line login
+      var url = new URL(window.location.href);
+      var params = url.searchParams;
+      var paramsObject = new Object();
+      for (let pair of params.entries()) {
+        if (pair[0] == 'code') paramsObject.code = pair[1];
+        if (pair[0] == 'state') paramsObject.state = pair[1];
+      }
+      if(paramsObject.code) {
+        loginLine(paramsObject.code);
+      }else {
+        auth();
+      }
+    })
+
+    function loginLine(code) {
+      if (!code) return;
+
+      var redirect_uri = "http://dadaeats.herokuapp.com/";
+      $.ajax({
+        url: '/users/loginLine',
+        type: 'post',
+        data: {
+          code,
+        },
+        error: function (err) {
+          if (err) throw err
+          alert('登入失敗1');
+        },
+        success: function (res) {
+          if (res == 'error') alert('登入失敗2');
+
+          $.ajax({
+            url: '/users/login',
+            type: 'post',
+            data: {
+              account: res.name,
+              password: res.picture
+            },
+            error: function (err) {
+              if (err) throw err
+            },
+            success: function (res) {
+              if (res == 'error') alert('登入失敗3');
+              auth();
+            }
+          })
+        }
+      })
+    }
+
+    function auth() {
       $.ajax({
         url: '/users/auth',
         type: 'get',
@@ -207,7 +260,7 @@
             $('.auth').hide();
             $('.non-auth').show();
           }
-
+  
           if (res.account == 'admin') {
             $('.dashboard').show();
             $('.manageMenus').attr('href', '/dashboard/getMenus')
@@ -225,7 +278,7 @@
           }
         }
       })
-
+  
       $.ajax({
         url: '/groupId',
         type: 'get',
@@ -233,17 +286,19 @@
           if (err) throw err
         },
         success: function (res) {
-          $('.nav-lookMenu').attr('href', '/menu/getMenu?groupId='+res.groupId)
-          $('.nav-lookCart').attr('href', '/cart/getCartList?groupId='+res.groupId)
+          $('.nav-lookMenu').attr('href', '/menu/getMenu?groupId=' + res.groupId)
+          $('.nav-lookCart').attr('href', '/cart/getCartList?groupId=' + res.groupId)
         }
       })
-    })
 
-    $(document).on('click', '#mobile-nav-toggle', function(e) {
+    }
+
+    $(document).on('click', '#mobile-nav-toggle', function (e) {
       $('.accountTitle').text('Hi, ' + name)
       $('.accountTitle').attr('name', name)
       $('.accountTitle').attr('account', account)
     })
+
 
   </script>
 </body>
