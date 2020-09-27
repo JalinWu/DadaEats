@@ -205,35 +205,33 @@
     })
 
     function loginLine(code) {
-      if (!code) return;
-
-      var redirect_uri = "http://dadaeats.herokuapp.com/";
+      var redirect_uri = "<%= process.env.redirect_url %>";
       $.ajax({
         url: '/users/loginLine',
         type: 'post',
-        data: {
-          code,
-        },
+        data: { code },
         error: function (err) {
           if (err) throw err
           alert('登入失敗1');
         },
         success: function (res) {
           if (res == 'error') alert('登入失敗2');
+          const { name, picture } = res;
 
           $.ajax({
             url: '/users/login',
             type: 'post',
             data: {
-              account: res.name,
-              password: res.picture
+              account: name,
+              password: picture
             },
             error: function (err) {
               if (err) throw err
+              alert('登入失敗3');
             },
             success: function (res) {
-              if (res == 'error') alert('登入失敗3');
-              auth();
+              if (res == 'error') alert('登入失敗4');
+              // auth();
               document.location.href="/";
             }
           })
