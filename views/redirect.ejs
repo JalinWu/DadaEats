@@ -1,0 +1,59 @@
+<div class="container" style="height: 100vh">
+  <p>頁面跳轉中，請稍候...</p>
+</div>
+
+<script type="text/javascript">
+  var name, account;
+
+  $(document).ready(function () {
+    // line login
+    var url = new URL(window.location.href);
+    var params = url.searchParams;
+    var paramsObject = new Object();
+    for (let pair of params.entries()) {
+      if (pair[0] == 'code') paramsObject.code = pair[1];
+      if (pair[0] == 'state') paramsObject.state = pair[1];
+    }
+    if (paramsObject.code) {
+      loginLine(paramsObject.code);
+    } else {
+      alert("Oops, 好像哪裡出錯了...");
+    }
+  })
+
+  function loginLine(code) {
+    var redirect_uri = "<%= process.env.redirect_url %>";
+    $.ajax({
+      url: '/users/loginLine',
+      type: 'post',
+      data: { code },
+      error: function (err) {
+        if (err) throw err
+        alert('登入失敗1');
+      },
+      success: function (res) {
+        if (res == 'error') alert('登入失敗2');
+        const { name, picture } = res;
+
+        $.ajax({
+          url: '/users/login',
+          type: 'post',
+          data: {
+            account: name,
+            password: picture
+          },
+          error: function (err) {
+            if (err) throw err
+            alert('登入失敗3');
+          },
+          success: function (res) {
+            if (res == 'error') alert('登入失敗4');
+
+            document.location.href = "/";
+          }
+        })
+      }
+    })
+  }
+
+</script>

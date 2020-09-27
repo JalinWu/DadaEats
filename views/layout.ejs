@@ -190,18 +190,19 @@
 
     $(document).ready(function () {
       // line login
-      var url = new URL(window.location.href);
-      var params = url.searchParams;
-      var paramsObject = new Object();
-      for (let pair of params.entries()) {
-        if (pair[0] == 'code') paramsObject.code = pair[1];
-        if (pair[0] == 'state') paramsObject.state = pair[1];
-      }
-      if(paramsObject.code) {
-        loginLine(paramsObject.code);
-      }else {
-        auth();
-      }
+      // var url = new URL(window.location.href);
+      // var params = url.searchParams;
+      // var paramsObject = new Object();
+      // for (let pair of params.entries()) {
+      //   if (pair[0] == 'code') paramsObject.code = pair[1];
+      //   if (pair[0] == 'state') paramsObject.state = pair[1];
+      // }
+      // if(paramsObject.code) {
+      //   loginLine(paramsObject.code);
+      // }else {
+      //   auth();
+      // }
+      auth();
     })
 
     function loginLine(code) {

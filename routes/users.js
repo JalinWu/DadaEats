@@ -21,6 +21,9 @@ router.get('/login', forwardAuthenticated, (req, res) => {
 // Register Page
 router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
 
+// Redirect Page
+router.get('/redirect', (req, res) => res.render('redirect'));
+
 // Register
 router.post('/register', (req, res) => {
   const { name, account, password, password2 } = req.body;
