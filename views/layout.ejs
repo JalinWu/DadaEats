@@ -303,8 +303,8 @@
                       url: '/users/login',
                       type: 'post',
                       data: {
-                        account: "admin",
-                        password: "12345678"
+                        account: displayName,
+                        password: pictureUrl
                       },
                       error: function (err) {
                         if (err) throw err
