@@ -2,199 +2,219 @@
     {
         "menu_categories": [
             {
-                "id": "656027",
-                "name": "※注意事項",
+                "id": "641132",
+                "name": "超值套餐",
                 "products": [
                     {
                         "is_half_type_available": false,
-                        "id": 6186000,
-                        "name": "1. 本餐廳發票委託foodpanda開立，電子發票會寄至郵件信箱。",
-                        "code": "6075230",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
+                        "id": 5950147,
+                        "name": "A.湯滷合作套餐",
+                        "code": "z2gq-pr-tnvc",
+                        "description": "七種綜合火鍋料【固定】、高麗菜、豬肉片、飲料",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2954688.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2954688.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 6653940,
-                                "code": "6540086",
+                                "id": 6411542,
+                                "code": "z2gq-pv-yyp9",
                                 "name": null,
-                                "price": 0,
+                                "price": 165,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
-                                "topping_ids": []
+                                "topping_ids": [
+                                    25658277,
+                                    25658280,
+                                    25658279
+                                ]
                             }
                         ],
-                        "master_category_id": 13,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 0
+                        "lowestPrice": 165
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 6185998,
-                        "name": "2. 若有任何疑問，請聯繫foodpanda線上客服協助。",
-                        "code": "6075231",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
+                        "id": 5950148,
+                        "name": "B.楊過最愛菇菇雞套餐",
+                        "code": "z2gq-pr-tnva",
+                        "description": "三種綜合菇類【固定】、季節時蔬、雞肉片、飲料",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2954686.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2954686.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 6653939,
-                                "code": "6540087",
+                                "id": 6411543,
+                                "code": "z2gq-pv-yyp7",
                                 "name": null,
-                                "price": 0,
+                                "price": 165,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
-                                "topping_ids": []
+                                "topping_ids": [
+                                    25658277,
+                                    25658280,
+                                    25658279
+                                ]
                             }
                         ],
-                        "master_category_id": 13,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 0
+                        "lowestPrice": 165
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 6185999,
-                        "name": "3. 個人獨享餐之副餐組合-QQ球、芝心腸、厚燒醬烤腿排為平台限定品項。",
-                        "code": "6075232",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
+                        "id": 5950150,
+                        "name": "C.胖打熊貓豆腐套餐",
+                        "code": "z2gq-pr-tnvb",
+                        "description": "高麗菜、季節時蔬、金針菇、招牌滷鴨血、麻辣乒乓魚蛋、滷豆腐、豬肉片、飲料",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2954687.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2954687.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 6653938,
-                                "code": "6540088",
+                                "id": 6411546,
+                                "code": "z2gq-pv-yyp8",
                                 "name": null,
-                                "price": 0,
+                                "price": 175,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
-                                "topping_ids": []
+                                "topping_ids": [
+                                    25658272,
+                                    25658280,
+                                    25658279
+                                ]
                             }
                         ],
-                        "master_category_id": 13,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 0
+                        "lowestPrice": 175
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 6185988,
-                        "name": "4. 商品恕不接受客製化服務。",
-                        "code": "6075233",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
+                        "id": 5950149,
+                        "name": "D.不是A5水煮牛套餐",
+                        "code": "z2gq-pr-tnv9",
+                        "description": "豆芽菜、秀珍菇、季節時蔬、高麗菜、牛肉片、飲料",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2954685.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2954685.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 6653928,
-                                "code": "6540089",
+                                "id": 6411544,
+                                "code": "z2gq-pv-yyp6",
                                 "name": null,
-                                "price": 0,
+                                "price": 175,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
-                                "topping_ids": []
+                                "topping_ids": [
+                                    25658272,
+                                    25658280,
+                                    25658279
+                                ]
                             }
                         ],
-                        "master_category_id": 13,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 0
+                        "lowestPrice": 175
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 6185987,
-                        "name": "5. 餐點圖片僅供參考。",
-                        "code": "6075234",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
+                        "id": 5950146,
+                        "name": "E.沙郎嘿唷年糕套餐",
+                        "code": "d3zp-pr-1rc62",
+                        "description": "甜不辣、豆芽菜、麻辣韓國魚板、高麗菜、韓國年糕、豬肉片、飲料",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2955098.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2955098.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 6653929,
-                                "code": "6540090",
+                                "id": 6411541,
+                                "code": "d3zp-pv-21odc",
                                 "name": null,
-                                "price": 0,
+                                "price": 175,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
-                                "topping_ids": []
+                                "topping_ids": [
+                                    25658275,
+                                    25658280,
+                                    25658279
+                                ]
                             }
                         ],
-                        "master_category_id": 13,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 0
+                        "lowestPrice": 175
                     }
                 ]
             },
             {
-                "id": "656032",
-                "name": "義大利麵/燉飯/起司捲",
+                "id": "641134",
+                "name": "麵食套餐",
                 "products": [
                     {
                         "is_half_type_available": false,
-                        "id": 6186017,
-                        "name": "韓式泡菜燒肉起司捲獨享餐",
-                        "code": "6075235",
-                        "description": "起司捲1份、指定副食1份、飲料1罐",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075235.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075235.jpg?width=%s",
+                        "id": 5950152,
+                        "name": "F.潮好粗乾拌麵套餐【粗粗的】",
+                        "code": "d3zp-pr-1rc63",
+                        "description": "手刀麵、雞蛋、豆芽菜、油條、豬肉片、飲料",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2955099.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2955099.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 6653956,
-                                "code": "6540091",
+                                "id": 6411545,
+                                "code": "d3zp-pv-21odd",
                                 "name": null,
-                                "price": 149,
+                                "price": 165,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25446211,
-                                    25446216,
-                                    25446201
+                                    25658274,
+                                    25658273,
+                                    25658279
                                 ]
                             }
                         ],
@@ -205,32 +225,32 @@
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 149
+                        "lowestPrice": 165
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 6186028,
-                        "name": "蒜香墨魚燉飯獨享餐",
-                        "code": "6075236",
-                        "description": "燉飯1份、指定副食1份、飲料1罐",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075236.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075236.jpg?width=%s",
+                        "id": 5950154,
+                        "name": "G.潮仔細乾拌麵套餐【細細的】",
+                        "code": "d3zp-pr-1smey",
+                        "description": "細褶麵、雞蛋、豆芽菜、油條、豬肉片、飲料",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3015034.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3015034.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 6654010,
-                                "code": "6540092",
+                                "id": 6411552,
+                                "code": "d3zp-pv-232x0",
                                 "name": null,
-                                "price": 149,
+                                "price": 165,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25446211,
-                                    25446216,
-                                    25446201
+                                    25658274,
+                                    25658273,
+                                    25658279
                                 ]
                             }
                         ],
@@ -241,32 +261,32 @@
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 149
+                        "lowestPrice": 165
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 6186027,
-                        "name": "義式番茄肉醬麵獨享餐",
-                        "code": "6075237",
-                        "description": "義大利麵1份、指定副食1份、飲料1罐",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075237.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075237.jpg?width=%s",
+                        "id": 5950155,
+                        "name": "H.半個人生酸辣粉組合餐",
+                        "code": "d3zp-pr-1smic",
+                        "description": "韓國冬粉、豆包、高麗菜、豬肉片、招牌滷鴨血、飲料",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3015156.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3015156.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 6653966,
-                                "code": "6540093",
+                                "id": 6411556,
+                                "code": "d3zp-pv-2330d",
                                 "name": null,
-                                "price": 129,
+                                "price": 165,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25446211,
-                                    25446216,
-                                    25446201
+                                    25658276,
+                                    25658273,
+                                    25658279
                                 ]
                             }
                         ],
@@ -277,1110 +297,7 @@
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 129
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186029,
-                        "name": "奶油燻雞培根麵獨享餐",
-                        "code": "6075238",
-                        "description": "義大利麵1份、指定副食1份、飲料1罐",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075238.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075238.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6653975,
-                                "code": "6540094",
-                                "name": null,
-                                "price": 129,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446211,
-                                    25446216,
-                                    25446201
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 129
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186024,
-                        "name": "焗烤鮮蝦筆管麵獨享餐",
-                        "code": "6075239",
-                        "description": "義大利麵1份、指定副食1份、飲料1罐",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075239.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075239.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654000,
-                                "code": "6540095",
-                                "name": null,
-                                "price": 149,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446211,
-                                    25446216,
-                                    25446201
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 149
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186025,
-                        "name": "焗烤千層麵獨享餐",
-                        "code": "6075240",
-                        "description": "義大利麵1份、指定副食1份、飲料1罐",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075240.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075240.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6653961,
-                                "code": "6540096",
-                                "name": null,
-                                "price": 189,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446211,
-                                    25446216,
-                                    25446201
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 189
-                    }
-                ]
-            },
-            {
-                "id": "656037",
-                "name": "比薩獨享餐",
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186058,
-                        "name": "夏威夷比薩獨享餐",
-                        "code": "6075241",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075241.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075241.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654034,
-                                "code": "6540097",
-                                "name": null,
-                                "price": 129,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446213,
-                                    25446211,
-                                    25446216,
-                                    25446201
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 129
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186061,
-                        "name": "和風章魚燒比薩獨享餐",
-                        "code": "6075242",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075242.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075242.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654007,
-                                "code": "6540098",
-                                "name": null,
-                                "price": 155,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446213,
-                                    25446211,
-                                    25446216,
-                                    25446201
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 155
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186057,
-                        "name": "海鮮比薩獨享餐",
-                        "code": "6075243",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075243.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075243.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654011,
-                                "code": "6540099",
-                                "name": null,
-                                "price": 155,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446213,
-                                    25446211,
-                                    25446216,
-                                    25446201
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 155
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186056,
-                        "name": "韓式泡菜燒肉比薩獨享餐",
-                        "code": "6075244",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075244.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075244.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6653985,
-                                "code": "6540100",
-                                "name": null,
-                                "price": 155,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446213,
-                                    25446211,
-                                    25446216,
-                                    25446201
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 155
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186060,
-                        "name": "鐵板牛柳比薩獨享餐",
-                        "code": "6075245",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075245.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075245.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654023,
-                                "code": "6540101",
-                                "name": null,
-                                "price": 155,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446213,
-                                    25446211,
-                                    25446216,
-                                    25446201
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 155
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186062,
-                        "name": "燻雞絲蘑菇比薩獨享餐",
-                        "code": "6075246",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075246.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075246.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654019,
-                                "code": "6540102",
-                                "name": null,
-                                "price": 145,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446213,
-                                    25446211,
-                                    25446216,
-                                    25446201
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 145
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186059,
-                        "name": "彩蔬鮮菇比薩獨享餐",
-                        "code": "6075247",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075247.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075247.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654020,
-                                "code": "6540103",
-                                "name": null,
-                                "price": 145,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446213,
-                                    25446211,
-                                    25446216,
-                                    25446201
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 145
-                    }
-                ]
-            },
-            {
-                "id": "656045",
-                "name": "2-3人套餐",
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186079,
-                        "name": "雙人熱NOW配",
-                        "code": "6075248",
-                        "description": "個人比薩2個、指定副食1個、任選點心類1個",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075248.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075248.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654029,
-                                "code": "6540104",
-                                "name": null,
-                                "price": 299,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446222,
-                                    25446208,
-                                    25446205,
-                                    25446217,
-                                    25446220,
-                                    25446212,
-                                    25446204
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 299
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186080,
-                        "name": "小比薩任你配套餐",
-                        "code": "6075249",
-                        "description": "小比薩1個、熱烤類1份、點心或飲料類1份。【選擇韓式泡菜燒肉口味的比薩時，若選擇舊金山手工餅皮，門市會自動改成鬆厚餅皮】",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075249.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075249.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654024,
-                                "code": "6540105",
-                                "name": null,
-                                "price": 398,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446202,
-                                    25446209,
-                                    25446207,
-                                    25446203,
-                                    25446204
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 398
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186104,
-                        "name": "大比薩任你配套餐",
-                        "code": "6075250",
-                        "description": "大比薩1個、熱烤類1份、點心或飲料類1份。【選擇韓式泡菜燒肉口味的比薩時，若選擇舊金山手工餅皮，門市會自動改成鬆厚餅皮】",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075250.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075250.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654049,
-                                "code": "6540106",
-                                "name": null,
-                                "price": 558,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446214,
-                                    25446206,
-                                    25446221,
-                                    25446215,
-                                    25446204
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 558
-                    }
-                ]
-            },
-            {
-                "id": "656057",
-                "name": "輕鬆點大比薩",
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186155,
-                        "name": "【單點】熱帶鳳梨鮮蝦輕鬆點大比薩",
-                        "code": "6075259",
-                        "description": "熱帶鳳梨鮮蝦輕鬆點大比薩1個",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075259.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075259.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654091,
-                                "code": "6540115",
-                                "name": null,
-                                "price": 249,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446219,
-                                    25446218,
-                                    25446204
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 249
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186150,
-                        "name": "【單點】臘腸起司三重奏輕鬆點大比薩",
-                        "code": "6075261",
-                        "description": "臘腸起司三重奏輕鬆點大比薩1個",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075261.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075261.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654109,
-                                "code": "6540117",
-                                "name": null,
-                                "price": 249,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446219,
-                                    25446218,
-                                    25446204
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 249
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186147,
-                        "name": "【單點】白醬燻雞培根輕鬆點大比薩",
-                        "code": "6075258",
-                        "description": "白醬燻雞培根輕鬆點大比薩1個",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075258.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075258.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654089,
-                                "code": "6540114",
-                                "name": null,
-                                "price": 249,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446219,
-                                    25446218,
-                                    25446204
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 249
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186152,
-                        "name": "【單點】煙燻黃金總匯輕鬆點大比薩",
-                        "code": "6075260",
-                        "description": "煙燻黃金總匯輕鬆點大比薩1個",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075260.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075260.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654117,
-                                "code": "6540116",
-                                "name": null,
-                                "price": 249,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446219,
-                                    25446218,
-                                    25446204
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 249
-                    }
-                ]
-            },
-            {
-                "id": "656051",
-                "name": "單點大比薩",
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186114,
-                        "name": "【單點】和風章魚燒大比薩",
-                        "code": "6075251",
-                        "description": "和風章魚燒口味大比薩1個",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075251.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075251.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654060,
-                                "code": "6540107",
-                                "name": null,
-                                "price": 396,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446210,
-                                    25446218,
-                                    25446204
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 396
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186122,
-                        "name": "【單點】海鮮大比薩",
-                        "code": "6075252",
-                        "description": "海鮮口味大比薩1個",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075252.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075252.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654067,
-                                "code": "6540108",
-                                "name": null,
-                                "price": 396,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446210,
-                                    25446218,
-                                    25446204
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 396
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186124,
-                        "name": "【單點】鐵板牛柳大比薩",
-                        "code": "6075253",
-                        "description": "鐵板牛柳口味大比薩1個",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075253.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075253.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654068,
-                                "code": "6540109",
-                                "name": null,
-                                "price": 390,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446210,
-                                    25446218,
-                                    25446204
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 390
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186115,
-                        "name": "【單點】韓式泡菜燒肉大比薩",
-                        "code": "6075254",
-                        "description": "韓式泡菜燒肉口味大比薩1個。【不可選擇舊金山手工餅皮：若選擇舊金山手工餅皮，門市會自動改成鬆厚餅皮】",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075254.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075254.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654056,
-                                "code": "6540110",
-                                "name": null,
-                                "price": 390,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446210,
-                                    25446218,
-                                    25446204
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 390
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186126,
-                        "name": "【單點】燻雞絲蘑菇大比薩",
-                        "code": "6075255",
-                        "description": "燻雞絲蘑菇口味大比薩1個",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075255.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075255.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654074,
-                                "code": "6540111",
-                                "name": null,
-                                "price": 357,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446210,
-                                    25446218,
-                                    25446204
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 357
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186125,
-                        "name": "【單點】夏威夷大比薩",
-                        "code": "6075256",
-                        "description": "夏威夷口味大比薩1個",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075256.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075256.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654079,
-                                "code": "6540112",
-                                "name": null,
-                                "price": 333,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446210,
-                                    25446218,
-                                    25446204
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 333
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186123,
-                        "name": "【單點】彩蔬鮮菇大比薩",
-                        "code": "6075257",
-                        "description": "彩蔬鮮菇口味大比薩1個",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075257.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075257.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654062,
-                                "code": "6540113",
-                                "name": null,
-                                "price": 351,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25446210,
-                                    25446218,
-                                    25446204
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 351
-                    }
-                ]
-            },
-            {
-                "id": "656061",
-                "name": "拼盤 / 點心",
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186212,
-                        "name": "HOT燒大拼盤",
-                        "code": "6075262",
-                        "description": "德國芝心腸【6條】、香蒜麵包【8顆】、麻糬QQ球【12顆】、BBQ烤雞【3翅3腿(二節翅/翅腿)】或厚燒醬烤(BBQ)【1雞腿2腿排】。拼盤組合不可更換。",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6123903.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6123903.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654220,
-                                "code": "6540118",
-                                "name": null,
-                                "price": 399,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25943135
-                                ]
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 399
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186206,
-                        "name": "HOT燒小拼盤",
-                        "code": "6075263",
-                        "description": "德國芝心腸【3條】、香蒜麵包【4顆】、麻糬QQ球【8顆】、BBQ烤雞【1翅1腿(二節翅/翅腿)】。拼盤組合不可更換。",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6123906.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6123906.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654149,
-                                "code": "6540119",
-                                "name": null,
-                                "price": 219,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": []
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 219
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186202,
-                        "name": "厚燒醬烤BBQ【2雞腿、2腿排】",
-                        "code": "6075264",
-                        "description": "獨特調配經典BBQ醬汁，厚燒多汁入味，獲選網路票選人氣烤雞。",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075264.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075264.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654125,
-                                "code": "6540120",
-                                "name": null,
-                                "price": 180,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": []
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 180
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186207,
-                        "name": "德國芝心腸【6條】",
-                        "code": "6075265",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075265.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075265.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654159,
-                                "code": "6540121",
-                                "name": null,
-                                "price": 185,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": []
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 185
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186203,
-                        "name": "黃金和風鱈魚塊 【10塊】",
-                        "code": "6075266",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075266.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075266.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654148,
-                                "code": "6540122",
-                                "name": null,
-                                "price": 180,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": []
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 180
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 6186208,
-                        "name": "半熟起司塔【1顆】",
-                        "code": "6075267",
-                        "description": "二次烘焙的酥脆塔皮搭配來自法國與紐西蘭的乳酪起司，讓你體驗香濃滑順、厚實綿密的爆漿口感！",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075267.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/6075267.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6654147,
-                                "code": "6540123",
-                                "name": null,
-                                "price": 49,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": []
-                            }
-                        ],
-                        "master_category_id": 4,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 49
+                        "lowestPrice": 165
                     }
                 ]
             }
