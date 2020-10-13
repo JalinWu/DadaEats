@@ -77,6 +77,7 @@ app.use('/menu', require('./routes/menu.js'));
 app.use('/cart', require('./routes/cart.js'));
 app.use('/dashboard', require('./routes/dashboard.js'));
 app.use('/chatbot', require('./routes/chatbot.js'));
+app.use('/profile', require('./routes/profile.js'));
 
 const PORT = process.env.PORT || 5000;
 

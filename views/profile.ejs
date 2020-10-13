@@ -1,0 +1,29 @@
+<div class="container">
+    <p>OS: <span id="OS"></span></p>
+    <p>Language: <span id="Language"></span></p>
+    <p>Version: <span id="Version"></span></p>
+    <p>isInClient: <span id="isInClient"></span></p>
+    <p>isLoggedIn: <span id="isLoggedIn"></span></p>
+</div>
+
+<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+
+<script>
+    liff.init({
+        liffId: '1654985474-1K5daZn5'
+    }).then(() => {
+        //Success Callback
+        // 拿取系統
+        document.getElementById('OS').innerHTML = liff.getOS()
+        // 拿取語系
+        document.getElementById('Language').innerHTML = liff.getLanguage()
+        // 拿取版本
+        document.getElementById('Version').innerHTML = liff.getVersion()
+        // 是否透過 LIFF 瀏覽器開啟
+        document.getElementById('isInClient').innerHTML = liff.isInClient()
+        // 是否登入
+        document.getElementById('isLoggedIn').innerHTML = liff.isLoggedIn()
+    }).catch((err) => {
+        // Error Callback
+    })
+</script>
