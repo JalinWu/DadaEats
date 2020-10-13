@@ -14,21 +14,20 @@
 <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
 
 <script>
-    liff.init(
-        data => {
-            liff.getProfile().then(profile => {
-                // 拿取profile
-                document.getElementById('userId').innerHTML = profile.userId
-                document.getElementById('displayName').innerHTML = profile.displayName
-                document.getElementById('pictureUrl').innerHTML = profile.pictureUrl
-                document.getElementById('statusMessage').innerHTML = profile.statusMessage
-            })
-        })
-
     liff.init({
         liffId: '1654985474-1K5daZn5'
     }).then(() => {
         //Success Callback
+        liff.getProfile()
+            .then(profile => {
+                const name = profile.displayName
+                document.getElementById('displayName').innerHTML = name;
+                alert(name);
+            })
+            .catch((err) => {
+                console.log('error', err);
+            });
+
         // 拿取系統
         document.getElementById('OS').innerHTML = liff.getOS()
         // 拿取語系
