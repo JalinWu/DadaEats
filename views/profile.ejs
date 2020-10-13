@@ -20,9 +20,10 @@
         //Success Callback
         liff.getProfile()
             .then(profile => {
-                const name = profile.displayName
-                document.getElementById('displayName').innerHTML = name;
-                alert(name);
+                document.getElementById('userId').innerHTML = profile.displayuserIdName;
+                document.getElementById('displayName').innerHTML = profile.displayName;
+                document.getElementById('pictureUrl').innerHTML = profile.pictureUrl;
+                document.getElementById('statusMessage').innerHTML = profile.statusMessage;
             })
             .catch((err) => {
                 console.log('error', err);
