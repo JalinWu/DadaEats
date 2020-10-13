@@ -1,15 +1,15 @@
 {
-    "25658272": {
-        "id": 25658272,
-        "name": "\u53e3\u5473\u9078\u64c7\u3010C\u3001D\u3011",
+    "25088604": {
+        "id": 25088604,
+        "name": "冰量選擇",
         "description": "",
         "quantity_minimum": 1,
         "quantity_maximum": 1,
         "options": [
             {
-                "id": 35917812,
-                "product_id": 5950165,
-                "name": "\u9ebb\u8fa3\u7576\u62db\u724c\u3010\u6e6f\uff0c\u8fa3\u3011",
+                "id": 25492868,
+                "product_id": 1533507,
+                "name": "正常冰",
                 "description": "",
                 "price": 0,
                 "is_sold_out": false,
@@ -17,9 +17,59 @@
                 "remote_code": ""
             },
             {
-                "id": 35917813,
-                "product_id": 5950168,
-                "name": "\u85e5\u81b3\u662f\u7d93\u5178\u3010\u6e6f\u3011",
+                "id": 25492869,
+                "product_id": 1533508,
+                "name": "少冰 【7分冰】",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 25492870,
+                "product_id": 1533509,
+                "name": "微冰 【5分冰】",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 25492871,
+                "product_id": 1533510,
+                "name": "去冰 【3分冰】",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 25492872,
+                "product_id": 1533511,
+                "name": "完全去冰 【涼涼的】",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 27669133,
+                "product_id": 1533512,
+                "name": "溫飲",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 27669134,
+                "product_id": 1533513,
+                "name": "熱飲",
                 "description": "",
                 "price": 0,
                 "is_sold_out": false,
@@ -28,17 +78,17 @@
             }
         ]
     },
-    "25658273": {
-        "id": 25658273,
-        "name": "\u62db\u724c\u55ae\u9ede",
+    "25088605": {
+        "id": 25088605,
+        "name": "甜度選擇",
         "description": "",
         "quantity_minimum": 1,
         "quantity_maximum": 1,
         "options": [
             {
-                "id": 35917808,
-                "product_id": 5950180,
-                "name": "\u62db\u724c\u6ef7\u9d28\u8840",
+                "id": 25492875,
+                "product_id": 1533501,
+                "name": "正常甜",
                 "description": "",
                 "price": 0,
                 "is_sold_out": false,
@@ -46,9 +96,9 @@
                 "remote_code": ""
             },
             {
-                "id": 35917810,
-                "product_id": 5950173,
-                "name": "\u9ebb\u8fa3\u97d3\u570b\u9b5a\u677f",
+                "id": 25492876,
+                "product_id": 1533502,
+                "name": "少糖 【7分糖】",
                 "description": "",
                 "price": 0,
                 "is_sold_out": false,
@@ -56,9 +106,39 @@
                 "remote_code": ""
             },
             {
-                "id": 35917811,
-                "product_id": 5950162,
-                "name": "\u9ebb\u8fa3\u8c46\u8150",
+                "id": 25492877,
+                "product_id": 1533503,
+                "name": "半糖 【5分糖】",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 25492878,
+                "product_id": 1533504,
+                "name": "微糖 【3分糖】",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 25492879,
+                "product_id": 1533505,
+                "name": "1分糖",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 25492880,
+                "product_id": 1533506,
+                "name": "無糖",
                 "description": "",
                 "price": 0,
                 "is_sold_out": false,
@@ -67,222 +147,57 @@
             }
         ]
     },
-    "25658274": {
-        "id": 25658274,
-        "name": "\u53e3\u5473\u9078\u64c7\u3010\u4e7e\u62cc\u9eb5\u3011",
+    "25088606": {
+        "id": 25088606,
+        "name": "加料選擇",
         "description": "",
-        "quantity_minimum": 1,
-        "quantity_maximum": 1,
+        "quantity_minimum": 0,
+        "quantity_maximum": 11,
         "options": [
             {
-                "id": 35917830,
-                "product_id": 5950179,
-                "name": "\u9ebb\u8fa3\u5c0f\u5fc3\u4e7e\u3010\u4e7e\uff0c\u8fa3\u3011",
+                "id": 25492881,
+                "product_id": 1533490,
+                "name": "黑糖珍珠",
                 "description": "",
-                "price": 0,
+                "price": 5,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""
             },
             {
-                "id": 35917831,
-                "product_id": 5950164,
-                "name": "\u849c\u9999\u5c0f\u5fc3\u4e7e\u3010\u4e7e\u3011",
+                "id": 25492882,
+                "product_id": 1533491,
+                "name": "荔枝椰果",
                 "description": "",
-                "price": 0,
+                "price": 5,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""
             },
             {
-                "id": 35917832,
-                "product_id": 9174643,
-                "name": "\u9ebb\u91ac\u9ed1\u5fc3\u4e7e\u3010\u4e7e\u3011",
+                "id": 25492883,
+                "product_id": 1533492,
+                "name": "蘆薈",
                 "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            }
-        ]
-    },
-    "25658275": {
-        "id": 25658275,
-        "name": "\u53e3\u5473\u9078\u64c7\u3010\u5e74\u7cd5\u5957\u9910\u3011",
-        "description": "",
-        "quantity_minimum": 1,
-        "quantity_maximum": 1,
-        "options": [
-            {
-                "id": 35917816,
-                "product_id": 5950179,
-                "name": "\u9ebb\u8fa3\u5c0f\u5fc3\u4e7e\u3010\u4e7e\uff0c\u8fa3\u3011",
-                "description": "",
-                "price": 0,
+                "price": 5,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""
             },
             {
-                "id": 35917817,
-                "product_id": 9174643,
-                "name": "\u9ebb\u91ac\u9ed1\u5fc3\u4e7e\u3010\u4e7e\u3011",
+                "id": 25492885,
+                "product_id": 1533494,
+                "name": "紅豆",
                 "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            }
-        ]
-    },
-    "25658276": {
-        "id": 25658276,
-        "name": "\u53e3\u5473\u9078\u64c7\u3010\u9178\u8fa3\u7c89\u3011",
-        "description": "",
-        "quantity_minimum": 1,
-        "quantity_maximum": 1,
-        "options": [
-            {
-                "id": 35917835,
-                "product_id": 5950172,
-                "name": "\u534a\u500b\u4eba\u751f\u9178\u8fa3\u7c89\u7d44\u5408\u9910\u3010\u6e6f\uff0c\u8fa3\u3011",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            }
-        ]
-    },
-    "25658277": {
-        "id": 25658277,
-        "name": "\u53e3\u5473\u9078\u64c7\u3010A\u3001B\u3011",
-        "description": "",
-        "quantity_minimum": 1,
-        "quantity_maximum": 1,
-        "options": [
-            {
-                "id": 35917823,
-                "product_id": 5950165,
-                "name": "\u9ebb\u8fa3\u7576\u62db\u724c\u3010\u6e6f\uff0c\u8fa3\u3011",
-                "description": "",
-                "price": 0,
+                "price": 5,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""
             },
             {
-                "id": 35917824,
-                "product_id": 5950183,
-                "name": "\u8c5a\u9aa8\u5473\u6700\u9bae\u3010\u6e6f \u3011",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 35917825,
-                "product_id": 5950168,
-                "name": "\u85e5\u81b3\u662f\u7d93\u5178\u3010\u6e6f\u3011",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 35917826,
-                "product_id": 5950182,
-                "name": "\u9ebb\u6cb9\u9047\u8591\u9ec3\u3010\u6e6f\u3011",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 35917827,
-                "product_id": 5950179,
-                "name": "\u9ebb\u8fa3\u5c0f\u5fc3\u4e7e\u3010\u4e7e\uff0c\u8fa3\u3011",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 35917828,
-                "product_id": 5950164,
-                "name": "\u849c\u9999\u5c0f\u5fc3\u4e7e\u3010\u4e7e\u3011",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 35917829,
-                "product_id": 9174643,
-                "name": "\u9ebb\u91ac\u9ed1\u5fc3\u4e7e\u3010\u4e7e\u3011",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            }
-        ]
-    },
-    "25658278": {
-        "id": 25658278,
-        "name": "\u53e3\u5473\u9078\u64c7\u3010\u6cf0\u5f0f\u9178\u8fa3\u6d77\u9bae\u3011",
-        "description": "",
-        "quantity_minimum": 1,
-        "quantity_maximum": 1,
-        "options": [
-            {
-                "id": 35917821,
-                "product_id": 9174646,
-                "name": "\u6cf0\u5f0f\u9178\u8fa3\u3010\u6e6f\u3011",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            }
-        ]
-    },
-    "25658279": {
-        "id": 25658279,
-        "name": "\u98f2\u6599\u9078\u64c7",
-        "description": "",
-        "quantity_minimum": 1,
-        "quantity_maximum": 1,
-        "options": [
-            {
-                "id": 35917838,
-                "product_id": 5950178,
-                "name": "\u51b7\u6ce1\u91d1\u8431\u88dd\u6587\u9752",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 35917839,
-                "product_id": 5950171,
-                "name": "\u51b7\u6ce1\u9435\u89c0\u97f3\u719f\u4e0d\u719f",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 35917841,
-                "product_id": 5950176,
-                "name": "\u51ac\u74dc\u6ab8\u6aac\u624b\u727d\u624b",
+                "id": 25492886,
+                "product_id": 1533495,
+                "name": "布丁",
                 "description": "",
                 "price": 10,
                 "is_sold_out": false,
@@ -290,9 +205,9 @@
                 "remote_code": ""
             },
             {
-                "id": 35917842,
-                "product_id": 5950170,
-                "name": "\u9673\u76ae\u6885\u611b\u60c5\u7279\u8abf",
+                "id": 25492887,
+                "product_id": 1533496,
+                "name": "寒天晶球",
                 "description": "",
                 "price": 10,
                 "is_sold_out": false,
@@ -300,28 +215,58 @@
                 "remote_code": ""
             },
             {
-                "id": 35917844,
-                "product_id": 9174639,
-                "name": "\u871c\u6843\u679c\u8336\u6200\u611b\u4e2d",
+                "id": 25492888,
+                "product_id": 1533497,
+                "name": "愛玉",
                 "description": "",
                 "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 25492890,
+                "product_id": 1533499,
+                "name": "仙草雲",
+                "description": "",
+                "price": 10,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 25492891,
+                "product_id": 1533500,
+                "name": "芋頭",
+                "description": "",
+                "price": 15,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 25492892,
+                "product_id": 1533514,
+                "name": "奶蓋",
+                "description": "",
+                "price": 25,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""
             }
         ]
     },
-    "25658280": {
-        "id": 25658280,
-        "name": "\u4e3b\u98df\u9078\u64c7",
+    "25411459": {
+        "id": 25411459,
+        "name": "冰量選擇",
         "description": "",
         "quantity_minimum": 1,
         "quantity_maximum": 1,
         "options": [
             {
-                "id": 35917849,
-                "product_id": 5950177,
-                "name": "\u7cbf\u4ed4\u689d",
+                "id": 27669135,
+                "product_id": 1533507,
+                "name": "正常冰",
                 "description": "",
                 "price": 0,
                 "is_sold_out": false,
@@ -329,9 +274,39 @@
                 "remote_code": ""
             },
             {
-                "id": 35917851,
-                "product_id": 5950159,
-                "name": "\u70cf\u9f8d\u9eb5",
+                "id": 27669136,
+                "product_id": 1533508,
+                "name": "少冰 【7分冰】",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 27669137,
+                "product_id": 1533509,
+                "name": "微冰 【5分冰】",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 27669138,
+                "product_id": 1533510,
+                "name": "去冰 【3分冰】",
+                "description": "",
+                "price": 0,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 27669139,
+                "product_id": 1533511,
+                "name": "完全去冰 【涼涼的】",
                 "description": "",
                 "price": 0,
                 "is_sold_out": false,

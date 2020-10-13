@@ -9,59 +9,114 @@ const Group = require('../models/Group');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // getUser
-router.get('/getUsers', ensureAuthenticated, (req, res) => {
-    User.find({})
-        .then(result => {
-            // console.log(result);
-            res.render('getUsers', {
-                permission: req.user.account,
-                result
-            })
-        })
+router.get('/getUsers', ensureAuthenticated, async (req, res) => {
+    let usersRef = await database.ref("users").once('value');
+    let usersDocs = usersRef.val();
+
+    let result = new Array();
+    for (let i in usersDocs) {
+        let value = usersDocs[i];
+        result.push(value);
+    }
+
+    res.render('getUsers', {
+        permission: req.user.account,
+        result
+    })
+
+    // User.find({})
+    //     .then(result => {
+    //         // console.log(result);
+    //         res.render('getUsers', {
+    //             permission: req.user.account,
+    //             result
+    //         })
+    //     })
 });
 
 // updateDadaCoin
-router.post('/updateDadaCoin', ensureAuthenticated, (req, res) => {
+router.post('/updateDadaCoin', ensureAuthenticated, async (req, res) => {
     const { dadaCoin, accounts } = req.body;
 
-    for (var i = 0; i < accounts.length; i++) {
-        User.findOneAndUpdate({ account: accounts[i].split('user-picker-')[1] }, { $inc: { 'dadaCoin': parseInt(dadaCoin) } }, (err, response) => {
-            if (err) throw err;
-        })
+    for (let i = 0; i < accounts.length; i++) {
+        let account = accounts[i].split('user-picker-')[1];
+        let usersRef = await database.ref("users").orderByChild("account").equalTo(account).once('value');
+        let usersDocs = usersRef.val();
+        let oldDadaCoin = 0;
+        for (let j in usersDocs) {
+            oldDadaCoin = usersDocs[j].dadaCoin;
+            usersDocs[j].dadaCoin = oldDadaCoin + parseInt(dadaCoin);
+            database.ref("users").set(usersDocs);
+        }
+
+        // User.findOneAndUpdate({ account: accounts[i].split('user-picker-')[1] }, { $inc: { 'dadaCoin': parseInt(dadaCoin) } }, (err, response) => {
+        //     if (err) throw err;
+        // })
     }
     res.send('success')
 });
 // --------------------------------------------------
 // getOrders
-router.get('/getOrders', ensureAuthenticated, (req, res) => {
-    Order.find({ expired: false })
-        .then(result => {
-            res.render('getOrders', {
-                permission: req.user.account,
-                result
-            })
-        })
+router.get('/getOrders', ensureAuthenticated, async (req, res) => {
+    let ordersRef = await database.ref("orders").orderByChild("expired").equalTo(false).once('value');
+    let ordersDocs = ordersRef.val();
+    let orders = new Array();
+    for (let i in ordersDocs) {
+        orders.push(ordersDocs[i]);
+    }
+    res.render('getOrders', {
+        permission: req.user.account,
+        result: orders
+    });
+
+    // Order.find({ expired: false })
+    //     .then(result => {
+    //         res.render('getOrders', {
+    //             permission: req.user.account,
+    //             result
+    //         })
+    //     })
 })
 
 // updateOrders
-router.post('/updateOrders', ensureAuthenticated, (req, res) => {
+router.post('/updateOrders', ensureAuthenticated, async (req, res) => {
     const { orderId } = req.body;
 
     for (var i = 0; i < orderId.length; i++) {
-        Order.findOneAndUpdate({ _id: orderId[i].split('user-picker-')[1] }, { $set: { 'expired': true } }, (err, response) => {
-            if (err) throw err;
-        })
+        let ordersRef = await database.ref("orders").orderByChild("_id").equalTo(orderId[i].split('user-picker-')[1]).once('value');
+        let ordersDocs = ordersRef.val();
+        console.log(ordersDocs);
+        if (ordersDocs) {
+            for (let i in ordersDocs) {
+                ordersDocs[i].expired = true;
+                database.ref("orders").set(ordersDocs);
+            }
+        }
+
+        // Order.findOneAndUpdate({ _id: orderId[i].split('user-picker-')[1] }, { $set: { 'expired': true } }, (err, response) => {
+        //     if (err) throw err;
+        // })
     }
     res.send('success')
 });
 
 // updateOrdersPayment
-router.post('/updateOrdersPayment', ensureAuthenticated, (req, res) => {
+router.post('/updateOrdersPayment', ensureAuthenticated, async (req, res) => {
     const { orderId } = req.body;
 
-    Order.findOneAndUpdate({ _id: orderId }, { $set: { 'payment': true } }, (err, response) => {
-        if (err) throw err;
-    })
+    let ordersRef = await database.ref("orders").orderByChild("_id").equalTo(orderId).once('value');
+    let ordersDocs = ordersRef.val();
+    console.log(ordersDocs);
+    if (ordersDocs) {
+        for (let i in ordersDocs) {
+            ordersDocs[i].payment = true;
+            database.ref("orders").set(ordersDocs);
+        }
+    }
+
+    // Order.findOneAndUpdate({ _id: orderId }, { $set: { 'payment': true } }, (err, response) => {
+    //     if (err) throw err;
+    // })
     res.send('success')
 });
 // --------------------------------------------------
@@ -81,80 +136,41 @@ function writeIntoJSON(fileName, content) {
 
 // createMenus
 router.post('/createMenus', ensureAuthenticated, async (req, res) => {
-    var { groupId, foodpandaUrl, shopName, freight, imgSrc, dataVendor } = req.body;
+    // var { groupId, foodpandaUrl, shopName, freight, imgSrc, dataVendor } = req.body;  // Archived
+    var { groupId, foodpandaUrl, freight } = req.body;
 
     // close old group
-    var updateGroup = await Group.updateMany({ status: 'open' }, { $set: { status: 'closed' } })
-
-    // insert new group
-    var groupInfo = new Group({
-        groupId,
-        foodpandaUrl,
-        shopName,
-        freight,
-        imgSrc
-    })
-    groupInfo.save();
-
-    dataVendor = JSON.parse(dataVendor);
-
-    // getLowestPrice
-    const JSONdata = dataVendor.menus
-
-    console.log(JSONdata[0].menu_categories[0].products[0].product_variations[0].price)
-    var menu_categories = JSONdata[0].menu_categories;
-
-    for (var i = 0; i < menu_categories.length; i++) {
-        for (var j = 0; j < menu_categories[i].products.length; j++) {
-            var lowestPrice = 100000;
-            for (var k = 0; k < menu_categories[i].products[j].product_variations.length; k++) {
-                var currentPrice = menu_categories[i].products[j].product_variations[k].price
-                if (currentPrice < lowestPrice)
-                    lowestPrice = currentPrice;
-            }
-            menu_categories[i].products[j].lowestPrice = lowestPrice;
+    let groupsRef = await database.ref("groups").orderByChild("status").equalTo("open").once('value');
+    let groupsDocs = groupsRef.val();
+    console.log(groupsDocs);
+    if (groupsDocs) {
+        for (let i in groupsDocs) {
+            groupsDocs[i].status = "closed";
+            database.ref("groups").set(groupsDocs);
         }
     }
 
-    JSONdata[0].menu_categories = menu_categories;
-    fs.writeFileSync('./menus/menu.txt', JSON.stringify(JSONdata))
+    // insert new group
+    let groupInfo = {
+        groupId,
+        foodpandaUrl,
+        freight,
+        status: "open"
+    }
+    database.ref("groups").push(groupInfo);
 
-    writeIntoJSON('./menus/toppings.txt', dataVendor.toppings)
 
+    // close old group
+    // var updateGroup = await Group.updateMany({ status: 'open' }, { $set: { status: 'closed' } })
 
-    // webcrawler
-    // var r = request(foodpandaUrl, (error, response, body) => {
-    //     if (error) throw error;
-
-    //     var $ = cheerio.load(body);
-
-    //     var whereWrapper = $(".where-wrapper");
-    //     var dataVendor = JSON.parse($(whereWrapper[0]).attr('data-vendor'));
-
-    //     // getLowestPrice
-    //     const JSONdata = dataVendor.menus
-
-    //     console.log(JSONdata[0].menu_categories[0].products[0].product_variations[0].price)
-    //     var menu_categories = JSONdata[0].menu_categories;
-
-    //     for (var i = 0; i < menu_categories.length; i++) {
-    //         for (var j = 0; j < menu_categories[i].products.length; j++) {
-    //             var lowestPrice = 100000;
-    //             for (var k = 0; k < menu_categories[i].products[j].product_variations.length; k++) {
-    //                 var currentPrice = menu_categories[i].products[j].product_variations[k].price
-    //                 if (currentPrice < lowestPrice)
-    //                     lowestPrice = currentPrice;
-    //             }
-    //             menu_categories[i].products[j].lowestPrice = lowestPrice;
-    //         }
-    //     }
-
-    //     JSONdata[0].menu_categories = menu_categories;
-    //     fs.writeFileSync('./menus/menu.txt', JSON.stringify(JSONdata))
-
-    //     writeIntoJSON('./menus/toppings.txt', dataVendor.toppings)
-
+    // insert new group
+    // var groupInfo = new Group({
+    //     groupId,
+    //     foodpandaUrl,
+    //     freight
     // })
+    // groupInfo.save();
+
     res.send('success');
 
 });

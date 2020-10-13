@@ -7,22 +7,46 @@ const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 // global.orderId = 3;
 
 // Dashboard
-router.get('/',async (req, res) =>{
-  var userCount = await User.find({}).countDocuments()
-  var getGroup = await Group.findOne({ status: 'open' })
-  var groupId;
-  (getGroup) ? groupId = getGroup.groupId : groupId = 0
-  
+router.get('/', async (req, res) => {
+  let usersRef = await database.ref("users").once('value');
+  let usersDocs = usersRef.val();
+  let usersCount = 0;
+  if (usersDocs) {
+    usersCount = Object.keys(usersDocs).length;
+  }
+
+  let groupsRefforIndexOn = await database.ref("groups").orderByChild("groupId").equalTo("").once('value');
+  let groupsRef = await database.ref("groups").orderByChild("status").equalTo("open").once('value');
+  let groupsDocs = groupsRef.val();
+  let groupId = 0;
+  for(let i in groupsDocs) {
+    groupId = groupsDocs[i].groupId;
+  }
+
+  // var userCount = await User.find({}).countDocuments()
+  // var getGroup = await Group.findOne({ status: 'open' })
+  // var groupId;
+  // (getGroup) ? groupId = getGroup.groupId : groupId = 0
+
   res.render('index', {
     groupId,
-    userCount
+    usersCount
   })
 });
 
 router.get('/groupId', async (req, res) => {
-  var getGroup = await Group.findOne({ status: 'open' })
+  let groupsRefforIndexOn = await database.ref("groups").orderByChild("groupId").equalTo("").once('value');
+  let groupsRef = await database.ref("groups").orderByChild("status").equalTo("open").once('value');
+  let groupsDocs = groupsRef.val();
+  let groupId = 0;
+  for(let i in groupsDocs) {
+    groupId = groupsDocs[i].groupId;
+  }
+
+  // var getGroup = await Group.findOne({ status: 'open' })
+  // var groupId = getGroup.groupId;
   res.send({
-    groupId: getGroup.groupId
+    groupId
   })
 })
 

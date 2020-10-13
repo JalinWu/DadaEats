@@ -21,6 +21,7 @@
     "express": "^4.16.4",
     "express-ejs-layouts": "^2.5.0",
     "express-session": "^1.15.6",
+    "firebase": "^7.22.1",
     "jwt-decode": "^3.0.0-beta.2",
     "mongoose": "^5.7.5",
     "passport": "^0.4.0",

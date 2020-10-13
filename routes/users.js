@@ -7,6 +7,7 @@ const axios = require('axios');
 const FormData = require('form-data');
 require('dotenv').config();
 const jwt_decode = require('jwt-decode');
+
 // Load User model
 const User = require('../models/User');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
@@ -37,10 +38,6 @@ router.post('/register', (req, res) => {
     errors.push({ msg: 'Passwords do not match' });
   }
 
-  // if (password.length < 6) {
-  //   errors.push({ msg: 'Password must be at least 6 characters' });
-  // }
-
   if (errors.length > 0) {
     res.render('register', {
       errors,
@@ -50,8 +47,8 @@ router.post('/register', (req, res) => {
       password2
     });
   } else {
-    User.findOne({ account: account }).then(user => {
-      if (user) {
+    database.ref("users").orderByChild("account").equalTo(account).once('value', e => {
+      if (e.val()) {
         errors.push({ msg: 'ID already exists' });
         res.render('register', {
           errors,
@@ -61,19 +58,21 @@ router.post('/register', (req, res) => {
           password2
         });
       } else {
-        const newUser = new User({
+        const newUser = {
           name,
           account,
-          password
-        });
+          password,
+          dadaCoin: 0
+        };
 
         bcrypt.genSalt(10, (err, salt) => {
           bcrypt.hash(newUser.password, salt, (err, hash) => {
             if (err) throw err;
             newUser.password = hash;
-            newUser
-              .save()
-              .then(user => {
+
+            // insert into firebase
+            database.ref("users").push(newUser)
+              .then(() => {
                 req.flash(
                   'success_msg',
                   'You are now registered and can log in'
@@ -81,10 +80,53 @@ router.post('/register', (req, res) => {
                 res.redirect('/users/login');
               })
               .catch(err => console.log(err));
+
           });
         });
       }
     });
+
+    // User.findOne({ account: account }).then(user => {
+    //   if (user) {
+    //     errors.push({ msg: 'ID already exists' });
+    //     res.render('register', {
+    //       errors,
+    //       name,
+    //       account,
+    //       password,
+    //       password2
+    //     });
+    //   } else {
+    //     const newUser = new User({
+    //       name,
+    //       account,
+    //       password
+    //     });
+
+    //     bcrypt.genSalt(10, (err, salt) => {
+    //       bcrypt.hash(newUser.password, salt, (err, hash) => {
+    //         if (err) throw err;
+    //         newUser.password = hash;
+
+    //         // insert into firebase
+    //         database.ref("users").push({ name, account, password: hash }).then(() => {
+    //           // firebase.app().delete(); // 寫入完成後刪除 firebase 宣告
+    //         });
+
+    //         newUser
+    //           .save()
+    //           .then(user => {
+    //             req.flash(
+    //               'success_msg',
+    //               'You are now registered and can log in'
+    //             );
+    //             res.redirect('/users/login');
+    //           })
+    //           .catch(err => console.log(err));
+    //       });
+    //     });
+    //   }
+    // });
   }
 });
 
@@ -123,7 +165,7 @@ router.get('/dadaCoin', ensureAuthenticated, (req, res) => {
 router.post('/loginLine', (req, res) => {
   console.log("/loginLine");
   const { code } = req.body;
-  
+
   var url = 'https://api.line.me/oauth2/v2.1/token';
   var data = `
     grant_type=authorization_code&

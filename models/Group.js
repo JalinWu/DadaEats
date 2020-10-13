@@ -9,16 +9,8 @@ const GroupSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  shopName: {
-    type: String,
-    required: true
-  },
   freight: {
     type: Number,
-    default: 0
-  },
-  imgSrc: {
-    type: String,
     default: 0
   },
   status: {

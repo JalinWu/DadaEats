@@ -12,6 +12,8 @@ router.get('/getCartList/', ensureAuthenticated, (req, res) => {
 
     Order.findOne({ expired: false, account, groupId })
         .then(result => {
+            console.log(result);
+            
 
             res.render('cart', {
                 result,
