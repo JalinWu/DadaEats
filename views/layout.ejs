@@ -47,6 +47,8 @@
   <script src="/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
+  <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
   <!--
 			CSS
@@ -189,22 +191,22 @@
   <script type="text/javascript">
     var name, account;
 
-    $(document).ready(function () {
-      // line login
-      // var url = new URL(window.location.href);
-      // var params = url.searchParams;
-      // var paramsObject = new Object();
-      // for (let pair of params.entries()) {
-      //   if (pair[0] == 'code') paramsObject.code = pair[1];
-      //   if (pair[0] == 'state') paramsObject.state = pair[1];
-      // }
-      // if(paramsObject.code) {
-      //   loginLine(paramsObject.code);
-      // }else {
-      //   auth();
-      // }
-      auth();
-    })
+    // $(document).ready(function () {
+    // line login
+    // var url = new URL(window.location.href);
+    // var params = url.searchParams;
+    // var paramsObject = new Object();
+    // for (let pair of params.entries()) {
+    //   if (pair[0] == 'code') paramsObject.code = pair[1];
+    //   if (pair[0] == 'state') paramsObject.state = pair[1];
+    // }
+    // if(paramsObject.code) {
+    //   loginLine(paramsObject.code);
+    // }else {
+    //   auth();
+    // }
+    // auth();
+    // })
 
     function loginLine(code) {
       var redirect_uri = "<%= process.env.redirect_url %>";
@@ -234,7 +236,7 @@
             success: function (res) {
               if (res == 'error') alert('登入失敗4');
               // auth();
-              document.location.href="/";
+              document.location.href = "/";
             }
           })
         }
@@ -242,6 +244,8 @@
     }
 
     function auth() {
+      console.log('auth');
+
       $.ajax({
         url: '/users/auth',
         type: 'get',
@@ -261,14 +265,14 @@
             $('.auth').hide();
             $('.non-auth').show();
           }
-  
+
           if (res.account == 'admin') {
             $('.dashboard').show();
             $('.manageMenus').attr('href', '/dashboard/getMenus')
             $('.manageUsers').attr('href', '/dashboard/getUsers')
             $('.manageOrders').attr('href', '/dashboard/getOrders')
             $('.myChatbot').attr('href', '/chatbot/getChatbot')
-          } else if (res.account == '2007004' || res.account == '1908059') {
+          } else if (res.account == '1908059') {
             $('.dashboard').show();
             $('.manageMenus').hide();
             $('.manageUsers').hide();
@@ -277,9 +281,54 @@
           } else {
             $('.dashboard').hide();
           }
+
+          if (!res.account) { // 未登入
+            console.log('no login');
+
+            liff.init({
+              liffId: '1654985474-1K5daZn5'
+            }).then(() => {
+              // 是否登入line
+              var isLoggedIn = liff.isLoggedIn();
+              console.log("isLoggedIn: " + isLoggedIn);
+
+              if (isLoggedIn) {
+                liff.getProfile()
+                  .then(profile => {
+                    var userId = profile.userId;
+                    var displayName = profile.displayName;
+                    var pictureUrl = profile.pictureUrl;
+
+                    $.ajax({
+                      url: '/users/login',
+                      type: 'post',
+                      data: {
+                        account: "admin",
+                        password: "12345678"
+                      },
+                      error: function (err) {
+                        if (err) throw err
+                      },
+                      success: function (res) {
+                        console.log('login');
+                        location.reload();
+                      }
+                    })
+
+                  })
+                  .catch((err) => {
+                    console.log('error', err);
+                  });
+              }
+            }).catch((err) => {
+              // Error Callback
+            })
+
+          }
+
         }
       })
-  
+
       $.ajax({
         url: '/groupId',
         type: 'get',
@@ -300,7 +349,7 @@
       $('.accountTitle').attr('account', account)
     })
 
-
+    auth();
   </script>
 </body>
 
