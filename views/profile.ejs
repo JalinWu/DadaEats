@@ -20,7 +20,7 @@
         //Success Callback
         liff.getProfile()
             .then(profile => {
-                document.getElementById('userId').innerHTML = profile.displayuserIdName;
+                document.getElementById('userId').innerHTML = profile.userId;
                 document.getElementById('displayName').innerHTML = profile.displayName;
                 document.getElementById('pictureUrl').innerHTML = profile.pictureUrl;
                 document.getElementById('statusMessage').innerHTML = profile.statusMessage;
