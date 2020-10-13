@@ -1,4 +1,5 @@
 <div class="container">
+    <p>displayName: <span id="displayName"></span></p>
     <p>OS: <span id="OS"></span></p>
     <p>Language: <span id="Language"></span></p>
     <p>Version: <span id="Version"></span></p>
@@ -13,6 +14,13 @@
         liffId: '1654985474-1K5daZn5'
     }).then(() => {
         //Success Callback
+        // 拿取個人資料
+        liff.getProfile()
+            .then((profile) => {
+                document.getElementById('displayName').innerHTML = profile.displayname;
+            }).catch((err) => {
+                console.log(err);
+            })
         // 拿取系統
         document.getElementById('OS').innerHTML = liff.getOS()
         // 拿取語系
