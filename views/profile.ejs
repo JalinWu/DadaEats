@@ -14,6 +14,9 @@
         liffId: '1654985474-1K5daZn5'
     }).then(() => {
         //Success Callback
+        if (!liff.isLoggedIn()) {
+            liff.login({ redirectUri: "http://dadaeats.herokuapp.com/users/redirect" });
+        }
         // 拿取個人資料
         liff.getProfile()
             .then((profile) => {
