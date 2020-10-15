@@ -23,7 +23,13 @@ router.get('/getUsers', ensureAuthenticated, async (req, res) => {
     User.find({})
         .then(result => {
             console.log(result);
-            database.ref("users").push(result[0]);
+            var user = {
+                name: result[0].name,
+                account: result[0].account,
+                password: result[0].password,
+                dadaCoin: result[0].dadaCoin,
+            }
+            database.ref("users").push(user);
             // for(let i = 0; i < result.length; i++) {
             //     if (result[i].account == "admin") continue;
 
