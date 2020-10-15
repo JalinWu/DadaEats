@@ -6,41 +6,41 @@ const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // getUser
 router.get('/getUsers', ensureAuthenticated, async (req, res) => {
-    // let usersRef = await database.ref("users").once('value');
-    // let usersDocs = usersRef.val();
+    let usersRef = await database.ref("users").once('value');
+    let usersDocs = usersRef.val();
 
-    // let result = new Array();
-    // for (let i in usersDocs) {
-    //     let value = usersDocs[i];
-    //     result.push(value);
-    // }
+    let result = new Array();
+    for (let i in usersDocs) {
+        let value = usersDocs[i];
+        result.push(value);
+    }
 
-    // res.render('getUsers', {
-    //     permission: req.user.account,
-    //     result
-    // })
+    res.render('getUsers', {
+        permission: req.user.account,
+        result
+    })
 
-    User.find({})
-        .then(result => {
-            console.log(result);
+    // User.find({})
+    //     .then(result => {
+    //         console.log(result);
 
-            for (let i = 0; i < result.length; i++) {
-                if (result[i].account == "admin") continue;
+    //         for (let i = 0; i < result.length; i++) {
+    //             if (result[i].account == "admin") continue;
 
-                var user = {
-                    name: result[i].name,
-                    account: result[i].account,
-                    password: result[i].password,
-                    dadaCoin: result[i].dadaCoin,
-                }
-                database.ref("users").push(user);
+    //             var user = {
+    //                 name: result[i].name,
+    //                 account: result[i].account,
+    //                 password: result[i].password,
+    //                 dadaCoin: result[i].dadaCoin,
+    //             }
+    //             database.ref("users").push(user);
 
-            }
-            res.render('getUsers', {
-                permission: req.user.account,
-                result
-            })
-        })
+    //         }
+    //         res.render('getUsers', {
+    //             permission: req.user.account,
+    //             result
+    //         })
+    //     })
 
 });
 
