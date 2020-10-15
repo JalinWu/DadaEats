@@ -1,6 +1,6 @@
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 const passport = require('passport');
 const flash = require('connect-flash');
 const session = require('express-session');
@@ -27,17 +27,17 @@ require('./config/passport')(passport);
 const db = require('./config/keys').mongoURI;
 
 // Connect to MongoDB
-mongoose
-  .connect(
-    db,
-    { 
-      useUnifiedTopology: true,
-      useNewUrlParser: true ,
-      useFindAndModify: false
-    }
-  )
-  .then(() => console.log('MongoDB Connected'))
-  .catch(err => console.log(err));
+// mongoose
+//   .connect(
+//     db,
+//     { 
+//       useUnifiedTopology: true,
+//       useNewUrlParser: true ,
+//       useFindAndModify: false
+//     }
+//   )
+//   .then(() => console.log('MongoDB Connected'))
+//   .catch(err => console.log(err));
 
 // EJS
 app.use(expressLayouts);

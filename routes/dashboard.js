@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 var fs = require('fs');
-const User = require('../models/User');
+// const User = require('../models/User');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // getUser
