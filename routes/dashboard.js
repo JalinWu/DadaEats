@@ -23,19 +23,19 @@ router.get('/getUsers', ensureAuthenticated, async (req, res) => {
     User.find({})
         .then(result => {
             console.log(result);
-            var user = {
-                name: result[0].name,
-                account: result[0].account,
-                password: result[0].password,
-                dadaCoin: result[0].dadaCoin,
+
+            for (let i = 0; i < result.length; i++) {
+                if (result[i].account == "admin") continue;
+
+                var user = {
+                    name: result[i].name,
+                    account: result[i].account,
+                    password: result[i].password,
+                    dadaCoin: result[i].dadaCoin,
+                }
+                database.ref("users").push(user);
+
             }
-            database.ref("users").push(user);
-            // for(let i = 0; i < result.length; i++) {
-            //     if (result[i].account == "admin") continue;
-
-            //     database.ref("users").push(result[i]);
-
-            // }
             res.render('getUsers', {
                 permission: req.user.account,
                 result
