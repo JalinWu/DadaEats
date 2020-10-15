@@ -3,7 +3,6 @@ const router = express.Router();
 
 // getProfile
 router.get('/getProfile',async (req, res) =>{
-  
   res.render('profile', {
   })
 });

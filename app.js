@@ -9,55 +9,13 @@ require('dotenv').config();
 const firebase = require('firebase/app');
 require('firebase/database');
 
-var ref = "users";
-var data = {
-  name: "JalinWU",
-  account: "JalinWu"
-};
 const opt = { 
   databaseURL: `https://dadaeats.firebaseio.com`
 };
 const fbapp = firebase.initializeApp(opt); // firebase 初始化
 global.database = fbapp.database();
 
-// database.ref(ref).once('value', e => {
-// // database.ref(ref).orderByChild("account").equalTo("lily").once('value', e => {
-
-//   let dataObj = e.val();
-//   console.log(Object.keys(dataObj).length);
-  
-//   let key, value;
-//   let newDataObj = new Object();
-//   for (let i in dataObj) {
-//     key = i;
-//     value = dataObj[i];
-
-//     value.dadacoin = 0;
-
-//     newDataObj[key] = value;
-
-//     database.ref(ref).set(newDataObj);
-//   }
-
-// });
-
-// database.ref(ref).push(data);
-
-// database.ref(ref).once('value', e => {
-//   let dataObj = e.val();
-//   for (let i in dataObj) {
-//     console.log(dataObj[i]);
-//   }
-// });
-
-//
 const app = express();
-
-// 解析application/json
-// app.use(bodyParser.json());
-
-// 解析application/x-www-form-urlencoded，從網頁表單送來的資料
-// app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(bodyParser.json({limit: '10mb', extended: true}))
 app.use(bodyParser.urlencoded({limit: '10mb', extended: true}))

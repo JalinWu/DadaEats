@@ -1,79 +1,88 @@
 const express = require('express');
 const router = express.Router();
-const Order = require('../models/Order');
-const Group = require('../models/Group');
 const fs = require('fs');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // getCartList
-router.get('/getCartList/', ensureAuthenticated, (req, res) => {
+router.get('/getCartList/', ensureAuthenticated, async (req, res) => {
     const { account } = req.user
     const groupId = req.query.groupId;
 
-    Order.findOne({ expired: false, account, groupId })
-        .then(result => {
-            console.log(result);
-            
+    let ordersRef = await database.ref("orders").orderByChild("expired").equalTo(false).once('value');
+    let ordersDocs = ordersRef.val();
+    if (ordersDocs) {
+        for (let i in ordersDocs) {
+            if (ordersDocs[i].account == account && ordersDocs[i].groupId == groupId) {
+                let result = ordersDocs[i];
+                res.render('cart', {
+                    result,
+                })
+            }
+        }
+    } else {
+        res.render('cart', { result: null })
+    }
 
-            res.render('cart', {
-                result,
-            })
-
-        })
 });
-  
+
 // deleteOrder
 router.post('/deleteCartList', ensureAuthenticated, async (req, res) => {
     const { account } = req.user;
-    console.log(`"${req.body.id}"`);
+    const oid = req.body.id;
 
-    var getGroup = await Group.findOne({ status: 'open' })
-    var groupId = getGroup.groupId;
+    let groupsRef = await database.ref("groups").orderByChild("status").equalTo("open").once('value');
+    let groupsDocs = groupsRef.val();
+    let groupId = 0;
+    for (let i in groupsDocs) {
+        groupId = groupsDocs[i].groupId;
+    }
 
-    Order.updateOne({ account, groupId }, {
-        $pull: {
-            "orders": {
-                "oid": req.body.id
-            }
-        }
-    }).then((result0) => {
-        var subTotal = 0;
-        var freight = 0;
-        var dadaCoin = 0;
-        Order.findOne({ account, groupId })
-            .then((result) => {
-                for (var i = 0; i < result.orders.length; i++) {
-                    subTotal += parseInt(result.orders[i].amount);
+    let ordersRef = await database.ref("orders").once('value');
+    let ordersDocs = ordersRef.val();
+    for (let i in ordersDocs) {
+        if (ordersDocs[i].account == account && ordersDocs[i].groupId == groupId) {
+            let subTotal = 0;
+            let freight = parseInt(ordersDocs[i].freight);
+            let dadaCoin = parseInt(ordersDocs[i].dadaCoin);
+            let sum = 0;
+            let item = null;
+            for (let j = 0; j < ordersDocs[i].orders.length; j++) {
+                if (ordersDocs[i].orders[j].oid == oid) {
+                    item = j;
+                } else {
+                    subTotal += parseInt(ordersDocs[i].orders[j].amount);
                 }
-                freight = result.freight;
-                dadaCoin = result.dadaCoin;
-            })
-            .then((result) => {
-                var sum = parseInt(subTotal) + parseInt(freight) - Math.floor(parseInt(dadaCoin) / 100)
-                dadaCoin %= 100;
-                Order.updateOne({ account, groupId }, {
-                    $set: {
-                        subTotal,
-                        sum
-                    }
-                }).then((result) => {
-                    res.send({
-                        msg: 'success'
-                    })
-                })
-            })
+            }
+            ordersDocs[i].orders.splice(item, 1);
+            sum = subTotal + freight - Math.floor(dadaCoin / 100);
+            ordersDocs[i].subTotal = subTotal;
+            ordersDocs[i].sum = sum;
+            database.ref("orders").set(ordersDocs);
+        }
+    }
+
+    res.send({
+        msg: 'success'
     })
 })
 
 // updateOrder
-router.get('/updateCartList', ensureAuthenticated, (req, res) => {
+router.get('/updateCartList', ensureAuthenticated, async (req, res) => {
+    const { account } = req.user;
 
-    Order.updateMany({ "account": req.user.account }, { "$set": { "orders.$[].status": "confirmed" } })
-        .then(result => {
-            res.send({
-                msg: 'success'
-            })
-        })
+    let ordersRef = await database.ref("orders").orderByChild("account").equalTo(account).once('value');
+    let ordersDocs = ordersRef.val();
+    for (let i in ordersDocs) {
+        if (ordersDocs[i].expired == false) {
+            for (let j = 0; j < ordersDocs[i].orders.length; j++) {
+                ordersDocs[i].orders[j].status = "confirmed";
+            }
+        }
+    }
+    database.ref("orders").set(ordersDocs);
+    res.send({
+        msg: 'success'
+    });
 
 })
 

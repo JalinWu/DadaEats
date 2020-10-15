@@ -8,7 +8,7 @@
             </blockquote>
             <br>
 
-            <% if(result != null) { %>
+            <% if(result != null && result.orders) { %>
             <% for(var i = 0;i < result.orders.length; i++){ %>
             <div class="table-row" id="table-row-<%= i %>">
                 <div class="row no-margin" style="width: 100%">

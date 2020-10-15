@@ -1,7 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/User');
-const Group = require('../models/Group');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // global.orderId = 3;
@@ -23,11 +21,6 @@ router.get('/', async (req, res) => {
     groupId = groupsDocs[i].groupId;
   }
 
-  // var userCount = await User.find({}).countDocuments()
-  // var getGroup = await Group.findOne({ status: 'open' })
-  // var groupId;
-  // (getGroup) ? groupId = getGroup.groupId : groupId = 0
-
   res.render('index', {
     groupId,
     usersCount
@@ -43,8 +36,6 @@ router.get('/groupId', async (req, res) => {
     groupId = groupsDocs[i].groupId;
   }
 
-  // var getGroup = await Group.findOne({ status: 'open' })
-  // var groupId = getGroup.groupId;
   res.send({
     groupId
   })

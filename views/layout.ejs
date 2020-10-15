@@ -286,7 +286,7 @@
             console.log('no login');
 
             liff.init({
-              liffId: '1654985474-1K5daZn5'
+              liffId: "<%= process.env.liffId %>"
             }).then(() => {
               // 是否登入line
               var isLoggedIn = liff.isLoggedIn();

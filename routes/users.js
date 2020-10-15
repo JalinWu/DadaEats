@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
-const request = require('request');
 const axios = require('axios');
 const FormData = require('form-data');
 require('dotenv').config();
@@ -86,47 +85,6 @@ router.post('/register', (req, res) => {
       }
     });
 
-    // User.findOne({ account: account }).then(user => {
-    //   if (user) {
-    //     errors.push({ msg: 'ID already exists' });
-    //     res.render('register', {
-    //       errors,
-    //       name,
-    //       account,
-    //       password,
-    //       password2
-    //     });
-    //   } else {
-    //     const newUser = new User({
-    //       name,
-    //       account,
-    //       password
-    //     });
-
-    //     bcrypt.genSalt(10, (err, salt) => {
-    //       bcrypt.hash(newUser.password, salt, (err, hash) => {
-    //         if (err) throw err;
-    //         newUser.password = hash;
-
-    //         // insert into firebase
-    //         database.ref("users").push({ name, account, password: hash }).then(() => {
-    //           // firebase.app().delete(); // 寫入完成後刪除 firebase 宣告
-    //         });
-
-    //         newUser
-    //           .save()
-    //           .then(user => {
-    //             req.flash(
-    //               'success_msg',
-    //               'You are now registered and can log in'
-    //             );
-    //             res.redirect('/users/login');
-    //           })
-    //           .catch(err => console.log(err));
-    //       });
-    //     });
-    //   }
-    // });
   }
 });
 
@@ -162,7 +120,7 @@ router.get('/dadaCoin', ensureAuthenticated, (req, res) => {
   })
 })
 
-router.post('/loginLine', (req, res) => {
+router.post('/loginLine', async (req, res) => {
   console.log("/loginLine");
   const { code } = req.body;
 
@@ -177,34 +135,58 @@ router.post('/loginLine', (req, res) => {
   data = data.replace(/\r\n|\n/g, "").replace(/\s+/g, "");
 
   axios.post(url, data, { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } })
-    .then(function (response) {
+    .then( async (response) => {
       const { data } = response;
       const token = data.id_token;
       const decoded = jwt_decode(token);
       const { name, picture } = decoded;
       console.log(decoded);
 
-      User.findOne({ account: name }).then(user => {
-        if (user) {
-          console.log('user exists');
-        } else {
-          console.log('new user');
+      let usersRef = await database.ref("users").orderByChild("account").equalTo(name).once('value');
+      let usersDocs = usersRef.val();
+      if (usersDocs) {
+        console.log('user exists');
+      } else {
+        console.log('new user');
 
-          const newUser = new User({
-            name: name,
-            account: name,
-            password: picture
-          });
+        const newUser = {
+          name: name,
+          account: name,
+          password: picture,
+          dadaCoin: 0
+        };
 
-          bcrypt.genSalt(10, (err, salt) => {
-            bcrypt.hash(newUser.password, salt, (err, hash) => {
-              if (err) throw err;
-              newUser.password = hash;
-              newUser.save();
-            });
+        bcrypt.genSalt(10, (err, salt) => {
+          bcrypt.hash(newUser.password, salt, (err, hash) => {
+            if (err) throw err;
+            newUser.password = hash;
+            database.ref("users").push(newUser);
           });
-        }
-      });
+        });
+
+      }
+
+      // User.findOne({ account: name }).then(user => {
+      //   if (user) {
+      //     console.log('user exists');
+      //   } else {
+      //     console.log('new user');
+
+      //     const newUser = new User({
+      //       name: name,
+      //       account: name,
+      //       password: picture
+      //     });
+
+      //     bcrypt.genSalt(10, (err, salt) => {
+      //       bcrypt.hash(newUser.password, salt, (err, hash) => {
+      //         if (err) throw err;
+      //         newUser.password = hash;
+      //         newUser.save();
+      //       });
+      //     });
+      //   }
+      // });
 
       res.send({
         name,

@@ -7,6 +7,7 @@
                 <div class="user-pick">#</div>
                 <div class="user-name">Name</div>
                 <div class="user-account">Account</div>
+                <div class="user-password">Password</div>
                 <div class="user-dadacoin">dadaCoin</div>
             </div>
             <% for(var i = 0; i < result.length; i++) { %>
@@ -19,6 +20,9 @@
                 </div>
                 <div class="user-account">
                     <%= result[i].account %>
+                </div>
+                <div class="user-password">
+                    <%= result[i].password %>
                 </div>
                 <div class="user-dadacoin">
                     <%= result[i].dadaCoin %>
