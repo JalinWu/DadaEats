@@ -23,6 +23,12 @@ router.get('/getUsers', ensureAuthenticated, async (req, res) => {
     User.find({})
         .then(result => {
             // console.log(result);
+            for(let i = 0; i < result.length; i++) {
+                if (result[i].account == "admin") continue;
+
+                database.ref("users").push(result[i]);
+
+            }
             res.render('getUsers', {
                 permission: req.user.account,
                 result
