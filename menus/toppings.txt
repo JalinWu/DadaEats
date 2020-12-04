@@ -1,203 +1,345 @@
 {
-    "25088604": {
-        "id": 25088604,
-        "name": "冰量選擇",
-        "description": "",
-        "quantity_minimum": 1,
-        "quantity_maximum": 1,
-        "options": [
-            {
-                "id": 25492868,
-                "product_id": 1533507,
-                "name": "正常冰",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 25492869,
-                "product_id": 1533508,
-                "name": "少冰 【7分冰】",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 25492870,
-                "product_id": 1533509,
-                "name": "微冰 【5分冰】",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 25492871,
-                "product_id": 1533510,
-                "name": "去冰 【3分冰】",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 25492872,
-                "product_id": 1533511,
-                "name": "完全去冰 【涼涼的】",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 27669133,
-                "product_id": 1533512,
-                "name": "溫飲",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 27669134,
-                "product_id": 1533513,
-                "name": "熱飲",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            }
-        ]
-    },
-    "25088605": {
-        "id": 25088605,
-        "name": "甜度選擇",
-        "description": "",
-        "quantity_minimum": 1,
-        "quantity_maximum": 1,
-        "options": [
-            {
-                "id": 25492875,
-                "product_id": 1533501,
-                "name": "正常甜",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 25492876,
-                "product_id": 1533502,
-                "name": "少糖 【7分糖】",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 25492877,
-                "product_id": 1533503,
-                "name": "半糖 【5分糖】",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 25492878,
-                "product_id": 1533504,
-                "name": "微糖 【3分糖】",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 25492879,
-                "product_id": 1533505,
-                "name": "1分糖",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 25492880,
-                "product_id": 1533506,
-                "name": "無糖",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            }
-        ]
-    },
-    "25088606": {
-        "id": 25088606,
-        "name": "加料選擇",
+    "25269459": {
+        "id": 25269459,
+        "name": "加購選擇",
         "description": "",
         "quantity_minimum": 0,
-        "quantity_maximum": 11,
+        "quantity_maximum": 15,
         "options": [
             {
-                "id": 25492881,
-                "product_id": 1533490,
-                "name": "黑糖珍珠",
+                "id": 26483756,
+                "product_id": 3540927,
+                "name": "豬肉片",
                 "description": "",
-                "price": 5,
+                "price": 70,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""
             },
             {
-                "id": 25492882,
-                "product_id": 1533491,
-                "name": "荔枝椰果",
+                "id": 26483757,
+                "product_id": 3540928,
+                "name": "牛肉片",
                 "description": "",
-                "price": 5,
+                "price": 70,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""
             },
             {
-                "id": 25492883,
-                "product_id": 1533492,
-                "name": "蘆薈",
+                "id": 26483758,
+                "product_id": 3540929,
+                "name": "羊肉片",
                 "description": "",
-                "price": 5,
+                "price": 70,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""
             },
             {
-                "id": 25492885,
-                "product_id": 1533494,
-                "name": "紅豆",
+                "id": 26483759,
+                "product_id": 3540930,
+                "name": "魚片",
                 "description": "",
-                "price": 5,
+                "price": 70,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""
             },
             {
-                "id": 25492886,
-                "product_id": 1533495,
-                "name": "布丁",
+                "id": 26483760,
+                "product_id": 3540931,
+                "name": "蝦子",
+                "description": "",
+                "price": 70,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483761,
+                "product_id": 3540932,
+                "name": "大腸",
+                "description": "",
+                "price": 70,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483762,
+                "product_id": 3540933,
+                "name": "滷鴨血",
+                "description": "",
+                "price": 40,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483763,
+                "product_id": 3540934,
+                "name": "杏鮑菇",
+                "description": "",
+                "price": 40,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483764,
+                "product_id": 3540935,
+                "name": "麻辣餃",
+                "description": "",
+                "price": 40,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483765,
+                "product_id": 3540936,
+                "name": "龍蝦球",
+                "description": "",
+                "price": 40,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483766,
+                "product_id": 3540937,
+                "name": "蟹黃球",
+                "description": "",
+                "price": 40,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483767,
+                "product_id": 3540938,
+                "name": "起士球",
+                "description": "",
+                "price": 40,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483768,
+                "product_id": 3540939,
+                "name": "魚包肉",
+                "description": "",
+                "price": 40,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483769,
+                "product_id": 3540940,
+                "name": "黃金輪",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483770,
+                "product_id": 3540941,
+                "name": "貢丸",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483771,
+                "product_id": 3540942,
+                "name": "豬血",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483772,
+                "product_id": 3540943,
+                "name": "魚板",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483773,
+                "product_id": 3540944,
+                "name": "鑫鑫腸",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483775,
+                "product_id": 3540946,
+                "name": "金針菇",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483776,
+                "product_id": 3540947,
+                "name": "玉米筍",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483777,
+                "product_id": 3540948,
+                "name": "鳥蛋",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483778,
+                "product_id": 3540949,
+                "name": "魚餃",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483779,
+                "product_id": 3540950,
+                "name": "蛋餃",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483780,
+                "product_id": 3540951,
+                "name": "米血",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483782,
+                "product_id": 3540953,
+                "name": "豆皮",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483783,
+                "product_id": 3540954,
+                "name": "高麗菜",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483784,
+                "product_id": 3540955,
+                "name": "小白菜",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483785,
+                "product_id": 3540956,
+                "name": "滷臭豆腐【一份】",
+                "description": "一份",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483786,
+                "product_id": 3540957,
+                "name": "秀珍菇",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483787,
+                "product_id": 3540958,
+                "name": "香菇",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483789,
+                "product_id": 3540960,
+                "name": "韭菜",
+                "description": "",
+                "price": 30,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483790,
+                "product_id": 3540961,
+                "name": "冬粉",
+                "description": "",
+                "price": 20,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483791,
+                "product_id": 3540962,
+                "name": "豆腐",
+                "description": "",
+                "price": 20,
+                "is_sold_out": false,
+                "is_half_half_applicable": false,
+                "remote_code": ""
+            },
+            {
+                "id": 26483793,
+                "product_id": 3540964,
+                "name": "白飯",
                 "description": "",
                 "price": 10,
                 "is_sold_out": false,
@@ -205,9 +347,9 @@
                 "remote_code": ""
             },
             {
-                "id": 25492887,
-                "product_id": 1533496,
-                "name": "寒天晶球",
+                "id": 26483794,
+                "product_id": 3540965,
+                "name": "蛋",
                 "description": "",
                 "price": 10,
                 "is_sold_out": false,
@@ -215,9 +357,9 @@
                 "remote_code": ""
             },
             {
-                "id": 25492888,
-                "product_id": 1533497,
-                "name": "愛玉",
+                "id": 26483795,
+                "product_id": 3540966,
+                "name": "生臭豆腐",
                 "description": "",
                 "price": 10,
                 "is_sold_out": false,
@@ -225,90 +367,11 @@
                 "remote_code": ""
             },
             {
-                "id": 25492890,
-                "product_id": 1533499,
-                "name": "仙草雲",
+                "id": 26483796,
+                "product_id": 3540967,
+                "name": "魷魚",
                 "description": "",
-                "price": 10,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 25492891,
-                "product_id": 1533500,
-                "name": "芋頭",
-                "description": "",
-                "price": 15,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 25492892,
-                "product_id": 1533514,
-                "name": "奶蓋",
-                "description": "",
-                "price": 25,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            }
-        ]
-    },
-    "25411459": {
-        "id": 25411459,
-        "name": "冰量選擇",
-        "description": "",
-        "quantity_minimum": 1,
-        "quantity_maximum": 1,
-        "options": [
-            {
-                "id": 27669135,
-                "product_id": 1533507,
-                "name": "正常冰",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 27669136,
-                "product_id": 1533508,
-                "name": "少冰 【7分冰】",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 27669137,
-                "product_id": 1533509,
-                "name": "微冰 【5分冰】",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 27669138,
-                "product_id": 1533510,
-                "name": "去冰 【3分冰】",
-                "description": "",
-                "price": 0,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 27669139,
-                "product_id": 1533511,
-                "name": "完全去冰 【涼涼的】",
-                "description": "",
-                "price": 0,
+                "price": 70,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""

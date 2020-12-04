@@ -1,26 +1,26 @@
 [
     {
-        "vendor_name": "水雲堂Drink Store (台北東湖店)",
-        "bgImg": "https://images.deliveryhero.io/image/fd-tw/LH/z9sb-hero.jpg?width=2000&height=500",
+        "vendor_name": "大呼過癮 (台北南港店)",
+        "bgImg": "https://images.deliveryhero.io/image/fd-tw/LH/d6ek-hero.jpg?width=2000&height=500",
         "menu_categories": [
             {
-                "id": "1030908",
-                "name": "注意事項",
+                "id": "427521",
+                "name": "※注意事項",
                 "products": [
                     {
                         "is_half_type_available": false,
-                        "id": 14780613,
-                        "name": "請勿下單罐裝",
-                        "code": "e7dc827d-f02c-4e84-a93a-082c51746b50",
-                        "description": "罐裝因物流問題暫未到貨.請勿點罐裝",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/14780613.JPG?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/14780613.JPG?width=%s",
+                        "id": 3540969,
+                        "name": "店家均提供熟食",
+                        "code": "d6ek-pr-23w89",
+                        "description": "",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/3540969.JPG?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/3540969.JPG?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 15413425,
-                                "code": "141cff63-dfa5-4d73-bd20-9e4827128a4c",
+                                "id": 4110248,
+                                "code": "d6ek-pv-2g3hk",
                                 "name": null,
                                 "price": 0,
                                 "price_before_discount": null,
@@ -42,3296 +42,586 @@
                 ]
             },
             {
-                "id": "955686",
-                "name": "熱門餐點專區",
+                "id": "427518",
+                "name": "精選美食",
                 "products": [
                     {
                         "is_half_type_available": false,
-                        "id": 15244654,
-                        "name": "錫蘭紅茶x2",
-                        "code": "57936ad6-2975-444d-8e62-ba7fe0c02847",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
+                        "id": 3540910,
+                        "name": "海鮮豆腐鍋",
+                        "code": "b5ox-pr-1i3e8",
+                        "description": "附蛋，肉品原產地：加拿大猪肉\n猪脂（油）原產地：加拿大",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523824.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523824.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 15882304,
-                                "code": "69082c49-04ed-4544-b5bc-70b70b23c2ea",
+                                "id": 4110189,
+                                "code": "b5ox-pv-1r7vc",
                                 "name": null,
-                                "price": 35,
-                                "price_before_discount": 70,
+                                "price": 140,
+                                "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25088604,
-                                    25088605
+                                    25269459
                                 ]
                             }
                         ],
-                        "master_category_id": 11,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 35
+                        "lowestPrice": 140
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 15244658,
-                        "name": "茉香綠茶x2",
-                        "code": "0a15e2ec-b8c8-4024-95ee-abf30ca5cbe6",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
+                        "id": 3540909,
+                        "name": "大腸臭臭鍋",
+                        "code": "b5ox-pr-1i3e7",
+                        "description": "肉品原產地：加拿大猪肉\n猪脂（油）原產地：加拿大",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523823.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523823.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 15882308,
-                                "code": "bd84fbd8-2406-4523-9156-27aff83f265a",
+                                "id": 4110188,
+                                "code": "b5ox-pv-1r7vb",
                                 "name": null,
-                                "price": 35,
-                                "price_before_discount": 70,
+                                "price": 140,
+                                "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25088604,
-                                    25088605
+                                    25269459
                                 ]
                             }
                         ],
-                        "master_category_id": 11,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 35
-                    }
-                ]
-            },
-            {
-                "id": "187677",
-                "name": "黑糖珍珠系列",
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533426,
-                        "name": "黑糖珍珠奶茶",
-                        "code": "y6ys-pr-pwm5",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533426.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533426.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801622,
-                                "code": "y6ys-pv-up6z",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 75,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801623,
-                                "code": "y6ys-pv-up70",
-                                "name": "大杯",
-                                "price": 45,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 45
+                        "lowestPrice": 140
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 1533427,
-                        "name": "黑糖珍珠鮮奶",
-                        "code": "y6ys-pr-pwm6",
-                        "description": "甜冰固定屬無糖少冰，無法調整",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533427.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533427.jpg?width=%s",
+                        "id": 3540911,
+                        "name": "泡菜鍋",
+                        "code": "b5ox-pr-1i3e9",
+                        "description": "附蛋，肉品原產地：加拿大猪肉\n猪脂（油）原產地：加拿大",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523825.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523825.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 1801624,
-                                "code": "y6ys-pv-up71",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801625,
-                                "code": "y6ys-pv-up72",
-                                "name": "中杯",
-                                "price": 50,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 6122208,
-                                "code": "5349385",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 50
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533428,
-                        "name": "黑糖珍珠紅茶拿鐵",
-                        "code": "y6ys-pr-pwm7",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533428.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533428.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801627,
-                                "code": "y6ys-pv-up74",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801628,
-                                "code": "y6ys-pv-up75",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 60
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533429,
-                        "name": "黑糖珍珠綠茶拿鐵",
-                        "code": "y6ys-pr-pwm8",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801629,
-                                "code": "y6ys-pv-up76",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801630,
-                                "code": "y6ys-pv-up77",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 60
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533430,
-                        "name": "伯爵珍珠鮮奶",
-                        "code": "y6ys-pr-pwm9",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801631,
-                                "code": "y6ys-pv-up78",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801632,
-                                "code": "y6ys-pv-up79",
-                                "name": "大杯",
-                                "price": 65,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 65
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533431,
-                        "name": "抹茶珍珠鮮奶",
-                        "code": "y6ys-pr-pwma",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801633,
-                                "code": "y6ys-pv-up7a",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 100,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801634,
-                                "code": "y6ys-pv-up7b",
-                                "name": "大杯",
-                                "price": 65,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 65
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533440,
-                        "name": "百香雙星綠茶",
-                        "code": "y6ys-pr-qnm9",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801651,
-                                "code": "y6ys-pv-vklp",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 80,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801652,
-                                "code": "y6ys-pv-vklq",
-                                "name": "大杯",
-                                "price": 50,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 50
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533437,
-                        "name": "百香雙星紅茶",
-                        "code": "y6ys-pr-pwmg",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801645,
-                                "code": "y6ys-pv-up7m",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 80,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801646,
-                                "code": "y6ys-pv-up7n",
-                                "name": "大杯",
-                                "price": 50,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 50
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533438,
-                        "name": "百香雙星四季春",
-                        "code": "y7xp-pr-ql16",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801647,
-                                "code": "y7xp-pv-vh92",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 80,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801648,
-                                "code": "y7xp-pv-vh93",
-                                "name": "大杯",
-                                "price": 50,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 50
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 5668974,
-                        "name": "四季春雙星",
-                        "code": "4913308",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5668974.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5668974.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6122178,
-                                "code": "5349405",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 75,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 6122197,
-                                "code": "5349406",
-                                "name": "大杯",
-                                "price": 40,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 6122204,
-                                "code": "5349407",
-                                "name": "中杯",
-                                "price": 35,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 35
-                    }
-                ]
-            },
-            {
-                "id": "187676",
-                "name": "手作鮮果茶系列",
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533423,
-                        "name": "百香蜂蜜優酪爽",
-                        "code": "y7xp-pr-ql17",
-                        "description": "甜度固定",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533423.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533423.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801616,
-                                "code": "y7xp-pv-vh94",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25411459,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801617,
-                                "code": "y7xp-pv-vh95",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 60
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533414,
-                        "name": "完全檸檬鮮榨綠",
-                        "code": "y6ys-pr-pwlw",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533414.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533414.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801598,
-                                "code": "y6ys-pv-up6h",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801599,
-                                "code": "y6ys-pv-up6i",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 60
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533416,
-                        "name": "完全檸檬蜜蘆薈",
-                        "code": "y6ys-pr-pwly",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533416.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533416.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801602,
-                                "code": "y6ys-pv-up6l",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801603,
-                                "code": "y6ys-pv-up6m",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 60
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533417,
-                        "name": "完全檸檬蜜愛玉",
-                        "code": "y6ys-pr-pwlz",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533417.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533417.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801604,
-                                "code": "y6ys-pv-up6n",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801605,
-                                "code": "y6ys-pv-up6o",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 60
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533418,
-                        "name": "鮮榨檸檬百香",
-                        "code": "y6ys-pr-pwm0",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533418.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533418.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801606,
-                                "code": "y6ys-pv-up6p",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801607,
-                                "code": "y6ys-pv-up6q",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 60
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533419,
-                        "name": "手榨檸檬四季春",
-                        "code": "y6ys-pr-pwm1",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801608,
-                                "code": "y6ys-pv-up6r",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801609,
-                                "code": "y6ys-pv-up6s",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 60
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533420,
-                        "name": "手榨檸檬紅茶",
-                        "code": "y6ys-pr-pwm2",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801610,
-                                "code": "y6ys-pv-up6t",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801611,
-                                "code": "y6ys-pv-up6u",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 60
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533421,
-                        "name": "手榨檸檬烏龍",
-                        "code": "y6ys-pr-pwm3",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801612,
-                                "code": "y6ys-pv-up6v",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801613,
-                                "code": "y6ys-pv-up6w",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 60
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533422,
-                        "name": "手榨金桔檸檬",
-                        "code": "y6ys-pr-pwm4",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801614,
-                                "code": "y6ys-pv-up6x",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801615,
-                                "code": "y6ys-pv-up6y",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 60
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533425,
-                        "name": "蜂蜜檸檬",
-                        "code": "y7xp-pr-ql1s",
-                        "description": "甜度固定",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801620,
-                                "code": "y7xp-pv-vh9z",
-                                "name": "罐裝【980c.c.】",
-                                "price": 90,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25411459,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801621,
-                                "code": "y7xp-pv-vha0",
-                                "name": "中杯",
-                                "price": 50,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 6122216,
-                                "code": "5349374",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25411459,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 50
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 5668985,
-                        "name": "玉荷青",
-                        "code": "4913297",
-                        "description": "甜度固定",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5668985.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5668985.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6122198,
-                                "code": "5349376",
-                                "name": "罐裝【980c.c.】",
-                                "price": 80,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25411459,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 6122215,
-                                "code": "5349377",
-                                "name": "大杯",
-                                "price": 45,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25411459,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 6122228,
-                                "code": "5349378",
-                                "name": "中杯",
-                                "price": 40,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25411459,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 40
-                    }
-                ]
-            },
-            {
-                "id": "187680",
-                "name": "茶拿鐵系列",
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533457,
-                        "name": "伯爵鮮奶茶",
-                        "code": "y6ys-pr-pwmw",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801683,
-                                "code": "y6ys-pv-up8h",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 90,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801684,
-                                "code": "y6ys-pv-up8i",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 60
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533454,
-                        "name": "玫瑰鮮奶茶",
-                        "code": "y6ys-pr-pwmt",
-                        "description": "甜度固定",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801677,
-                                "code": "y6ys-pv-up8b",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 110,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801678,
-                                "code": "y6ys-pv-up8c",
-                                "name": "大杯",
-                                "price": 70,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 70
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533455,
-                        "name": "紅茶拿鐵",
-                        "code": "y6ys-pr-pwmu",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801679,
-                                "code": "y6ys-pv-up8d",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 85,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801680,
-                                "code": "y6ys-pv-up8e",
-                                "name": "大杯",
-                                "price": 55,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 55
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533456,
-                        "name": "綠茶拿鐵",
-                        "code": "y6ys-pr-pwmv",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801681,
-                                "code": "y6ys-pv-up8f",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 85,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801682,
-                                "code": "y6ys-pv-up8g",
-                                "name": "大杯",
-                                "price": 55,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 55
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533458,
-                        "name": "烏龍鮮奶茶",
-                        "code": "y6ys-pr-pwmx",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801685,
-                                "code": "y6ys-pv-up8j",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 90,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801686,
-                                "code": "y6ys-pv-up8k",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 60
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533459,
-                        "name": "法式可可鮮奶",
-                        "code": "y6ys-pr-pwmy",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801687,
-                                "code": "y6ys-pv-up8l",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 85,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801688,
-                                "code": "y6ys-pv-up8m",
-                                "name": "大杯",
-                                "price": 55,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 55
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533460,
-                        "name": "甲級芋頭鮮奶",
-                        "code": "y6ys-pr-pwmz",
-                        "description": "大杯",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533460.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533460.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801689,
-                                "code": "y6ys-pv-up8n",
+                                "id": 4110190,
+                                "code": "b5ox-pv-1r7vd",
                                 "name": null,
-                                "price": 70,
+                                "price": 140,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
+                                    25269459
                                 ]
                             }
                         ],
-                        "master_category_id": 11,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 70
+                        "lowestPrice": 140
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 5668992,
-                        "name": "伯爵嚼嚼鮮奶",
-                        "code": "4913339",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5668992.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5668992.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6122210,
-                                "code": "5349466",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 6122222,
-                                "code": "5349467",
-                                "name": "大杯",
-                                "price": 65,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 65
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533467,
-                        "name": "仙草雲牛奶",
-                        "code": "y6ys-pr-pwn6",
-                        "description": "",
+                        "id": 3540912,
+                        "name": "泡菜臭臭鍋",
+                        "code": "b5ox-pr-1i3ea",
+                        "description": "肉品原產地：加拿大猪肉\n猪脂（油）原產地：加拿大",
                         "file_path": "",
                         "logo_path": "",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 1801699,
-                                "code": "y6ys-pv-up8x",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801700,
-                                "code": "y6ys-pv-up8y",
-                                "name": "中杯",
-                                "price": 50,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 50
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533469,
-                        "name": "黑糖珍珠紅豆牛奶",
-                        "code": "y6ys-pr-pwn8",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801703,
-                                "code": "y6ys-pv-up91",
-                                "name": "大杯",
-                                "price": 65,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801704,
-                                "code": "y6ys-pv-up92",
-                                "name": "中杯",
-                                "price": 55,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 55
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533471,
-                        "name": "紅豆仙草牛奶",
-                        "code": "y6ys-pr-pwna",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801707,
-                                "code": "y6ys-pv-up95",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801708,
-                                "code": "y6ys-pv-up96",
-                                "name": "中杯",
-                                "price": 50,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 50
-                    }
-                ]
-            },
-            {
-                "id": "187681",
-                "name": "鮮果汁系列",
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 5669005,
-                        "name": "超級水果四季春",
-                        "code": "4913298",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6122212,
-                                "code": "5349379",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 100,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 6122234,
-                                "code": "5349380",
-                                "name": "大杯",
-                                "price": 65,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 65
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533461,
-                        "name": "木瓜牛奶",
-                        "code": "y6ys-pr-pwn0",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533461.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533461.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801690,
-                                "code": "y6ys-pv-up8o",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 100,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25411459,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801691,
-                                "code": "y6ys-pv-up8p",
-                                "name": "大杯",
-                                "price": 65,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25411459,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 65
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533463,
-                        "name": "寒天葡萄柚綠茶",
-                        "code": "y6ys-pr-pwn2",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801694,
-                                "code": "y6ys-pv-up8s",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 100,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801695,
-                                "code": "y6ys-pv-up8t",
-                                "name": "大杯",
-                                "price": 65,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 65
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533465,
-                        "name": "火龍果芭樂",
-                        "code": "y6ys-pr-pwn4",
-                        "description": "搖搖瓶．甜度及冰量固定",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801697,
-                                "code": "y6ys-pv-up8v",
+                                "id": 4110191,
+                                "code": "b5ox-pv-1r7ve",
                                 "name": null,
-                                "price": 70,
+                                "price": 140,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25088606
+                                    25269459
                                 ]
                             }
                         ],
-                        "master_category_id": 11,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 70
+                        "lowestPrice": 140
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 1533464,
-                        "name": "芭樂汁",
-                        "code": "y6ys-pr-pwn3",
-                        "description": "搖搖瓶．甜度及冰量固定",
-                        "file_path": "",
-                        "logo_path": "",
+                        "id": 3540913,
+                        "name": "養生素食鍋",
+                        "code": "b5ox-pr-1i3eb",
+                        "description": "",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523827.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523827.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 1801696,
-                                "code": "y6ys-pv-up8u",
+                                "id": 4110192,
+                                "code": "b5ox-pv-1r7vf",
                                 "name": null,
-                                "price": 60,
+                                "price": 140,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25088606
+                                    25269459
                                 ]
                             }
                         ],
-                        "master_category_id": 11,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 60
+                        "lowestPrice": 140
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 1533466,
-                        "name": "橙香火龍果",
-                        "code": "y6ys-pr-pwn5",
-                        "description": "搖搖瓶．甜度及冰量固定",
-                        "file_path": "",
-                        "logo_path": "",
+                        "id": 3540915,
+                        "name": "腸旺鴨血鍋",
+                        "code": "b5ox-pr-1i3ed",
+                        "description": "肉品原產地：加拿大猪肉\n猪脂（油）原產地：加拿大",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523829.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523829.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 1801698,
-                                "code": "y6ys-pv-up8w",
+                                "id": 4110194,
+                                "code": "b5ox-pv-1r7vh",
                                 "name": null,
-                                "price": 70,
+                                "price": 150,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25088606
+                                    25269459
                                 ]
                             }
                         ],
-                        "master_category_id": 11,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 70
+                        "lowestPrice": 150
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 1533481,
-                        "name": "蔓越莓冰醋",
-                        "code": "y6ys-pr-pwnk",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
+                        "id": 3540916,
+                        "name": "養生菇菇鍋",
+                        "code": "b5ox-pr-1i3ee",
+                        "description": "肉品原產地：加拿大猪肉\n猪脂（油）原產地：加拿大",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523830.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523830.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 1801727,
-                                "code": "y6ys-pv-up9p",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25411459,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801728,
-                                "code": "y6ys-pv-up9q",
-                                "name": "大杯",
-                                "price": 65,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25411459,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 65
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533482,
-                        "name": "紅葡萄冰醋",
-                        "code": "y6ys-pr-pwnl",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801729,
-                                "code": "y6ys-pv-up9r",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25411459,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801730,
-                                "code": "y6ys-pv-up9s",
-                                "name": "大杯",
-                                "price": 65,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25411459,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 65
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533483,
-                        "name": "梅子冰醋",
-                        "code": "y6ys-pr-pwnm",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801731,
-                                "code": "y6ys-pv-up9t",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 95,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25411459,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801732,
-                                "code": "y6ys-pv-up9u",
-                                "name": "大杯",
-                                "price": 65,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25411459,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 65
-                    }
-                ]
-            },
-            {
-                "id": "187685",
-                "name": "芝士你的奶沫",
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 5669013,
-                        "name": "葡式芝味果粒【蘆薈】",
-                        "code": "4913348",
-                        "description": "甜度固定 | 冰塊固定",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6122217,
-                                "code": "5349481",
+                                "id": 4110195,
+                                "code": "b5ox-pv-1r7vi",
                                 "name": null,
-                                "price": 75,
+                                "price": 150,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25088606
+                                    25269459
                                 ]
                             }
                         ],
-                        "master_category_id": 11,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 75
+                        "lowestPrice": 150
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 5669012,
-                        "name": "葡式芝味果粒",
-                        "code": "4913349",
-                        "description": "甜度固定 | 冰塊固定",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5669012.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5669012.jpg?width=%s",
+                        "id": 3540917,
+                        "name": "麻辣鍋",
+                        "code": "b5ox-pr-1i3ef",
+                        "description": "肉品原產地：加拿大猪肉\n猪脂（油）原產地：加拿大",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523831.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523831.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 6122226,
-                                "code": "5349482",
+                                "id": 4110196,
+                                "code": "b5ox-pv-1r7vj",
                                 "name": null,
-                                "price": 75,
+                                "price": 150,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25088606
+                                    25269459
                                 ]
                             }
                         ],
-                        "master_category_id": 11,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 75
+                        "lowestPrice": 150
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 5669014,
-                        "name": "芝士火龍果",
-                        "code": "4913350",
-                        "description": "甜度固定 | 冰塊固定",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5669014.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5669014.jpg?width=%s",
+                        "id": 3540918,
+                        "name": "咖哩鍋",
+                        "code": "b5ox-pr-1i3eg",
+                        "description": "肉品原產地：加拿大猪肉\n猪脂（油）原產地：加拿大",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523832.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523832.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 6122220,
-                                "code": "5349483",
+                                "id": 4110197,
+                                "code": "b5ox-pv-1r7vk",
                                 "name": null,
-                                "price": 75,
+                                "price": 150,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25088606
+                                    25269459
                                 ]
                             }
                         ],
-                        "master_category_id": 11,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 75
+                        "lowestPrice": 150
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 5669018,
-                        "name": "芝士芒芒果粒【蘆薈】",
-                        "code": "4913352",
-                        "description": "甜度固定 | 冰塊固定",
-                        "file_path": "",
-                        "logo_path": "",
+                        "id": 3540919,
+                        "name": "醬燒牛肉鍋",
+                        "code": "b5ox-pr-1i3eh",
+                        "description": "肉品原產地：美國牛五花肉\n猪脂（油）原產地：加拿大",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523833.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523833.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 6122221,
-                                "code": "5349485",
+                                "id": 4110198,
+                                "code": "b5ox-pv-1r7vl",
                                 "name": null,
-                                "price": 70,
+                                "price": 150,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25088606
+                                    25269459
                                 ]
                             }
                         ],
-                        "master_category_id": 11,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 70
+                        "lowestPrice": 150
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 5669015,
-                        "name": "芝士芒芒果粒",
-                        "code": "4913353",
-                        "description": "甜度固定 | 冰塊固定",
+                        "id": 3540920,
+                        "name": "醬燒羊肉鍋",
+                        "code": "b5ox-pr-1i3ei",
+                        "description": "肉品原產地：紐西蘭羊肉\n猪脂（油）原產地：加拿大",
                         "file_path": "",
                         "logo_path": "",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 6122235,
-                                "code": "5349486",
+                                "id": 4110199,
+                                "code": "b5ox-pv-1r7vm",
                                 "name": null,
-                                "price": 70,
+                                "price": 150,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25088606
+                                    25269459
                                 ]
                             }
                         ],
-                        "master_category_id": 11,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 70
-                    }
-                ]
-            },
-            {
-                "id": "187678",
-                "name": "醇品鮮茶系列",
-                "products": [
+                        "lowestPrice": 150
+                    },
                     {
                         "is_half_type_available": false,
-                        "id": 1533441,
-                        "name": "茉香綠茶",
-                        "code": "y6ys-pr-pwmh",
-                        "description": "",
+                        "id": 3540921,
+                        "name": "醬燒豬肉鍋",
+                        "code": "b5ox-pr-1i3ej",
+                        "description": "肉品原產地：加拿大猪肉\n猪脂（油）原產地：加拿大",
                         "file_path": "",
                         "logo_path": "",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 1801653,
-                                "code": "y6ys-pv-up7o",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 50,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801654,
-                                "code": "y6ys-pv-up7p",
-                                "name": "大杯",
-                                "price": 35,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 35
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533442,
-                        "name": "錫蘭紅茶",
-                        "code": "y6ys-pr-pwmi",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801655,
-                                "code": "y6ys-pv-up7q",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 50,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801656,
-                                "code": "y6ys-pv-up7r",
-                                "name": "大杯",
-                                "price": 35,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 35
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533443,
-                        "name": "伯爵紅茶",
-                        "code": "y6ys-pr-pwmj",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801657,
-                                "code": "y6ys-pv-up7s",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 55,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801658,
-                                "code": "y6ys-pv-up7t",
-                                "name": "大杯",
-                                "price": 30,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 30
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533444,
-                        "name": "南投四季春",
-                        "code": "y6ys-pr-pwmk",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801659,
-                                "code": "y6ys-pv-up7u",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 55,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801660,
-                                "code": "y6ys-pv-up7v",
-                                "name": "大杯",
-                                "price": 30,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 30
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533445,
-                        "name": "鹿谷烏龍茶",
-                        "code": "y6ys-pr-pwml",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801661,
-                                "code": "y6ys-pv-up7w",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 55,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801662,
-                                "code": "y6ys-pv-up7x",
-                                "name": "大杯",
-                                "price": 30,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 30
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533446,
-                        "name": "養樂多綠茶",
-                        "code": "y6ys-pr-pwmm",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801663,
-                                "code": "y6ys-pv-up7y",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 90,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801664,
-                                "code": "y6ys-pv-up7z",
-                                "name": "大杯",
-                                "price": 55,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 55
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533472,
-                        "name": "仙草雲甘茶",
-                        "code": "y6ys-pr-pwnb",
-                        "description": "甜度固定",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801709,
-                                "code": "y6ys-pv-up97",
-                                "name": "大杯",
-                                "price": 55,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801710,
-                                "code": "y6ys-pv-up98",
-                                "name": "中杯",
-                                "price": 45,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 45
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 5669021,
-                        "name": "伯爵嚼嚼紅茶",
-                        "code": "4913316",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5669021.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5669021.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 6122244,
-                                "code": "5349422",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 75,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 6122255,
-                                "code": "5349423",
-                                "name": "大杯",
-                                "price": 45,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 45
-                    }
-                ]
-            },
-            {
-                "id": "187679",
-                "name": "經典奶茶系列",
-                "products": [
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533484,
-                        "name": "起司奶沫綠茶",
-                        "code": "y6ys-pr-pwnn",
-                        "description": "",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533484.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533484.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801733,
-                                "code": "y6ys-pv-up9v",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 80,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801734,
-                                "code": "y6ys-pv-up9w",
-                                "name": "大杯",
-                                "price": 50,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 50
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533485,
-                        "name": "起司奶沫紅茶",
-                        "code": "y6ys-pr-pwno",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801735,
-                                "code": "y6ys-pv-up9x",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 80,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801736,
-                                "code": "y6ys-pv-up9y",
-                                "name": "大杯",
-                                "price": 50,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 50
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533486,
-                        "name": "起司奶沫黑烏龍",
-                        "code": "y6ys-pr-pwnp",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801737,
-                                "code": "y6ys-pv-up9z",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 80,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801738,
-                                "code": "y6ys-pv-upa0",
-                                "name": "大杯",
-                                "price": 50,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 50
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533487,
-                        "name": "起司奶沫四季春",
-                        "code": "y6ys-pr-pwnq",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801739,
-                                "code": "y6ys-pv-upa1",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 80,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801740,
-                                "code": "y6ys-pv-upa2",
-                                "name": "大杯",
-                                "price": 50,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 50
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533488,
-                        "name": "日式可可奶沫",
-                        "code": "y6ys-pr-pwnr",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801741,
-                                "code": "y6ys-pv-upa3",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 90,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801742,
-                                "code": "y6ys-pv-upa4",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 60
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533489,
-                        "name": "法式可可奶沫",
-                        "code": "y6ys-pr-pwns",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801743,
-                                "code": "y6ys-pv-upa5",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 90,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801744,
-                                "code": "y6ys-pv-upa6",
-                                "name": "大杯",
-                                "price": 60,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 60
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533447,
-                        "name": "荔枝椰果奶茶",
-                        "code": "y6ys-pr-pwmn",
-                        "description": "",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801665,
-                                "code": "y6ys-pv-up80",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 75,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801666,
-                                "code": "y6ys-pv-up81",
-                                "name": "大杯",
-                                "price": 45,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 45
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533453,
-                        "name": "甲級芋頭奶茶",
-                        "code": "y7xp-pr-ql2d",
-                        "description": "大杯．每日限量",
-                        "file_path": "",
-                        "logo_path": "",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801676,
-                                "code": "y7xp-pv-vham",
+                                "id": 4110200,
+                                "code": "b5ox-pv-1r7vn",
                                 "name": null,
-                                "price": 60,
+                                "price": 150,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
+                                    25269459
                                 ]
                             }
                         ],
-                        "master_category_id": 11,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 60
+                        "lowestPrice": 150
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 1533449,
-                        "name": "霍格華茲奶茶",
-                        "code": "y6ys-pr-pwmp",
-                        "description": "起司",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533449.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533449.jpg?width=%s",
+                        "id": 3540922,
+                        "name": "沙茶鍋",
+                        "code": "b5ox-pr-1i3ek",
+                        "description": "肉品原產地：加拿大猪肉\n猪脂（油）原產地：加拿大",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523836.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523836.jpg?width=%s",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 1801669,
-                                "code": "y6ys-pv-up84",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 75,
+                                "id": 4110201,
+                                "code": "b5ox-pv-1r7vo",
+                                "name": null,
+                                "price": 160,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801670,
-                                "code": "y6ys-pv-up85",
-                                "name": "大杯",
-                                "price": 45,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
+                                    25269459
                                 ]
                             }
                         ],
-                        "master_category_id": 11,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 45
+                        "lowestPrice": 160
                     },
                     {
                         "is_half_type_available": false,
-                        "id": 1533450,
-                        "name": "鄧不利多奶綠",
-                        "code": "y6ys-pr-pwmq",
-                        "description": "起司",
-                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533450.jpg?width=%s",
-                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/1533450.jpg?width=%s",
-                        "half_type": "",
-                        "is_alcoholic_item": false,
-                        "product_variations": [
-                            {
-                                "id": 1801671,
-                                "code": "y6ys-pv-up86",
-                                "name": "罐裝 【980c.c.】",
-                                "price": 75,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            },
-                            {
-                                "id": 1801672,
-                                "code": "y6ys-pv-up87",
-                                "name": "大杯",
-                                "price": 45,
-                                "price_before_discount": null,
-                                "container_price": 0,
-                                "choices": [],
-                                "toppings": [],
-                                "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
-                                ]
-                            }
-                        ],
-                        "master_category_id": 11,
-                        "is_prepacked_item": false,
-                        "exclude_dish_information": false,
-                        "has_dish_information": null,
-                        "is_sold_out": false,
-                        "additives": [],
-                        "sold_out_options": [],
-                        "lowestPrice": 45
-                    },
-                    {
-                        "is_half_type_available": false,
-                        "id": 1533451,
-                        "name": "麻瓜布丁奶茶",
-                        "code": "y6ys-pr-pwmr",
-                        "description": "大杯．2顆布丁加起司",
+                        "id": 3540923,
+                        "name": "牛奶鍋",
+                        "code": "b5ox-pr-1i3el",
+                        "description": "附蛋，肉品原產地：加拿大猪肉\n猪脂（油）原產地：加拿大",
                         "file_path": "",
                         "logo_path": "",
                         "half_type": "",
                         "is_alcoholic_item": false,
                         "product_variations": [
                             {
-                                "id": 1801673,
-                                "code": "y6ys-pv-up88",
+                                "id": 4110202,
+                                "code": "b5ox-pv-1r7vp",
                                 "name": null,
-                                "price": 65,
+                                "price": 170,
                                 "price_before_discount": null,
                                 "container_price": 0,
                                 "choices": [],
                                 "toppings": [],
                                 "topping_ids": [
-                                    25088604,
-                                    25088605,
-                                    25088606
+                                    25269459
                                 ]
                             }
                         ],
-                        "master_category_id": 11,
+                        "master_category_id": 4,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
                         "is_sold_out": false,
                         "additives": [],
                         "sold_out_options": [],
-                        "lowestPrice": 65
+                        "lowestPrice": 170
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3540924,
+                        "name": "咖哩起士鍋",
+                        "code": "b5ox-pr-1i3em",
+                        "description": "肉品原產地：加拿大猪肉\n猪脂（油）原產地：加拿大",
+                        "file_path": "",
+                        "logo_path": "",
+                        "half_type": "",
+                        "is_alcoholic_item": false,
+                        "product_variations": [
+                            {
+                                "id": 4110203,
+                                "code": "b5ox-pv-1r7vq",
+                                "name": null,
+                                "price": 170,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25269459
+                                ]
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 170
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3540925,
+                        "name": "味噌魚片鍋",
+                        "code": "b5ox-pr-1i3en",
+                        "description": "附蛋，肉品原產地：加拿大猪肉\n猪脂（油）原產地：加拿大",
+                        "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523839.jpg?width=%s",
+                        "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/2523839.jpg?width=%s",
+                        "half_type": "",
+                        "is_alcoholic_item": false,
+                        "product_variations": [
+                            {
+                                "id": 4110204,
+                                "code": "b5ox-pv-1r7vr",
+                                "name": null,
+                                "price": 180,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25269459
+                                ]
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 180
+                    },
+                    {
+                        "is_half_type_available": false,
+                        "id": 3540926,
+                        "name": "牛奶起士鍋",
+                        "code": "b5ox-pr-1i3eo",
+                        "description": "附蛋，肉品原產地：加拿大猪肉\n猪脂（油）原產地：加拿大",
+                        "file_path": "",
+                        "logo_path": "",
+                        "half_type": "",
+                        "is_alcoholic_item": false,
+                        "product_variations": [
+                            {
+                                "id": 4110205,
+                                "code": "b5ox-pv-1r7vs",
+                                "name": null,
+                                "price": 190,
+                                "price_before_discount": null,
+                                "container_price": 0,
+                                "choices": [],
+                                "toppings": [],
+                                "topping_ids": [
+                                    25269459
+                                ]
+                            }
+                        ],
+                        "master_category_id": 4,
+                        "is_prepacked_item": false,
+                        "exclude_dish_information": false,
+                        "has_dish_information": null,
+                        "is_sold_out": false,
+                        "additives": [],
+                        "sold_out_options": [],
+                        "lowestPrice": 190
                     }
                 ]
             }
