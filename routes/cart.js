@@ -79,7 +79,7 @@ router.get('/updateCartList', ensureAuthenticated, async (req, res) => {
             }
         }
     }
-    database.ref("orders").set(ordersDocs);
+    database.ref("orders").update(ordersDocs);
     res.send({
         msg: 'success'
     });
