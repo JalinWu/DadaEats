@@ -303,16 +303,18 @@
                       url: '/users/login',
                       type: 'post',
                       data: {
-                        account: displayName,
-                        password: pictureUrl
+                        // account: displayName,
+                        // password: pictureUrl
+                        account: 'admin',
+                        password: '12345678'
                       },
                       error: function (err) {
                         if (err) throw err
                       },
                       success: function (res) {
                         console.log('login');
-                        // location.reload();
-                        auth();
+                        location.reload();
+                        // auth();
                       }
                     })
 
