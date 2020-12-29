@@ -3,15 +3,15 @@
         "id": 25993978,
         "name": "麵類選擇",
         "description": "",
-        "quantity_minimum": 0,
-        "quantity_maximum": 15,
+        "quantity_minimum": 1,
+        "quantity_maximum": 1,
         "options": [
             {
                 "id": 40707801,
                 "product_id": 15220256,
                 "name": "河粉",
                 "description": "",
-                "price": 70,
+                "price": 0,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""
@@ -21,7 +21,7 @@
                 "product_id": 15220257,
                 "name": "米粉",
                 "description": "",
-                "price": 40,
+                "price": 0,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""
@@ -40,7 +40,7 @@
                 "product_id": 15220290,
                 "name": "牛肉湯",
                 "description": "",
-                "price": 40,
+                "price": 0,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""
@@ -50,7 +50,7 @@
                 "product_id": 15220292,
                 "name": "蕃茄湯",
                 "description": "",
-                "price": 40,
+                "price": 0,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""
@@ -108,97 +108,7 @@
                 "product_id": 15220301,
                 "name": "牛肉",
                 "description": "",
-                "price": 30,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 26483785,
-                "product_id": 3540956,
-                "name": "滷臭豆腐【一份】",
-                "description": "一份",
-                "price": 30,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 26483786,
-                "product_id": 3540957,
-                "name": "秀珍菇",
-                "description": "",
-                "price": 30,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 26483787,
-                "product_id": 3540958,
-                "name": "香菇",
-                "description": "",
-                "price": 30,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 26483789,
-                "product_id": 3540960,
-                "name": "韭菜",
-                "description": "",
-                "price": 30,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 26483790,
-                "product_id": 3540961,
-                "name": "冬粉",
-                "description": "",
-                "price": 20,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 26483791,
-                "product_id": 3540962,
-                "name": "豆腐",
-                "description": "",
-                "price": 20,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 26483793,
-                "product_id": 3540964,
-                "name": "白飯",
-                "description": "",
-                "price": 10,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 26483794,
-                "product_id": 3540965,
-                "name": "蛋",
-                "description": "",
-                "price": 10,
-                "is_sold_out": false,
-                "is_half_half_applicable": false,
-                "remote_code": ""
-            },
-            {
-                "id": 26483795,
-                "product_id": 3540966,
-                "name": "生臭豆腐",
-                "description": "",
-                "price": 10,
+                "price": 0,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""
@@ -208,7 +118,7 @@
                 "product_id": 15220302,
                 "name": "豬肉",
                 "description": "",
-                "price": 70,
+                "price": 0,
                 "is_sold_out": false,
                 "is_half_half_applicable": false,
                 "remote_code": ""

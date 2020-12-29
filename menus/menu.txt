@@ -403,7 +403,7 @@
                                 "topping_ids": []
                             }
                         ],
-                        "master_category_id": 4,
+                        "master_category_id": 11,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,
@@ -435,7 +435,7 @@
                                 "topping_ids": []
                             }
                         ],
-                        "master_category_id": 4,
+                        "master_category_id": 11,
                         "is_prepacked_item": false,
                         "exclude_dish_information": false,
                         "has_dish_information": null,

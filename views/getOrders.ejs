@@ -20,7 +20,8 @@
                 </div>
                 <div class="user-orders">
                     <ol class="ordered-list">
-                        <% for(var j = 0; j < result[i].orders.length; j++) { %>
+                        <% var l = (result[i].orders) ? result[i].orders.length : 0 %>
+                        <% for(var j = 0; j < l; j++) { %>
                         <li>
                             <span>
                                 <span style="font-weight: bold">
